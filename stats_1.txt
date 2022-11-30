@@ -1,0 +1,2641 @@
+Starting New Test
+Render and get color array time delta, 115, 1238655495, 145 
+Time to copy new frame into temporrary frame, 5, 1238655495, 167 
+Delta encoding and remove zeros time, 1, 1238655495, 169 
+Total Pipeline Time, 145, 1238655495, 174 
+write time, 176, 0, 188 
+Render and get color array time delta, 49, 175340328, 226 
+Time to copy new frame into temporrary frame, 5, 175340328, 232 
+Delta encoding and remove zeros time, 0, 175340328, 232 
+Total Pipeline Time, 56, 175340328, 232 
+write time, 45, 0, 234 
+Render and get color array time delta, 33, 450156715, 266 
+Time to copy new frame into temporrary frame, 5, 450156715, 272 
+Delta encoding and remove zeros time, 0, 450156715, 272 
+Total Pipeline Time, 39, 450156715, 272 
+write time, 38, 0, 273 
+Render and get color array time delta, 28, 1238655495, 312 
+Time to copy new frame into temporrary frame, 5, 1238655495, 317 
+Delta encoding and remove zeros time, 13, 1238655495, 330 
+Total Pipeline Time, 49, 1238655495, 331 
+write time, 59, 0, 332 
+Render and get color array time delta, 33, 175340328, 366 
+Time to copy new frame into temporrary frame, 6, 175340328, 372 
+Delta encoding and remove zeros time, 13, 175340328, 385 
+Total Pipeline Time, 54, 175340328, 385 
+write time, 54, 0, 386 
+Render and get color array time delta, 34, 450156715, 421 
+Time to copy new frame into temporrary frame, 3, 450156715, 424 
+Delta encoding and remove zeros time, 13, 450156715, 437 
+Total Pipeline Time, 52, 450156715, 437 
+write time, 51, 0, 438 
+Render and get color array time delta, 64, 1238655495, 2759 
+Time to copy new frame into temporrary frame, 8, 1238655495, 2768 
+Delta encoding and remove zeros time, 22, 1238655495, 2790 
+Total Pipeline Time, 95, 1238655495, 2791 
+write time, 2364, 0, 2802 
+Render and get color array time delta, 45, 175340328, 2840 
+Time to copy new frame into temporrary frame, 12, 175340328, 2853 
+Delta encoding and remove zeros time, 16, 175340328, 2869 
+Total Pipeline Time, 78, 175340328, 2869 
+write time, 69, 0, 2872 
+Render and get color array time delta, 41, 450156715, 2911 
+Time to copy new frame into temporrary frame, 5, 450156715, 2916 
+Delta encoding and remove zeros time, 17, 450156715, 2934 
+Total Pipeline Time, 64, 450156715, 2934 
+write time, 63, 0, 2935 
+Render and get color array time delta, 44, 1238655495, 3205 
+Time to copy new frame into temporrary frame, 6, 1238655495, 3211 
+Delta encoding and remove zeros time, 16, 1238655495, 3227 
+Total Pipeline Time, 69, 1238655495, 3228 
+write time, 298, 0, 3233 
+Render and get color array time delta, 30, 175340328, 3258 
+Time to copy new frame into temporrary frame, 4, 175340328, 3262 
+Delta encoding and remove zeros time, 14, 175340328, 3277 
+Total Pipeline Time, 50, 175340328, 3278 
+write time, 45, 0, 3279 
+Render and get color array time delta, 27, 450156715, 3306 
+Time to copy new frame into temporrary frame, 3, 450156715, 3311 
+Delta encoding and remove zeros time, 17, 450156715, 3328 
+Total Pipeline Time, 50, 450156715, 3328 
+write time, 53, 0, 3332 
+Render and get color array time delta, 34, 1238655495, 3382 
+Time to copy new frame into temporrary frame, 3, 1238655495, 3387 
+Delta encoding and remove zeros time, 16, 1238655495, 3403 
+Total Pipeline Time, 55, 1238655495, 3404 
+write time, 72, 0, 3405 
+Render and get color array time delta, 26, 175340328, 3431 
+Time to copy new frame into temporrary frame, 4, 175340328, 3436 
+Delta encoding and remove zeros time, 15, 175340328, 3451 
+Total Pipeline Time, 47, 175340328, 3452 
+write time, 47, 0, 3452 
+Render and get color array time delta, 24, 450156715, 3476 
+Time to copy new frame into temporrary frame, 2, 450156715, 3482 
+Delta encoding and remove zeros time, 17, 450156715, 3499 
+Total Pipeline Time, 47, 450156715, 3499 
+write time, 49, 0, 3502 
+Render and get color array time delta, 27, 1238655495, 3533 
+Time to copy new frame into temporrary frame, 3, 1238655495, 3538 
+Delta encoding and remove zeros time, 13, 1238655495, 3552 
+Total Pipeline Time, 48, 1238655495, 3554 
+write time, 52, 0, 3554 
+Render and get color array time delta, 22, 175340328, 3576 
+Time to copy new frame into temporrary frame, 3, 175340328, 3581 
+Delta encoding and remove zeros time, 13, 175340328, 3595 
+Total Pipeline Time, 42, 175340328, 3596 
+write time, 42, 0, 3597 
+Render and get color array time delta, 22, 450156715, 3619 
+Time to copy new frame into temporrary frame, 3, 450156715, 3624 
+Delta encoding and remove zeros time, 15, 450156715, 3639 
+Total Pipeline Time, 43, 450156715, 3640 
+write time, 42, 0, 3640 
+Render and get color array time delta, 27, 1238655495, 3672 
+Time to copy new frame into temporrary frame, 3, 1238655495, 3677 
+Delta encoding and remove zeros time, 13, 1238655495, 3690 
+Total Pipeline Time, 47, 1238655495, 3692 
+write time, 52, 0, 3693 
+Render and get color array time delta, 22, 175340328, 3714 
+Time to copy new frame into temporrary frame, 3, 175340328, 3719 
+Delta encoding and remove zeros time, 13, 175340328, 3733 
+Total Pipeline Time, 42, 175340328, 3734 
+write time, 42, 0, 3735 
+Render and get color array time delta, 24, 450156715, 3761 
+Time to copy new frame into temporrary frame, 3, 450156715, 3764 
+Delta encoding and remove zeros time, 15, 450156715, 3779 
+Total Pipeline Time, 45, 450156715, 3780 
+write time, 45, 0, 3780 
+Render and get color array time delta, 25, 1238655495, 3811 
+Time to copy new frame into temporrary frame, 3, 1238655495, 3815 
+Delta encoding and remove zeros time, 13, 1238655495, 3829 
+Total Pipeline Time, 45, 1238655495, 3831 
+write time, 51, 0, 3831 
+Render and get color array time delta, 23, 175340328, 3855 
+Time to copy new frame into temporrary frame, 3, 175340328, 3859 
+Delta encoding and remove zeros time, 13, 175340328, 3872 
+Total Pipeline Time, 43, 175340328, 3874 
+write time, 43, 0, 3874 
+Render and get color array time delta, 23, 450156715, 3899 
+Time to copy new frame into temporrary frame, 3, 450156715, 3902 
+Delta encoding and remove zeros time, 15, 450156715, 3917 
+Total Pipeline Time, 43, 450156715, 3917 
+write time, 43, 0, 3918 
+Render and get color array time delta, 26, 1238655495, 3949 
+Time to copy new frame into temporrary frame, 3, 1238655495, 3954 
+Delta encoding and remove zeros time, 13, 1238655495, 3967 
+Total Pipeline Time, 46, 1238655495, 3969 
+write time, 51, 0, 3969 
+Render and get color array time delta, 24, 175340328, 3993 
+Time to copy new frame into temporrary frame, 3, 175340328, 3998 
+Delta encoding and remove zeros time, 13, 175340328, 4012 
+Total Pipeline Time, 44, 175340328, 4013 
+write time, 44, 0, 4014 
+Render and get color array time delta, 22, 450156715, 4036 
+Time to copy new frame into temporrary frame, 3, 450156715, 4041 
+Delta encoding and remove zeros time, 15, 450156715, 4056 
+Total Pipeline Time, 43, 450156715, 4057 
+write time, 43, 0, 4058 
+Render and get color array time delta, 28, 1238655495, 4090 
+Time to copy new frame into temporrary frame, 3, 1238655495, 4095 
+Delta encoding and remove zeros time, 13, 1238655495, 4109 
+Total Pipeline Time, 48, 1238655495, 4110 
+write time, 54, 0, 4112 
+Render and get color array time delta, 24, 175340328, 4134 
+Time to copy new frame into temporrary frame, 3, 175340328, 4139 
+Delta encoding and remove zeros time, 13, 175340328, 4153 
+Total Pipeline Time, 44, 175340328, 4155 
+write time, 43, 0, 4155 
+Render and get color array time delta, 24, 450156715, 4180 
+Time to copy new frame into temporrary frame, 3, 450156715, 4184 
+Delta encoding and remove zeros time, 15, 450156715, 4199 
+Total Pipeline Time, 45, 450156715, 4200 
+write time, 45, 0, 4201 
+Render and get color array time delta, 26, 1238655495, 4231 
+Time to copy new frame into temporrary frame, 3, 1238655495, 4236 
+Delta encoding and remove zeros time, 13, 1238655495, 4250 
+Total Pipeline Time, 47, 1238655495, 4252 
+write time, 52, 0, 4253 
+Render and get color array time delta, 25, 175340328, 4277 
+Time to copy new frame into temporrary frame, 3, 175340328, 4282 
+Delta encoding and remove zeros time, 14, 175340328, 4296 
+Total Pipeline Time, 45, 175340328, 4297 
+write time, 45, 0, 4298 
+Render and get color array time delta, 25, 450156715, 4324 
+Time to copy new frame into temporrary frame, 3, 450156715, 4327 
+Delta encoding and remove zeros time, 15, 450156715, 4343 
+Total Pipeline Time, 45, 450156715, 4343 
+write time, 45, 0, 4343 
+Render and get color array time delta, 26, 1238655495, 4375 
+Time to copy new frame into temporrary frame, 3, 1238655495, 4380 
+Delta encoding and remove zeros time, 13, 1238655495, 4394 
+Total Pipeline Time, 47, 1238655495, 4395 
+write time, 52, 0, 4396 
+Render and get color array time delta, 24, 175340328, 4420 
+Time to copy new frame into temporrary frame, 3, 175340328, 4425 
+Delta encoding and remove zeros time, 13, 175340328, 4438 
+Total Pipeline Time, 44, 175340328, 4440 
+write time, 44, 0, 4441 
+Render and get color array time delta, 22, 450156715, 4462 
+Time to copy new frame into temporrary frame, 3, 450156715, 4467 
+Delta encoding and remove zeros time, 15, 450156715, 4483 
+Total Pipeline Time, 42, 450156715, 4483 
+write time, 43, 0, 4484 
+Render and get color array time delta, 29, 1238655495, 4517 
+Time to copy new frame into temporrary frame, 3, 1238655495, 4522 
+Delta encoding and remove zeros time, 13, 1238655495, 4535 
+Total Pipeline Time, 49, 1238655495, 4537 
+write time, 54, 0, 4538 
+Render and get color array time delta, 23, 175340328, 4560 
+Time to copy new frame into temporrary frame, 3, 175340328, 4565 
+Delta encoding and remove zeros time, 12, 175340328, 4578 
+Total Pipeline Time, 40, 175340328, 4578 
+write time, 40, 0, 4579 
+Render and get color array time delta, 26, 450156715, 4606 
+Time to copy new frame into temporrary frame, 3, 450156715, 4609 
+Delta encoding and remove zeros time, 15, 450156715, 4625 
+Total Pipeline Time, 46, 450156715, 4625 
+write time, 46, 0, 4626 
+Render and get color array time delta, 28, 1238655495, 4658 
+Time to copy new frame into temporrary frame, 3, 1238655495, 4663 
+Delta encoding and remove zeros time, 13, 1238655495, 4676 
+Total Pipeline Time, 48, 1238655495, 4678 
+write time, 53, 0, 4680 
+Render and get color array time delta, 24, 175340328, 4702 
+Time to copy new frame into temporrary frame, 3, 175340328, 4707 
+Delta encoding and remove zeros time, 13, 175340328, 4721 
+Total Pipeline Time, 43, 175340328, 4722 
+write time, 43, 0, 4723 
+Render and get color array time delta, 22, 450156715, 4745 
+Time to copy new frame into temporrary frame, 3, 450156715, 4750 
+Delta encoding and remove zeros time, 15, 450156715, 4766 
+Total Pipeline Time, 43, 450156715, 4766 
+write time, 43, 0, 4766 
+Render and get color array time delta, 28, 1238655495, 4799 
+Time to copy new frame into temporrary frame, 3, 1238655495, 4803 
+Delta encoding and remove zeros time, 13, 1238655495, 4817 
+Total Pipeline Time, 48, 1238655495, 4819 
+write time, 53, 0, 4820 
+Render and get color array time delta, 25, 175340328, 4844 
+Time to copy new frame into temporrary frame, 3, 175340328, 4849 
+Delta encoding and remove zeros time, 13, 175340328, 4863 
+Total Pipeline Time, 45, 175340328, 4864 
+write time, 45, 0, 4865 
+Render and get color array time delta, 23, 450156715, 4888 
+Time to copy new frame into temporrary frame, 3, 450156715, 4892 
+Delta encoding and remove zeros time, 15, 450156715, 4908 
+Total Pipeline Time, 43, 450156715, 4908 
+write time, 44, 0, 4910 
+Render and get color array time delta, 28, 1238655495, 4942 
+Time to copy new frame into temporrary frame, 3, 1238655495, 4947 
+Delta encoding and remove zeros time, 12, 1238655495, 4960 
+Total Pipeline Time, 48, 1238655495, 4962 
+write time, 53, 0, 4963 
+Render and get color array time delta, 25, 175340328, 4987 
+Time to copy new frame into temporrary frame, 3, 175340328, 4992 
+Delta encoding and remove zeros time, 13, 175340328, 5005 
+Total Pipeline Time, 45, 175340328, 5007 
+write time, 45, 0, 5008 
+Render and get color array time delta, 22, 450156715, 5029 
+Time to copy new frame into temporrary frame, 3, 450156715, 5034 
+Delta encoding and remove zeros time, 15, 450156715, 5049 
+Total Pipeline Time, 42, 450156715, 5050 
+write time, 42, 0, 5050 
+Render and get color array time delta, 28, 1238655495, 5082 
+Time to copy new frame into temporrary frame, 3, 1238655495, 5087 
+Delta encoding and remove zeros time, 14, 1238655495, 5102 
+Total Pipeline Time, 48, 1238655495, 5103 
+write time, 53, 0, 5104 
+Render and get color array time delta, 22, 175340328, 5126 
+Time to copy new frame into temporrary frame, 3, 175340328, 5131 
+Delta encoding and remove zeros time, 13, 175340328, 5144 
+Total Pipeline Time, 42, 175340328, 5146 
+write time, 42, 0, 5146 
+Render and get color array time delta, 24, 450156715, 5170 
+Time to copy new frame into temporrary frame, 3, 450156715, 5175 
+Delta encoding and remove zeros time, 16, 450156715, 5191 
+Total Pipeline Time, 45, 450156715, 5192 
+write time, 46, 0, 5193 
+Render and get color array time delta, 30, 1238655495, 5227 
+Time to copy new frame into temporrary frame, 4, 1238655495, 5234 
+Delta encoding and remove zeros time, 14, 1238655495, 5248 
+Total Pipeline Time, 52, 1238655495, 5250 
+write time, 59, 0, 5252 
+Render and get color array time delta, 23, 175340328, 5273 
+Time to copy new frame into temporrary frame, 3, 175340328, 5278 
+Delta encoding and remove zeros time, 13, 175340328, 5291 
+Total Pipeline Time, 43, 175340328, 5293 
+write time, 41, 0, 5294 
+Render and get color array time delta, 23, 450156715, 5317 
+Time to copy new frame into temporrary frame, 3, 450156715, 5322 
+Delta encoding and remove zeros time, 15, 450156715, 5337 
+Total Pipeline Time, 44, 450156715, 5338 
+write time, 44, 0, 5338 
+Render and get color array time delta, 28, 1238655495, 5371 
+Time to copy new frame into temporrary frame, 3, 1238655495, 5376 
+Delta encoding and remove zeros time, 13, 1238655495, 5390 
+Total Pipeline Time, 48, 1238655495, 5391 
+write time, 53, 0, 5392 
+Render and get color array time delta, 23, 175340328, 5415 
+Time to copy new frame into temporrary frame, 3, 175340328, 5420 
+Delta encoding and remove zeros time, 13, 175340328, 5433 
+Total Pipeline Time, 43, 175340328, 5435 
+write time, 43, 0, 5436 
+Render and get color array time delta, 22, 450156715, 5459 
+Time to copy new frame into temporrary frame, 3, 450156715, 5462 
+Delta encoding and remove zeros time, 15, 450156715, 5478 
+Total Pipeline Time, 43, 450156715, 5478 
+write time, 43, 0, 5479 
+Render and get color array time delta, 28, 1238655495, 5512 
+Time to copy new frame into temporrary frame, 3, 1238655495, 5517 
+Delta encoding and remove zeros time, 14, 1238655495, 5531 
+Total Pipeline Time, 49, 1238655495, 5532 
+write time, 54, 0, 5534 
+Render and get color array time delta, 23, 175340328, 5556 
+Time to copy new frame into temporrary frame, 3, 175340328, 5561 
+Delta encoding and remove zeros time, 13, 175340328, 5574 
+Total Pipeline Time, 43, 175340328, 5576 
+write time, 42, 0, 5577 
+Render and get color array time delta, 23, 450156715, 5600 
+Time to copy new frame into temporrary frame, 3, 450156715, 5604 
+Delta encoding and remove zeros time, 15, 450156715, 5620 
+Total Pipeline Time, 44, 450156715, 5620 
+write time, 44, 0, 5621 
+Render and get color array time delta, 27, 1238655495, 5655 
+Time to copy new frame into temporrary frame, 3, 1238655495, 5658 
+Delta encoding and remove zeros time, 13, 1238655495, 5671 
+Total Pipeline Time, 47, 1238655495, 5673 
+write time, 53, 0, 5674 
+Render and get color array time delta, 23, 175340328, 5697 
+Time to copy new frame into temporrary frame, 3, 175340328, 5702 
+Delta encoding and remove zeros time, 13, 175340328, 5715 
+Total Pipeline Time, 43, 175340328, 5717 
+write time, 44, 0, 5719 
+Render and get color array time delta, 23, 450156715, 5741 
+Time to copy new frame into temporrary frame, 3, 450156715, 5747 
+Delta encoding and remove zeros time, 15, 450156715, 5763 
+Total Pipeline Time, 46, 450156715, 5763 
+write time, 45, 0, 5764 
+Render and get color array time delta, 27, 1238655495, 5796 
+Time to copy new frame into temporrary frame, 3, 1238655495, 5801 
+Delta encoding and remove zeros time, 13, 1238655495, 5815 
+Total Pipeline Time, 47, 1238655495, 5816 
+write time, 52, 0, 5817 
+Render and get color array time delta, 25, 175340328, 5842 
+Time to copy new frame into temporrary frame, 3, 175340328, 5847 
+Delta encoding and remove zeros time, 13, 175340328, 5860 
+Total Pipeline Time, 45, 175340328, 5862 
+write time, 45, 0, 5862 
+Render and get color array time delta, 22, 450156715, 5886 
+Time to copy new frame into temporrary frame, 3, 450156715, 5889 
+Delta encoding and remove zeros time, 15, 450156715, 5904 
+Total Pipeline Time, 42, 450156715, 5905 
+write time, 43, 0, 5906 
+Render and get color array time delta, 28, 1238655495, 5938 
+Time to copy new frame into temporrary frame, 3, 1238655495, 5943 
+Delta encoding and remove zeros time, 13, 1238655495, 5957 
+Total Pipeline Time, 48, 1238655495, 5958 
+write time, 54, 0, 5960 
+Render and get color array time delta, 23, 175340328, 5982 
+Time to copy new frame into temporrary frame, 3, 175340328, 5987 
+Delta encoding and remove zeros time, 13, 175340328, 6000 
+Total Pipeline Time, 43, 175340328, 6002 
+write time, 43, 0, 6003 
+Render and get color array time delta, 23, 450156715, 6027 
+Time to copy new frame into temporrary frame, 3, 450156715, 6030 
+Delta encoding and remove zeros time, 15, 450156715, 6046 
+Total Pipeline Time, 43, 450156715, 6046 
+write time, 43, 0, 6046 
+Render and get color array time delta, 28, 1238655495, 6079 
+Time to copy new frame into temporrary frame, 3, 1238655495, 6084 
+Delta encoding and remove zeros time, 13, 1238655495, 6097 
+Total Pipeline Time, 48, 1238655495, 6099 
+write time, 53, 0, 6100 
+Render and get color array time delta, 23, 175340328, 6123 
+Time to copy new frame into temporrary frame, 3, 175340328, 6128 
+Delta encoding and remove zeros time, 13, 175340328, 6141 
+Total Pipeline Time, 43, 175340328, 6143 
+write time, 43, 0, 6144 
+Render and get color array time delta, 24, 450156715, 6169 
+Time to copy new frame into temporrary frame, 3, 450156715, 6173 
+Delta encoding and remove zeros time, 15, 450156715, 6189 
+Total Pipeline Time, 45, 450156715, 6189 
+write time, 46, 0, 6190 
+Render and get color array time delta, 28, 1238655495, 6222 
+Time to copy new frame into temporrary frame, 3, 1238655495, 6227 
+Delta encoding and remove zeros time, 13, 1238655495, 6240 
+Total Pipeline Time, 47, 1238655495, 6242 
+write time, 51, 0, 6242 
+Render and get color array time delta, 25, 175340328, 6267 
+Time to copy new frame into temporrary frame, 3, 175340328, 6272 
+Delta encoding and remove zeros time, 13, 175340328, 6286 
+Total Pipeline Time, 45, 175340328, 6287 
+write time, 45, 0, 6288 
+Render and get color array time delta, 24, 450156715, 6312 
+Time to copy new frame into temporrary frame, 3, 450156715, 6316 
+Delta encoding and remove zeros time, 15, 450156715, 6332 
+Total Pipeline Time, 45, 450156715, 6333 
+write time, 45, 0, 6333 
+Render and get color array time delta, 27, 1238655495, 6365 
+Time to copy new frame into temporrary frame, 3, 1238655495, 6370 
+Delta encoding and remove zeros time, 15, 1238655495, 6386 
+Total Pipeline Time, 48, 1238655495, 6386 
+write time, 53, 0, 6386 
+Render and get color array time delta, 24, 175340328, 6410 
+Time to copy new frame into temporrary frame, 4, 175340328, 6415 
+Delta encoding and remove zeros time, 13, 175340328, 6428 
+Total Pipeline Time, 44, 175340328, 6430 
+write time, 44, 0, 6431 
+Render and get color array time delta, 22, 450156715, 6453 
+Time to copy new frame into temporrary frame, 3, 450156715, 6458 
+Delta encoding and remove zeros time, 15, 450156715, 6473 
+Total Pipeline Time, 43, 450156715, 6473 
+write time, 43, 0, 6475 
+Render and get color array time delta, 29, 1238655495, 6508 
+Time to copy new frame into temporrary frame, 5, 1238655495, 6515 
+Delta encoding and remove zeros time, 13, 1238655495, 6528 
+Total Pipeline Time, 51, 1238655495, 6530 
+write time, 55, 0, 6530 
+Render and get color array time delta, 24, 175340328, 6554 
+Time to copy new frame into temporrary frame, 3, 175340328, 6559 
+Delta encoding and remove zeros time, 13, 175340328, 6572 
+Total Pipeline Time, 44, 175340328, 6574 
+write time, 44, 0, 6575 
+Render and get color array time delta, 22, 450156715, 6598 
+Time to copy new frame into temporrary frame, 3, 450156715, 6601 
+Delta encoding and remove zeros time, 15, 450156715, 6617 
+Total Pipeline Time, 43, 450156715, 6618 
+write time, 43, 0, 6618 
+Render and get color array time delta, 29, 1238655495, 6651 
+Time to copy new frame into temporrary frame, 3, 1238655495, 6656 
+Delta encoding and remove zeros time, 14, 1238655495, 6671 
+Total Pipeline Time, 50, 1238655495, 6673 
+write time, 55, 0, 6673 
+Render and get color array time delta, 25, 175340328, 6698 
+Time to copy new frame into temporrary frame, 3, 175340328, 6704 
+Delta encoding and remove zeros time, 13, 175340328, 6718 
+Total Pipeline Time, 46, 175340328, 6719 
+write time, 46, 0, 6720 
+Render and get color array time delta, 26, 450156715, 6747 
+Time to copy new frame into temporrary frame, 3, 450156715, 6751 
+Delta encoding and remove zeros time, 15, 450156715, 6766 
+Total Pipeline Time, 47, 450156715, 6766 
+write time, 47, 0, 6767 
+Render and get color array time delta, 27, 1238655495, 6799 
+Time to copy new frame into temporrary frame, 3, 1238655495, 6804 
+Delta encoding and remove zeros time, 13, 1238655495, 6818 
+Total Pipeline Time, 47, 1238655495, 6820 
+write time, 53, 0, 6821 
+Render and get color array time delta, 23, 175340328, 6843 
+Time to copy new frame into temporrary frame, 3, 175340328, 6848 
+Delta encoding and remove zeros time, 13, 175340328, 6861 
+Total Pipeline Time, 42, 175340328, 6863 
+write time, 42, 0, 6863 
+Render and get color array time delta, 23, 450156715, 6886 
+Time to copy new frame into temporrary frame, 3, 450156715, 6891 
+Delta encoding and remove zeros time, 15, 450156715, 6907 
+Total Pipeline Time, 44, 450156715, 6907 
+write time, 45, 0, 6908 
+Render and get color array time delta, 27, 1238655495, 6940 
+Time to copy new frame into temporrary frame, 3, 1238655495, 6945 
+Delta encoding and remove zeros time, 14, 1238655495, 6959 
+Total Pipeline Time, 49, 1238655495, 6961 
+write time, 53, 0, 6962 
+Render and get color array time delta, 22, 175340328, 6983 
+Time to copy new frame into temporrary frame, 3, 175340328, 6988 
+Delta encoding and remove zeros time, 13, 175340328, 7002 
+Total Pipeline Time, 42, 175340328, 7003 
+write time, 42, 0, 7004 
+Render and get color array time delta, 24, 450156715, 7028 
+Time to copy new frame into temporrary frame, 3, 450156715, 7033 
+Delta encoding and remove zeros time, 15, 450156715, 7048 
+Total Pipeline Time, 45, 450156715, 7049 
+write time, 45, 0, 7049 
+Render and get color array time delta, 28, 1238655495, 7082 
+Time to copy new frame into temporrary frame, 3, 1238655495, 7087 
+Delta encoding and remove zeros time, 13, 1238655495, 7101 
+Total Pipeline Time, 48, 1238655495, 7102 
+write time, 53, 0, 7103 
+Render and get color array time delta, 22, 175340328, 7127 
+Time to copy new frame into temporrary frame, 3, 175340328, 7130 
+Delta encoding and remove zeros time, 13, 175340328, 7144 
+Total Pipeline Time, 43, 175340328, 7145 
+write time, 44, 0, 7147 
+Render and get color array time delta, 23, 450156715, 7169 
+Time to copy new frame into temporrary frame, 3, 450156715, 7174 
+Delta encoding and remove zeros time, 15, 450156715, 7189 
+Total Pipeline Time, 43, 450156715, 7189 
+write time, 42, 0, 7190 
+Render and get color array time delta, 26, 1238655495, 7220 
+Time to copy new frame into temporrary frame, 3, 1238655495, 7225 
+Delta encoding and remove zeros time, 13, 1238655495, 7239 
+Total Pipeline Time, 46, 1238655495, 7241 
+write time, 51, 0, 7241 
+Render and get color array time delta, 26, 175340328, 7267 
+Time to copy new frame into temporrary frame, 3, 175340328, 7272 
+Delta encoding and remove zeros time, 13, 175340328, 7286 
+Total Pipeline Time, 46, 175340328, 7287 
+write time, 46, 0, 7288 
+Render and get color array time delta, 22, 450156715, 7311 
+Time to copy new frame into temporrary frame, 3, 450156715, 7315 
+Delta encoding and remove zeros time, 15, 450156715, 7330 
+Total Pipeline Time, 43, 450156715, 7330 
+write time, 42, 0, 7331 
+Render and get color array time delta, 27, 1238655495, 7363 
+Time to copy new frame into temporrary frame, 3, 1238655495, 7368 
+Delta encoding and remove zeros time, 13, 1238655495, 7382 
+Total Pipeline Time, 48, 1238655495, 7383 
+write time, 52, 0, 7384 
+Render and get color array time delta, 23, 175340328, 7407 
+Time to copy new frame into temporrary frame, 3, 175340328, 7412 
+Delta encoding and remove zeros time, 13, 175340328, 7425 
+Total Pipeline Time, 43, 175340328, 7427 
+write time, 43, 0, 7428 
+Render and get color array time delta, 23, 450156715, 7452 
+Time to copy new frame into temporrary frame, 3, 450156715, 7455 
+Delta encoding and remove zeros time, 15, 450156715, 7471 
+Total Pipeline Time, 43, 450156715, 7471 
+write time, 44, 0, 7472 
+Render and get color array time delta, 28, 1238655495, 7504 
+Time to copy new frame into temporrary frame, 3, 1238655495, 7509 
+Delta encoding and remove zeros time, 15, 1238655495, 7525 
+Total Pipeline Time, 49, 1238655495, 7525 
+write time, 53, 0, 7526 
+Render and get color array time delta, 23, 175340328, 7548 
+Time to copy new frame into temporrary frame, 4, 175340328, 7553 
+Delta encoding and remove zeros time, 14, 175340328, 7568 
+Total Pipeline Time, 44, 175340328, 7570 
+write time, 44, 0, 7570 
+Render and get color array time delta, 26, 450156715, 7598 
+Time to copy new frame into temporrary frame, 3, 450156715, 7601 
+Delta encoding and remove zeros time, 15, 450156715, 7617 
+Total Pipeline Time, 47, 450156715, 7617 
+write time, 48, 0, 7619 
+Render and get color array time delta, 29, 1238655495, 7651 
+Time to copy new frame into temporrary frame, 5, 1238655495, 7658 
+Delta encoding and remove zeros time, 13, 1238655495, 7671 
+Total Pipeline Time, 51, 1238655495, 7673 
+write time, 55, 0, 7674 
+Render and get color array time delta, 23, 175340328, 7697 
+Time to copy new frame into temporrary frame, 3, 175340328, 7702 
+Delta encoding and remove zeros time, 13, 175340328, 7715 
+Total Pipeline Time, 43, 175340328, 7717 
+write time, 43, 0, 7717 
+Render and get color array time delta, 22, 450156715, 7740 
+Time to copy new frame into temporrary frame, 3, 450156715, 7745 
+Delta encoding and remove zeros time, 15, 450156715, 7760 
+Total Pipeline Time, 43, 450156715, 7760 
+write time, 43, 0, 7761 
+Render and get color array time delta, 27, 1238655495, 7793 
+Time to copy new frame into temporrary frame, 3, 1238655495, 7798 
+Delta encoding and remove zeros time, 13, 1238655495, 7812 
+Total Pipeline Time, 48, 1238655495, 7814 
+write time, 52, 0, 7814 
+Render and get color array time delta, 22, 175340328, 7836 
+Time to copy new frame into temporrary frame, 3, 175340328, 7841 
+Delta encoding and remove zeros time, 12, 175340328, 7853 
+Total Pipeline Time, 39, 175340328, 7853 
+write time, 40, 0, 7854 
+Render and get color array time delta, 25, 450156715, 7881 
+Time to copy new frame into temporrary frame, 3, 450156715, 7884 
+Delta encoding and remove zeros time, 15, 450156715, 7900 
+Total Pipeline Time, 46, 450156715, 7900 
+write time, 46, 0, 7901 
+Render and get color array time delta, 27, 1238655495, 7932 
+Time to copy new frame into temporrary frame, 3, 1238655495, 7937 
+Delta encoding and remove zeros time, 13, 1238655495, 7951 
+Total Pipeline Time, 47, 1238655495, 7953 
+write time, 52, 0, 7954 
+Render and get color array time delta, 24, 175340328, 7978 
+Time to copy new frame into temporrary frame, 3, 175340328, 7982 
+Delta encoding and remove zeros time, 13, 175340328, 7995 
+Total Pipeline Time, 43, 175340328, 7997 
+write time, 43, 0, 7997 
+Render and get color array time delta, 22, 450156715, 8021 
+Time to copy new frame into temporrary frame, 3, 450156715, 8024 
+Delta encoding and remove zeros time, 15, 450156715, 8040 
+Total Pipeline Time, 43, 450156715, 8040 
+write time, 43, 0, 8041 
+Render and get color array time delta, 27, 1238655495, 8072 
+Time to copy new frame into temporrary frame, 3, 1238655495, 8077 
+Delta encoding and remove zeros time, 13, 1238655495, 8091 
+Total Pipeline Time, 47, 1238655495, 8093 
+write time, 52, 0, 8093 
+Render and get color array time delta, 23, 175340328, 8116 
+Time to copy new frame into temporrary frame, 3, 175340328, 8121 
+Delta encoding and remove zeros time, 13, 175340328, 8135 
+Total Pipeline Time, 43, 175340328, 8136 
+write time, 43, 0, 8137 
+Render and get color array time delta, 24, 450156715, 8161 
+Time to copy new frame into temporrary frame, 3, 450156715, 8166 
+Delta encoding and remove zeros time, 15, 450156715, 8182 
+Total Pipeline Time, 45, 450156715, 8182 
+write time, 45, 0, 8183 
+Render and get color array time delta, 30, 1238655495, 8217 
+Time to copy new frame into temporrary frame, 3, 1238655495, 8222 
+Delta encoding and remove zeros time, 14, 1238655495, 8236 
+Total Pipeline Time, 51, 1238655495, 8238 
+write time, 55, 0, 8238 
+Render and get color array time delta, 24, 175340328, 8262 
+Time to copy new frame into temporrary frame, 3, 175340328, 8267 
+Delta encoding and remove zeros time, 13, 175340328, 8280 
+Total Pipeline Time, 44, 175340328, 8282 
+write time, 43, 0, 8282 
+Render and get color array time delta, 23, 450156715, 8305 
+Time to copy new frame into temporrary frame, 3, 450156715, 8310 
+Delta encoding and remove zeros time, 16, 450156715, 8326 
+Total Pipeline Time, 44, 450156715, 8326 
+write time, 45, 0, 8328 
+Render and get color array time delta, 27, 1238655495, 8359 
+Time to copy new frame into temporrary frame, 5, 1238655495, 8366 
+Delta encoding and remove zeros time, 13, 1238655495, 8380 
+Total Pipeline Time, 50, 1238655495, 8382 
+write time, 54, 0, 8382 
+Render and get color array time delta, 25, 175340328, 8408 
+Time to copy new frame into temporrary frame, 3, 175340328, 8412 
+Delta encoding and remove zeros time, 13, 175340328, 8426 
+Total Pipeline Time, 45, 175340328, 8428 
+write time, 46, 0, 8428 
+Render and get color array time delta, 23, 450156715, 8451 
+Time to copy new frame into temporrary frame, 5, 450156715, 8458 
+Delta encoding and remove zeros time, 15, 450156715, 8473 
+Total Pipeline Time, 45, 450156715, 8473 
+write time, 46, 0, 8474 
+Render and get color array time delta, 28, 1238655495, 8507 
+Time to copy new frame into temporrary frame, 3, 1238655495, 8512 
+Delta encoding and remove zeros time, 14, 1238655495, 8526 
+Total Pipeline Time, 49, 1238655495, 8528 
+write time, 53, 0, 8528 
+Render and get color array time delta, 24, 175340328, 8552 
+Time to copy new frame into temporrary frame, 3, 175340328, 8557 
+Delta encoding and remove zeros time, 13, 175340328, 8571 
+Total Pipeline Time, 44, 175340328, 8573 
+write time, 45, 0, 8573 
+Render and get color array time delta, 22, 450156715, 8597 
+Time to copy new frame into temporrary frame, 3, 450156715, 8600 
+Delta encoding and remove zeros time, 16, 450156715, 8617 
+Total Pipeline Time, 44, 450156715, 8617 
+write time, 44, 0, 8618 
+Render and get color array time delta, 28, 1238655495, 8650 
+Time to copy new frame into temporrary frame, 3, 1238655495, 8655 
+Delta encoding and remove zeros time, 13, 1238655495, 8668 
+Total Pipeline Time, 48, 1238655495, 8670 
+write time, 52, 0, 8671 
+Render and get color array time delta, 23, 175340328, 8693 
+Time to copy new frame into temporrary frame, 3, 175340328, 8698 
+Delta encoding and remove zeros time, 13, 175340328, 8712 
+Total Pipeline Time, 43, 175340328, 8713 
+write time, 43, 0, 8714 
+Render and get color array time delta, 24, 450156715, 8737 
+Time to copy new frame into temporrary frame, 3, 450156715, 8743 
+Delta encoding and remove zeros time, 16, 450156715, 8759 
+Total Pipeline Time, 45, 450156715, 8759 
+write time, 46, 0, 8760 
+Render and get color array time delta, 26, 1238655495, 8790 
+Time to copy new frame into temporrary frame, 3, 1238655495, 8795 
+Delta encoding and remove zeros time, 13, 1238655495, 8809 
+Total Pipeline Time, 46, 1238655495, 8811 
+write time, 51, 0, 8811 
+Render and get color array time delta, 22, 175340328, 8834 
+Time to copy new frame into temporrary frame, 3, 175340328, 8838 
+Delta encoding and remove zeros time, 13, 175340328, 8852 
+Total Pipeline Time, 43, 175340328, 8854 
+write time, 43, 0, 8854 
+Render and get color array time delta, 23, 450156715, 8877 
+Time to copy new frame into temporrary frame, 3, 450156715, 8882 
+Delta encoding and remove zeros time, 15, 450156715, 8898 
+Total Pipeline Time, 44, 450156715, 8898 
+write time, 44, 0, 8899 
+Render and get color array time delta, 27, 1238655495, 8931 
+Time to copy new frame into temporrary frame, 5, 1238655495, 8939 
+Delta encoding and remove zeros time, 13, 1238655495, 8952 
+Total Pipeline Time, 50, 1238655495, 8954 
+write time, 54, 0, 8954 
+Render and get color array time delta, 23, 175340328, 8978 
+Time to copy new frame into temporrary frame, 4, 175340328, 8982 
+Delta encoding and remove zeros time, 13, 175340328, 8996 
+Total Pipeline Time, 43, 175340328, 8998 
+write time, 43, 0, 8998 
+Render and get color array time delta, 23, 450156715, 9022 
+Time to copy new frame into temporrary frame, 3, 450156715, 9026 
+Delta encoding and remove zeros time, 15, 450156715, 9042 
+Total Pipeline Time, 44, 450156715, 9042 
+write time, 44, 0, 9043 
+Render and get color array time delta, 28, 1238655495, 9076 
+Time to copy new frame into temporrary frame, 5, 1238655495, 9083 
+Delta encoding and remove zeros time, 14, 1238655495, 9097 
+Total Pipeline Time, 51, 1238655495, 9099 
+write time, 56, 0, 9100 
+Render and get color array time delta, 24, 175340328, 9123 
+Time to copy new frame into temporrary frame, 3, 175340328, 9128 
+Delta encoding and remove zeros time, 13, 175340328, 9141 
+Total Pipeline Time, 43, 175340328, 9143 
+write time, 44, 0, 9144 
+Render and get color array time delta, 22, 450156715, 9165 
+Time to copy new frame into temporrary frame, 5, 450156715, 9173 
+Delta encoding and remove zeros time, 15, 450156715, 9188 
+Total Pipeline Time, 45, 450156715, 9188 
+write time, 45, 0, 9189 
+Render and get color array time delta, 27, 1238655495, 9221 
+Time to copy new frame into temporrary frame, 3, 1238655495, 9226 
+Delta encoding and remove zeros time, 14, 1238655495, 9240 
+Total Pipeline Time, 48, 1238655495, 9242 
+write time, 57, 0, 9247 
+Render and get color array time delta, 26, 175340328, 9268 
+Time to copy new frame into temporrary frame, 3, 175340328, 9273 
+Delta encoding and remove zeros time, 13, 175340328, 9287 
+Total Pipeline Time, 46, 175340328, 9288 
+write time, 42, 0, 9289 
+Render and get color array time delta, 24, 450156715, 9313 
+Time to copy new frame into temporrary frame, 3, 450156715, 9318 
+Delta encoding and remove zeros time, 16, 450156715, 9334 
+Total Pipeline Time, 45, 450156715, 9334 
+write time, 45, 0, 9335 
+Render and get color array time delta, 27, 1238655495, 9367 
+Time to copy new frame into temporrary frame, 3, 1238655495, 9371 
+Delta encoding and remove zeros time, 15, 1238655495, 9387 
+Total Pipeline Time, 47, 1238655495, 9387 
+write time, 52, 0, 9388 
+Render and get color array time delta, 23, 175340328, 9412 
+Time to copy new frame into temporrary frame, 3, 175340328, 9416 
+Delta encoding and remove zeros time, 13, 175340328, 9429 
+Total Pipeline Time, 43, 175340328, 9431 
+write time, 43, 0, 9431 
+Render and get color array time delta, 22, 450156715, 9454 
+Time to copy new frame into temporrary frame, 3, 450156715, 9458 
+Delta encoding and remove zeros time, 15, 450156715, 9474 
+Total Pipeline Time, 43, 450156715, 9474 
+write time, 43, 0, 9475 
+Render and get color array time delta, 28, 1238655495, 9508 
+Time to copy new frame into temporrary frame, 3, 1238655495, 9513 
+Delta encoding and remove zeros time, 13, 1238655495, 9527 
+Total Pipeline Time, 49, 1238655495, 9529 
+write time, 54, 0, 9529 
+Render and get color array time delta, 22, 175340328, 9551 
+Time to copy new frame into temporrary frame, 3, 175340328, 9556 
+Delta encoding and remove zeros time, 13, 175340328, 9570 
+Total Pipeline Time, 42, 175340328, 9571 
+write time, 42, 0, 9572 
+Render and get color array time delta, 23, 450156715, 9595 
+Time to copy new frame into temporrary frame, 3, 450156715, 9600 
+Delta encoding and remove zeros time, 16, 450156715, 9617 
+Total Pipeline Time, 45, 450156715, 9617 
+write time, 45, 0, 9618 
+Render and get color array time delta, 26, 1238655495, 9648 
+Time to copy new frame into temporrary frame, 4, 1238655495, 9655 
+Delta encoding and remove zeros time, 13, 1238655495, 9669 
+Total Pipeline Time, 48, 1238655495, 9670 
+write time, 53, 0, 9671 
+Render and get color array time delta, 23, 175340328, 9694 
+Time to copy new frame into temporrary frame, 3, 175340328, 9699 
+Delta encoding and remove zeros time, 13, 175340328, 9713 
+Total Pipeline Time, 43, 175340328, 9714 
+write time, 43, 0, 9715 
+Render and get color array time delta, 22, 450156715, 9737 
+Time to copy new frame into temporrary frame, 3, 450156715, 9742 
+Delta encoding and remove zeros time, 15, 450156715, 9758 
+Total Pipeline Time, 43, 450156715, 9758 
+write time, 43, 0, 9759 
+Render and get color array time delta, 28, 1238655495, 9792 
+Time to copy new frame into temporrary frame, 3, 1238655495, 9797 
+Delta encoding and remove zeros time, 15, 1238655495, 9813 
+Total Pipeline Time, 49, 1238655495, 9813 
+write time, 54, 0, 9813 
+Render and get color array time delta, 24, 175340328, 9838 
+Time to copy new frame into temporrary frame, 4, 175340328, 9842 
+Delta encoding and remove zeros time, 13, 175340328, 9856 
+Total Pipeline Time, 44, 175340328, 9858 
+write time, 45, 0, 9859 
+Render and get color array time delta, 24, 450156715, 9882 
+Time to copy new frame into temporrary frame, 3, 450156715, 9887 
+Delta encoding and remove zeros time, 15, 450156715, 9903 
+Total Pipeline Time, 45, 450156715, 9903 
+write time, 45, 0, 9904 
+Render and get color array time delta, 30, 1238655495, 9940 
+Time to copy new frame into temporrary frame, 4, 1238655495, 9945 
+Delta encoding and remove zeros time, 13, 1238655495, 9958 
+Total Pipeline Time, 51, 1238655495, 9960 
+write time, 56, 0, 9960 
+Render and get color array time delta, 24, 175340328, 9984 
+Time to copy new frame into temporrary frame, 3, 175340328, 9990 
+Delta encoding and remove zeros time, 13, 175340328, 10004 
+Total Pipeline Time, 45, 175340328, 10005 
+write time, 45, 0, 10006 
+Render and get color array time delta, 22, 450156715, 10028 
+Time to copy new frame into temporrary frame, 3, 450156715, 10033 
+Delta encoding and remove zeros time, 15, 450156715, 10048 
+Total Pipeline Time, 43, 450156715, 10049 
+write time, 43, 0, 10049 
+Render and get color array time delta, 27, 1238655495, 10081 
+Time to copy new frame into temporrary frame, 3, 1238655495, 10086 
+Delta encoding and remove zeros time, 13, 1238655495, 10100 
+Total Pipeline Time, 47, 1238655495, 10101 
+write time, 52, 0, 10102 
+Render and get color array time delta, 23, 175340328, 10125 
+Time to copy new frame into temporrary frame, 3, 175340328, 10130 
+Delta encoding and remove zeros time, 13, 175340328, 10144 
+Total Pipeline Time, 43, 175340328, 10145 
+write time, 44, 0, 10147 
+Render and get color array time delta, 25, 450156715, 10171 
+Time to copy new frame into temporrary frame, 3, 450156715, 10176 
+Delta encoding and remove zeros time, 15, 450156715, 10192 
+Total Pipeline Time, 47, 450156715, 10192 
+write time, 46, 0, 10193 
+Render and get color array time delta, 29, 1238655495, 10228 
+Time to copy new frame into temporrary frame, 5, 1238655495, 10233 
+Delta encoding and remove zeros time, 13, 1238655495, 10247 
+Total Pipeline Time, 51, 1238655495, 10248 
+write time, 56, 0, 10249 
+Render and get color array time delta, 23, 175340328, 10272 
+Time to copy new frame into temporrary frame, 3, 175340328, 10277 
+Delta encoding and remove zeros time, 13, 175340328, 10290 
+Total Pipeline Time, 43, 175340328, 10292 
+write time, 43, 0, 10293 
+Render and get color array time delta, 21, 450156715, 10314 
+Time to copy new frame into temporrary frame, 3, 450156715, 10319 
+Delta encoding and remove zeros time, 15, 450156715, 10334 
+Total Pipeline Time, 42, 450156715, 10334 
+write time, 42, 0, 10335 
+Render and get color array time delta, 27, 1238655495, 10367 
+Time to copy new frame into temporrary frame, 3, 1238655495, 10372 
+Delta encoding and remove zeros time, 14, 1238655495, 10386 
+Total Pipeline Time, 48, 1238655495, 10388 
+write time, 53, 0, 10389 
+Render and get color array time delta, 22, 175340328, 10411 
+Time to copy new frame into temporrary frame, 3, 175340328, 10416 
+Delta encoding and remove zeros time, 13, 175340328, 10429 
+Total Pipeline Time, 42, 175340328, 10431 
+write time, 42, 0, 10432 
+Render and get color array time delta, 26, 450156715, 10457 
+Time to copy new frame into temporrary frame, 3, 450156715, 10462 
+Delta encoding and remove zeros time, 15, 450156715, 10478 
+Total Pipeline Time, 47, 450156715, 10478 
+write time, 47, 0, 10479 
+Render and get color array time delta, 27, 1238655495, 10512 
+Time to copy new frame into temporrary frame, 3, 1238655495, 10516 
+Delta encoding and remove zeros time, 13, 1238655495, 10530 
+Total Pipeline Time, 48, 1238655495, 10531 
+write time, 52, 0, 10532 
+Render and get color array time delta, 23, 175340328, 10554 
+Time to copy new frame into temporrary frame, 3, 175340328, 10559 
+Delta encoding and remove zeros time, 13, 175340328, 10573 
+Total Pipeline Time, 43, 175340328, 10574 
+write time, 43, 0, 10575 
+Render and get color array time delta, 22, 450156715, 10597 
+Time to copy new frame into temporrary frame, 3, 450156715, 10602 
+Delta encoding and remove zeros time, 15, 450156715, 10617 
+Total Pipeline Time, 43, 450156715, 10617 
+write time, 43, 0, 10618 
+Render and get color array time delta, 27, 1238655495, 10649 
+Time to copy new frame into temporrary frame, 3, 1238655495, 10654 
+Delta encoding and remove zeros time, 13, 1238655495, 10668 
+Total Pipeline Time, 47, 1238655495, 10670 
+write time, 51, 0, 10670 
+Render and get color array time delta, 23, 175340328, 10693 
+Time to copy new frame into temporrary frame, 3, 175340328, 10698 
+Delta encoding and remove zeros time, 13, 175340328, 10712 
+Total Pipeline Time, 43, 175340328, 10713 
+write time, 43, 0, 10714 
+Render and get color array time delta, 22, 450156715, 10736 
+Time to copy new frame into temporrary frame, 3, 450156715, 10741 
+Delta encoding and remove zeros time, 15, 450156715, 10756 
+Total Pipeline Time, 43, 450156715, 10756 
+write time, 43, 0, 10757 
+Render and get color array time delta, 26, 1238655495, 10788 
+Time to copy new frame into temporrary frame, 3, 1238655495, 10793 
+Delta encoding and remove zeros time, 12, 1238655495, 10805 
+Total Pipeline Time, 43, 1238655495, 10806 
+write time, 48, 0, 10806 
+Render and get color array time delta, 26, 175340328, 10834 
+Time to copy new frame into temporrary frame, 3, 175340328, 10837 
+Delta encoding and remove zeros time, 13, 175340328, 10851 
+Total Pipeline Time, 46, 175340328, 10852 
+write time, 47, 0, 10853 
+Render and get color array time delta, 21, 450156715, 10875 
+Time to copy new frame into temporrary frame, 3, 450156715, 10879 
+Delta encoding and remove zeros time, 15, 450156715, 10894 
+Total Pipeline Time, 42, 450156715, 10894 
+write time, 42, 0, 10896 
+Render and get color array time delta, 28, 1238655495, 10928 
+Time to copy new frame into temporrary frame, 3, 1238655495, 10932 
+Delta encoding and remove zeros time, 12, 1238655495, 10945 
+Total Pipeline Time, 45, 1238655495, 10945 
+write time, 49, 0, 10945 
+Render and get color array time delta, 25, 175340328, 10972 
+Time to copy new frame into temporrary frame, 3, 175340328, 10975 
+Delta encoding and remove zeros time, 13, 175340328, 10989 
+Total Pipeline Time, 45, 175340328, 10990 
+write time, 45, 0, 10991 
+Render and get color array time delta, 23, 450156715, 11015 
+Time to copy new frame into temporrary frame, 3, 450156715, 11018 
+Delta encoding and remove zeros time, 16, 450156715, 11034 
+Total Pipeline Time, 44, 450156715, 11034 
+write time, 44, 0, 11035 
+Render and get color array time delta, 28, 1238655495, 11068 
+Time to copy new frame into temporrary frame, 3, 1238655495, 11072 
+Delta encoding and remove zeros time, 11, 1238655495, 11084 
+Total Pipeline Time, 45, 1238655495, 11084 
+write time, 49, 0, 11085 
+Render and get color array time delta, 25, 175340328, 11112 
+Time to copy new frame into temporrary frame, 3, 175340328, 11115 
+Delta encoding and remove zeros time, 11, 175340328, 11127 
+Total Pipeline Time, 43, 175340328, 11128 
+write time, 43, 0, 11129 
+Render and get color array time delta, 27, 450156715, 11156 
+Time to copy new frame into temporrary frame, 3, 450156715, 11160 
+Delta encoding and remove zeros time, 13, 450156715, 11173 
+Total Pipeline Time, 47, 450156715, 11175 
+write time, 46, 0, 11175 
+Render and get color array time delta, 27, 1238655495, 11207 
+Time to copy new frame into temporrary frame, 3, 1238655495, 11212 
+Delta encoding and remove zeros time, 12, 1238655495, 11224 
+Total Pipeline Time, 44, 1238655495, 11224 
+write time, 49, 0, 11225 
+Render and get color array time delta, 27, 175340328, 11253 
+Time to copy new frame into temporrary frame, 3, 175340328, 11256 
+Delta encoding and remove zeros time, 12, 175340328, 11268 
+Total Pipeline Time, 44, 175340328, 11269 
+write time, 44, 0, 11269 
+Render and get color array time delta, 27, 450156715, 11297 
+Time to copy new frame into temporrary frame, 3, 450156715, 11300 
+Delta encoding and remove zeros time, 15, 450156715, 11316 
+Total Pipeline Time, 47, 450156715, 11316 
+write time, 46, 0, 11316 
+Render and get color array time delta, 27, 1238655495, 11348 
+Time to copy new frame into temporrary frame, 3, 1238655495, 11353 
+Delta encoding and remove zeros time, 12, 1238655495, 11365 
+Total Pipeline Time, 44, 1238655495, 11365 
+write time, 49, 0, 11366 
+Render and get color array time delta, 27, 175340328, 11395 
+Time to copy new frame into temporrary frame, 3, 175340328, 11398 
+Delta encoding and remove zeros time, 12, 175340328, 11411 
+Total Pipeline Time, 46, 175340328, 11411 
+write time, 46, 0, 11412 
+Render and get color array time delta, 27, 450156715, 11440 
+Time to copy new frame into temporrary frame, 3, 450156715, 11443 
+Delta encoding and remove zeros time, 14, 450156715, 11458 
+Total Pipeline Time, 48, 450156715, 11460 
+write time, 49, 0, 11461 
+Render and get color array time delta, 32, 1238655495, 11575 
+Time to copy new frame into temporrary frame, 3, 1238655495, 11580 
+Delta encoding and remove zeros time, 12, 1238655495, 11592 
+Total Pipeline Time, 49, 1238655495, 11592 
+write time, 130, 0, 11592 
+Render and get color array time delta, 26, 175340328, 11619 
+Time to copy new frame into temporrary frame, 3, 175340328, 11623 
+Delta encoding and remove zeros time, 12, 175340328, 11635 
+Total Pipeline Time, 43, 175340328, 11635 
+write time, 43, 0, 11636 
+Render and get color array time delta, 27, 450156715, 11664 
+Time to copy new frame into temporrary frame, 3, 450156715, 11668 
+Delta encoding and remove zeros time, 13, 450156715, 11681 
+Total Pipeline Time, 46, 450156715, 11682 
+write time, 46, 0, 11683 
+Render and get color array time delta, 31, 1238655495, 11745 
+Time to copy new frame into temporrary frame, 3, 1238655495, 11748 
+Delta encoding and remove zeros time, 13, 1238655495, 11762 
+Total Pipeline Time, 50, 1238655495, 11763 
+write time, 85, 0, 11769 
+Render and get color array time delta, 31, 175340328, 11796 
+Time to copy new frame into temporrary frame, 3, 175340328, 11799 
+Delta encoding and remove zeros time, 12, 175340328, 11812 
+Total Pipeline Time, 49, 175340328, 11812 
+write time, 43, 0, 11813 
+Render and get color array time delta, 31, 450156715, 11844 
+Time to copy new frame into temporrary frame, 3, 450156715, 11848 
+Delta encoding and remove zeros time, 13, 450156715, 11862 
+Total Pipeline Time, 51, 450156715, 11864 
+write time, 51, 0, 11864 
+Render and get color array time delta, 27, 1238655495, 11908 
+Time to copy new frame into temporrary frame, 3, 1238655495, 11913 
+Delta encoding and remove zeros time, 12, 1238655495, 11925 
+Total Pipeline Time, 44, 1238655495, 11925 
+write time, 61, 0, 11926 
+Render and get color array time delta, 26, 175340328, 11953 
+Time to copy new frame into temporrary frame, 3, 175340328, 11956 
+Delta encoding and remove zeros time, 12, 175340328, 11968 
+Total Pipeline Time, 43, 175340328, 11968 
+write time, 43, 0, 11969 
+Render and get color array time delta, 28, 450156715, 11998 
+Time to copy new frame into temporrary frame, 3, 450156715, 12001 
+Delta encoding and remove zeros time, 13, 450156715, 12015 
+Total Pipeline Time, 47, 450156715, 12016 
+write time, 47, 0, 12017 
+Render and get color array time delta, 25, 1238655495, 12049 
+Time to copy new frame into temporrary frame, 3, 1238655495, 12054 
+Delta encoding and remove zeros time, 12, 1238655495, 12067 
+Total Pipeline Time, 43, 1238655495, 12067 
+write time, 50, 0, 12068 
+Render and get color array time delta, 25, 175340328, 12094 
+Time to copy new frame into temporrary frame, 3, 175340328, 12097 
+Delta encoding and remove zeros time, 12, 175340328, 12109 
+Total Pipeline Time, 42, 175340328, 12110 
+write time, 42, 0, 12110 
+Render and get color array time delta, 25, 450156715, 12136 
+Time to copy new frame into temporrary frame, 3, 450156715, 12139 
+Delta encoding and remove zeros time, 13, 450156715, 12153 
+Total Pipeline Time, 44, 450156715, 12154 
+write time, 44, 0, 12155 
+Render and get color array time delta, 30, 1238655495, 12190 
+Time to copy new frame into temporrary frame, 3, 1238655495, 12195 
+Delta encoding and remove zeros time, 13, 1238655495, 12208 
+Total Pipeline Time, 49, 1238655495, 12208 
+write time, 53, 0, 12209 
+Render and get color array time delta, 27, 175340328, 12237 
+Time to copy new frame into temporrary frame, 3, 175340328, 12240 
+Delta encoding and remove zeros time, 12, 175340328, 12252 
+Total Pipeline Time, 44, 175340328, 12252 
+write time, 44, 0, 12253 
+Render and get color array time delta, 26, 450156715, 12280 
+Time to copy new frame into temporrary frame, 3, 450156715, 12284 
+Delta encoding and remove zeros time, 12, 450156715, 12296 
+Total Pipeline Time, 44, 450156715, 12297 
+write time, 44, 0, 12297 
+Render and get color array time delta, 31, 1238655495, 12338 
+Time to copy new frame into temporrary frame, 3, 1238655495, 12342 
+Delta encoding and remove zeros time, 12, 1238655495, 12354 
+Total Pipeline Time, 49, 1238655495, 12354 
+write time, 57, 0, 12355 
+Render and get color array time delta, 26, 175340328, 12382 
+Time to copy new frame into temporrary frame, 3, 175340328, 12385 
+Delta encoding and remove zeros time, 12, 175340328, 12397 
+Total Pipeline Time, 43, 175340328, 12398 
+write time, 43, 0, 12398 
+Render and get color array time delta, 25, 450156715, 12425 
+Time to copy new frame into temporrary frame, 3, 450156715, 12428 
+Delta encoding and remove zeros time, 13, 450156715, 12442 
+Total Pipeline Time, 45, 450156715, 12443 
+write time, 45, 0, 12444 
+Render and get color array time delta, 31, 1238655495, 12481 
+Time to copy new frame into temporrary frame, 4, 1238655495, 12486 
+Delta encoding and remove zeros time, 12, 1238655495, 12499 
+Total Pipeline Time, 49, 1238655495, 12499 
+write time, 55, 0, 12499 
+Render and get color array time delta, 27, 175340328, 12528 
+Time to copy new frame into temporrary frame, 3, 175340328, 12531 
+Delta encoding and remove zeros time, 12, 175340328, 12543 
+Total Pipeline Time, 44, 175340328, 12543 
+write time, 45, 0, 12544 
+Render and get color array time delta, 25, 450156715, 12570 
+Time to copy new frame into temporrary frame, 3, 450156715, 12573 
+Delta encoding and remove zeros time, 15, 450156715, 12589 
+Total Pipeline Time, 45, 450156715, 12589 
+write time, 45, 0, 12590 
+Render and get color array time delta, 28, 1238655495, 12624 
+Time to copy new frame into temporrary frame, 3, 1238655495, 12628 
+Delta encoding and remove zeros time, 12, 1238655495, 12640 
+Total Pipeline Time, 45, 1238655495, 12640 
+write time, 50, 0, 12640 
+Render and get color array time delta, 25, 175340328, 12667 
+Time to copy new frame into temporrary frame, 3, 175340328, 12671 
+Delta encoding and remove zeros time, 12, 175340328, 12683 
+Total Pipeline Time, 42, 175340328, 12683 
+write time, 43, 0, 12684 
+Render and get color array time delta, 26, 450156715, 12711 
+Time to copy new frame into temporrary frame, 3, 450156715, 12714 
+Delta encoding and remove zeros time, 13, 450156715, 12728 
+Total Pipeline Time, 46, 450156715, 12729 
+write time, 46, 0, 12730 
+Render and get color array time delta, 29, 1238655495, 12764 
+Time to copy new frame into temporrary frame, 3, 1238655495, 12769 
+Delta encoding and remove zeros time, 12, 1238655495, 12781 
+Total Pipeline Time, 47, 1238655495, 12781 
+write time, 52, 0, 12782 
+Render and get color array time delta, 29, 175340328, 12812 
+Time to copy new frame into temporrary frame, 3, 175340328, 12815 
+Delta encoding and remove zeros time, 12, 175340328, 12827 
+Total Pipeline Time, 46, 175340328, 12827 
+write time, 46, 0, 12828 
+Render and get color array time delta, 29, 450156715, 12858 
+Time to copy new frame into temporrary frame, 3, 450156715, 12861 
+Delta encoding and remove zeros time, 13, 450156715, 12875 
+Total Pipeline Time, 48, 450156715, 12876 
+write time, 49, 0, 12878 
+Render and get color array time delta, 31, 1238655495, 12914 
+Time to copy new frame into temporrary frame, 3, 1238655495, 12917 
+Delta encoding and remove zeros time, 12, 1238655495, 12930 
+Total Pipeline Time, 48, 1238655495, 12930 
+write time, 52, 0, 12931 
+Render and get color array time delta, 27, 175340328, 12959 
+Time to copy new frame into temporrary frame, 3, 175340328, 12962 
+Delta encoding and remove zeros time, 12, 175340328, 12975 
+Total Pipeline Time, 45, 175340328, 12975 
+write time, 45, 0, 12976 
+Render and get color array time delta, 25, 450156715, 13002 
+Time to copy new frame into temporrary frame, 3, 450156715, 13005 
+Delta encoding and remove zeros time, 15, 450156715, 13021 
+Total Pipeline Time, 45, 450156715, 13021 
+write time, 45, 0, 13021 
+Render and get color array time delta, 28, 1238655495, 13054 
+Time to copy new frame into temporrary frame, 3, 1238655495, 13059 
+Delta encoding and remove zeros time, 12, 1238655495, 13071 
+Total Pipeline Time, 45, 1238655495, 13072 
+write time, 50, 0, 13072 
+Render and get color array time delta, 25, 175340328, 13099 
+Time to copy new frame into temporrary frame, 3, 175340328, 13102 
+Delta encoding and remove zeros time, 12, 175340328, 13114 
+Total Pipeline Time, 43, 175340328, 13115 
+write time, 42, 0, 13115 
+Render and get color array time delta, 24, 450156715, 13141 
+Time to copy new frame into temporrary frame, 3, 450156715, 13144 
+Delta encoding and remove zeros time, 15, 450156715, 13159 
+Total Pipeline Time, 44, 450156715, 13159 
+write time, 45, 0, 13161 
+Render and get color array time delta, 28, 1238655495, 13193 
+Time to copy new frame into temporrary frame, 3, 1238655495, 13198 
+Delta encoding and remove zeros time, 12, 1238655495, 13210 
+Total Pipeline Time, 45, 1238655495, 13210 
+write time, 50, 0, 13211 
+Render and get color array time delta, 26, 175340328, 13238 
+Time to copy new frame into temporrary frame, 3, 175340328, 13241 
+Delta encoding and remove zeros time, 12, 175340328, 13253 
+Total Pipeline Time, 43, 175340328, 13253 
+write time, 43, 0, 13254 
+Render and get color array time delta, 25, 450156715, 13280 
+Time to copy new frame into temporrary frame, 3, 450156715, 13284 
+Delta encoding and remove zeros time, 13, 450156715, 13297 
+Total Pipeline Time, 45, 450156715, 13299 
+write time, 45, 0, 13300 
+Render and get color array time delta, 29, 1238655495, 13333 
+Time to copy new frame into temporrary frame, 3, 1238655495, 13338 
+Delta encoding and remove zeros time, 11, 1238655495, 13350 
+Total Pipeline Time, 46, 1238655495, 13350 
+write time, 50, 0, 13350 
+Render and get color array time delta, 26, 175340328, 13378 
+Time to copy new frame into temporrary frame, 3, 175340328, 13381 
+Delta encoding and remove zeros time, 12, 175340328, 13393 
+Total Pipeline Time, 43, 175340328, 13393 
+write time, 43, 0, 13394 
+Render and get color array time delta, 26, 450156715, 13421 
+Time to copy new frame into temporrary frame, 3, 450156715, 13425 
+Delta encoding and remove zeros time, 13, 450156715, 13438 
+Total Pipeline Time, 46, 450156715, 13439 
+write time, 45, 0, 13440 
+Render and get color array time delta, 26, 1238655495, 13471 
+Time to copy new frame into temporrary frame, 3, 1238655495, 13476 
+Delta encoding and remove zeros time, 12, 1238655495, 13488 
+Total Pipeline Time, 43, 1238655495, 13488 
+write time, 48, 0, 13489 
+Render and get color array time delta, 26, 175340328, 13516 
+Time to copy new frame into temporrary frame, 3, 175340328, 13519 
+Delta encoding and remove zeros time, 12, 175340328, 13531 
+Total Pipeline Time, 43, 175340328, 13532 
+write time, 43, 0, 13532 
+Render and get color array time delta, 25, 450156715, 13558 
+Time to copy new frame into temporrary frame, 3, 450156715, 13561 
+Delta encoding and remove zeros time, 15, 450156715, 13577 
+Total Pipeline Time, 45, 450156715, 13577 
+write time, 45, 0, 13578 
+Render and get color array time delta, 28, 1238655495, 13610 
+Time to copy new frame into temporrary frame, 4, 1238655495, 13616 
+Delta encoding and remove zeros time, 12, 1238655495, 13628 
+Total Pipeline Time, 46, 1238655495, 13628 
+write time, 50, 0, 13628 
+Render and get color array time delta, 25, 175340328, 13654 
+Time to copy new frame into temporrary frame, 3, 175340328, 13658 
+Delta encoding and remove zeros time, 12, 175340328, 13670 
+Total Pipeline Time, 42, 175340328, 13670 
+write time, 42, 0, 13671 
+Render and get color array time delta, 25, 450156715, 13697 
+Time to copy new frame into temporrary frame, 3, 450156715, 13700 
+Delta encoding and remove zeros time, 15, 450156715, 13715 
+Total Pipeline Time, 45, 450156715, 13715 
+write time, 45, 0, 13716 
+Render and get color array time delta, 28, 1238655495, 13749 
+Time to copy new frame into temporrary frame, 3, 1238655495, 13754 
+Delta encoding and remove zeros time, 12, 1238655495, 13766 
+Total Pipeline Time, 45, 1238655495, 13766 
+write time, 50, 0, 13767 
+Render and get color array time delta, 26, 175340328, 13794 
+Time to copy new frame into temporrary frame, 3, 175340328, 13797 
+Delta encoding and remove zeros time, 12, 175340328, 13809 
+Total Pipeline Time, 43, 175340328, 13810 
+write time, 43, 0, 13811 
+Render and get color array time delta, 25, 450156715, 13836 
+Time to copy new frame into temporrary frame, 3, 450156715, 13839 
+Delta encoding and remove zeros time, 13, 450156715, 13853 
+Total Pipeline Time, 44, 450156715, 13854 
+write time, 44, 0, 13855 
+Render and get color array time delta, 25, 1238655495, 13885 
+Time to copy new frame into temporrary frame, 3, 1238655495, 13890 
+Delta encoding and remove zeros time, 12, 1238655495, 13902 
+Total Pipeline Time, 42, 1238655495, 13902 
+write time, 48, 0, 13903 
+Render and get color array time delta, 25, 175340328, 13929 
+Time to copy new frame into temporrary frame, 3, 175340328, 13933 
+Delta encoding and remove zeros time, 12, 175340328, 13945 
+Total Pipeline Time, 42, 175340328, 13945 
+write time, 42, 0, 13946 
+Render and get color array time delta, 24, 450156715, 13971 
+Time to copy new frame into temporrary frame, 3, 450156715, 13974 
+Delta encoding and remove zeros time, 13, 450156715, 13988 
+Total Pipeline Time, 44, 450156715, 13989 
+write time, 44, 0, 13990 
+Render and get color array time delta, 27, 1238655495, 14022 
+Time to copy new frame into temporrary frame, 3, 1238655495, 14027 
+Delta encoding and remove zeros time, 12, 1238655495, 14039 
+Total Pipeline Time, 45, 1238655495, 14039 
+write time, 49, 0, 14040 
+Render and get color array time delta, 25, 175340328, 14066 
+Time to copy new frame into temporrary frame, 3, 175340328, 14070 
+Delta encoding and remove zeros time, 12, 175340328, 14082 
+Total Pipeline Time, 42, 175340328, 14082 
+write time, 43, 0, 14083 
+Render and get color array time delta, 25, 450156715, 14108 
+Time to copy new frame into temporrary frame, 3, 450156715, 14112 
+Delta encoding and remove zeros time, 15, 450156715, 14127 
+Total Pipeline Time, 45, 450156715, 14127 
+write time, 44, 0, 14128 
+Render and get color array time delta, 31, 1238655495, 14164 
+Time to copy new frame into temporrary frame, 3, 1238655495, 14168 
+Delta encoding and remove zeros time, 12, 1238655495, 14181 
+Total Pipeline Time, 48, 1238655495, 14181 
+write time, 53, 0, 14182 
+Render and get color array time delta, 25, 175340328, 14208 
+Time to copy new frame into temporrary frame, 3, 175340328, 14211 
+Delta encoding and remove zeros time, 12, 175340328, 14224 
+Total Pipeline Time, 43, 175340328, 14224 
+write time, 43, 0, 14225 
+Render and get color array time delta, 26, 450156715, 14251 
+Time to copy new frame into temporrary frame, 3, 450156715, 14254 
+Delta encoding and remove zeros time, 15, 450156715, 14270 
+Total Pipeline Time, 45, 450156715, 14270 
+write time, 45, 0, 14270 
+Render and get color array time delta, 28, 1238655495, 14303 
+Time to copy new frame into temporrary frame, 3, 1238655495, 14308 
+Delta encoding and remove zeros time, 12, 1238655495, 14320 
+Total Pipeline Time, 45, 1238655495, 14320 
+write time, 50, 0, 14321 
+Render and get color array time delta, 27, 175340328, 14348 
+Time to copy new frame into temporrary frame, 3, 175340328, 14352 
+Delta encoding and remove zeros time, 12, 175340328, 14364 
+Total Pipeline Time, 43, 175340328, 14364 
+write time, 43, 0, 14365 
+Render and get color array time delta, 26, 450156715, 14391 
+Time to copy new frame into temporrary frame, 3, 450156715, 14395 
+Delta encoding and remove zeros time, 15, 450156715, 14410 
+Total Pipeline Time, 45, 450156715, 14410 
+write time, 45, 0, 14410 
+Render and get color array time delta, 28, 1238655495, 14443 
+Time to copy new frame into temporrary frame, 3, 1238655495, 14448 
+Delta encoding and remove zeros time, 12, 1238655495, 14460 
+Total Pipeline Time, 45, 1238655495, 14460 
+write time, 50, 0, 14461 
+Render and get color array time delta, 26, 175340328, 14488 
+Time to copy new frame into temporrary frame, 3, 175340328, 14492 
+Delta encoding and remove zeros time, 12, 175340328, 14504 
+Total Pipeline Time, 44, 175340328, 14504 
+write time, 44, 0, 14505 
+Render and get color array time delta, 24, 450156715, 14530 
+Time to copy new frame into temporrary frame, 3, 450156715, 14534 
+Delta encoding and remove zeros time, 15, 450156715, 14549 
+Total Pipeline Time, 44, 450156715, 14549 
+write time, 44, 0, 14550 
+Render and get color array time delta, 28, 1238655495, 14583 
+Time to copy new frame into temporrary frame, 3, 1238655495, 14587 
+Delta encoding and remove zeros time, 12, 1238655495, 14600 
+Total Pipeline Time, 46, 1238655495, 14600 
+write time, 50, 0, 14600 
+Render and get color array time delta, 26, 175340328, 14627 
+Time to copy new frame into temporrary frame, 3, 175340328, 14631 
+Delta encoding and remove zeros time, 12, 175340328, 14643 
+Total Pipeline Time, 43, 175340328, 14644 
+write time, 44, 0, 14644 
+Render and get color array time delta, 26, 450156715, 14671 
+Time to copy new frame into temporrary frame, 3, 450156715, 14674 
+Delta encoding and remove zeros time, 15, 450156715, 14690 
+Total Pipeline Time, 46, 450156715, 14690 
+write time, 46, 0, 14691 
+Render and get color array time delta, 29, 1238655495, 14725 
+Time to copy new frame into temporrary frame, 3, 1238655495, 14730 
+Delta encoding and remove zeros time, 12, 1238655495, 14742 
+Total Pipeline Time, 47, 1238655495, 14743 
+write time, 52, 0, 14743 
+Render and get color array time delta, 26, 175340328, 14771 
+Time to copy new frame into temporrary frame, 4, 175340328, 14775 
+Delta encoding and remove zeros time, 12, 175340328, 14787 
+Total Pipeline Time, 45, 175340328, 14788 
+write time, 45, 0, 14789 
+Render and get color array time delta, 26, 450156715, 14816 
+Time to copy new frame into temporrary frame, 3, 450156715, 14819 
+Delta encoding and remove zeros time, 15, 450156715, 14834 
+Total Pipeline Time, 46, 450156715, 14834 
+write time, 46, 0, 14835 
+Render and get color array time delta, 27, 1238655495, 14867 
+Time to copy new frame into temporrary frame, 3, 1238655495, 14872 
+Delta encoding and remove zeros time, 12, 1238655495, 14884 
+Total Pipeline Time, 45, 1238655495, 14884 
+write time, 49, 0, 14885 
+Render and get color array time delta, 25, 175340328, 14911 
+Time to copy new frame into temporrary frame, 3, 175340328, 14915 
+Delta encoding and remove zeros time, 12, 175340328, 14927 
+Total Pipeline Time, 43, 175340328, 14927 
+write time, 43, 0, 14928 
+Render and get color array time delta, 28, 450156715, 14957 
+Time to copy new frame into temporrary frame, 3, 450156715, 14960 
+Delta encoding and remove zeros time, 15, 450156715, 14976 
+Total Pipeline Time, 48, 450156715, 14976 
+write time, 48, 0, 14977 
+Render and get color array time delta, 29, 1238655495, 15011 
+Time to copy new frame into temporrary frame, 3, 1238655495, 15016 
+Delta encoding and remove zeros time, 12, 1238655495, 15028 
+Total Pipeline Time, 47, 1238655495, 15029 
+write time, 52, 0, 15029 
+Render and get color array time delta, 25, 175340328, 15056 
+Time to copy new frame into temporrary frame, 3, 175340328, 15059 
+Delta encoding and remove zeros time, 12, 175340328, 15072 
+Total Pipeline Time, 43, 175340328, 15072 
+write time, 43, 0, 15073 
+Render and get color array time delta, 26, 450156715, 15100 
+Time to copy new frame into temporrary frame, 3, 450156715, 15103 
+Delta encoding and remove zeros time, 15, 450156715, 15118 
+Total Pipeline Time, 46, 450156715, 15118 
+write time, 46, 0, 15119 
+Render and get color array time delta, 26, 1238655495, 15175 
+Time to copy new frame into temporrary frame, 3, 1238655495, 15181 
+Delta encoding and remove zeros time, 12, 1238655495, 15193 
+Total Pipeline Time, 45, 1238655495, 15194 
+write time, 75, 0, 15195 
+Render and get color array time delta, 31, 175340328, 15227 
+Time to copy new frame into temporrary frame, 3, 175340328, 15230 
+Delta encoding and remove zeros time, 13, 175340328, 15243 
+Total Pipeline Time, 50, 175340328, 15244 
+write time, 50, 0, 15246 
+Render and get color array time delta, 27, 450156715, 15273 
+Time to copy new frame into temporrary frame, 3, 450156715, 15276 
+Delta encoding and remove zeros time, 15, 450156715, 15292 
+Total Pipeline Time, 47, 450156715, 15292 
+write time, 46, 0, 15292 
+Render and get color array time delta, 27, 1238655495, 15324 
+Time to copy new frame into temporrary frame, 3, 1238655495, 15329 
+Delta encoding and remove zeros time, 12, 1238655495, 15342 
+Total Pipeline Time, 45, 1238655495, 15342 
+write time, 50, 0, 15343 
+Render and get color array time delta, 28, 175340328, 15372 
+Time to copy new frame into temporrary frame, 3, 175340328, 15375 
+Delta encoding and remove zeros time, 12, 175340328, 15387 
+Total Pipeline Time, 45, 175340328, 15387 
+write time, 45, 0, 15388 
+Render and get color array time delta, 27, 450156715, 15416 
+Time to copy new frame into temporrary frame, 3, 450156715, 15419 
+Delta encoding and remove zeros time, 15, 450156715, 15435 
+Total Pipeline Time, 47, 450156715, 15435 
+write time, 47, 0, 15436 
+Render and get color array time delta, 24, 1238655495, 15467 
+Time to copy new frame into temporrary frame, 3, 1238655495, 15470 
+Delta encoding and remove zeros time, 11, 1238655495, 15482 
+Total Pipeline Time, 41, 1238655495, 15482 
+write time, 47, 0, 15483 
+Render and get color array time delta, 26, 175340328, 15510 
+Time to copy new frame into temporrary frame, 3, 175340328, 15514 
+Delta encoding and remove zeros time, 12, 175340328, 15526 
+Total Pipeline Time, 43, 175340328, 15526 
+write time, 43, 0, 15527 
+Render and get color array time delta, 25, 450156715, 15552 
+Time to copy new frame into temporrary frame, 3, 450156715, 15555 
+Delta encoding and remove zeros time, 13, 450156715, 15569 
+Total Pipeline Time, 44, 450156715, 15571 
+write time, 44, 0, 15571 
+Render and get color array time delta, 28, 1238655495, 15604 
+Time to copy new frame into temporrary frame, 3, 1238655495, 15609 
+Delta encoding and remove zeros time, 12, 1238655495, 15621 
+Total Pipeline Time, 45, 1238655495, 15621 
+write time, 50, 0, 15622 
+Render and get color array time delta, 25, 175340328, 15648 
+Time to copy new frame into temporrary frame, 3, 175340328, 15651 
+Delta encoding and remove zeros time, 12, 175340328, 15664 
+Total Pipeline Time, 42, 175340328, 15664 
+write time, 42, 0, 15664 
+Render and get color array time delta, 25, 450156715, 15690 
+Time to copy new frame into temporrary frame, 3, 450156715, 15694 
+Delta encoding and remove zeros time, 13, 450156715, 15707 
+Total Pipeline Time, 45, 450156715, 15709 
+write time, 45, 0, 15710 
+Render and get color array time delta, 28, 1238655495, 15744 
+Time to copy new frame into temporrary frame, 3, 1238655495, 15748 
+Delta encoding and remove zeros time, 12, 1238655495, 15761 
+Total Pipeline Time, 46, 1238655495, 15761 
+write time, 51, 0, 15761 
+Render and get color array time delta, 28, 175340328, 15790 
+Time to copy new frame into temporrary frame, 3, 175340328, 15793 
+Delta encoding and remove zeros time, 12, 175340328, 15806 
+Total Pipeline Time, 45, 175340328, 15806 
+write time, 45, 0, 15807 
+Render and get color array time delta, 27, 450156715, 15835 
+Time to copy new frame into temporrary frame, 3, 450156715, 15838 
+Delta encoding and remove zeros time, 16, 450156715, 15854 
+Total Pipeline Time, 48, 450156715, 15854 
+write time, 48, 0, 15855 
+Render and get color array time delta, 27, 1238655495, 15888 
+Time to copy new frame into temporrary frame, 3, 1238655495, 15893 
+Delta encoding and remove zeros time, 13, 1238655495, 15906 
+Total Pipeline Time, 47, 1238655495, 15908 
+write time, 53, 0, 15909 
+Render and get color array time delta, 23, 175340328, 15933 
+Time to copy new frame into temporrary frame, 3, 175340328, 15936 
+Delta encoding and remove zeros time, 12, 175340328, 15949 
+Total Pipeline Time, 41, 175340328, 15949 
+write time, 40, 0, 15950 
+Render and get color array time delta, 24, 450156715, 15975 
+Time to copy new frame into temporrary frame, 3, 450156715, 15978 
+Delta encoding and remove zeros time, 15, 450156715, 15994 
+Total Pipeline Time, 45, 450156715, 15994 
+write time, 45, 0, 15995 
+Render and get color array time delta, 29, 1238655495, 16030 
+Time to copy new frame into temporrary frame, 3, 1238655495, 16033 
+Delta encoding and remove zeros time, 12, 1238655495, 16046 
+Total Pipeline Time, 46, 1238655495, 16046 
+write time, 51, 0, 16047 
+Render and get color array time delta, 25, 175340328, 16073 
+Time to copy new frame into temporrary frame, 3, 175340328, 16076 
+Delta encoding and remove zeros time, 12, 175340328, 16088 
+Total Pipeline Time, 42, 175340328, 16089 
+write time, 42, 0, 16089 
+Render and get color array time delta, 27, 450156715, 16118 
+Time to copy new frame into temporrary frame, 0, 450156715, 16123 
+Delta encoding and remove zeros time, 17, 450156715, 16140 
+Total Pipeline Time, 51, 450156715, 16140 
+write time, 51, 0, 16141 
+Render and get color array time delta, 25, 1238655495, 16183 
+Time to copy new frame into temporrary frame, 3, 1238655495, 16188 
+Delta encoding and remove zeros time, 12, 1238655495, 16200 
+Total Pipeline Time, 42, 1238655495, 16200 
+write time, 59, 0, 16201 
+Render and get color array time delta, 29, 175340328, 16230 
+Time to copy new frame into temporrary frame, 3, 175340328, 16234 
+Delta encoding and remove zeros time, 12, 175340328, 16246 
+Total Pipeline Time, 46, 175340328, 16247 
+write time, 46, 0, 16247 
+Render and get color array time delta, 27, 450156715, 16275 
+Time to copy new frame into temporrary frame, 3, 450156715, 16279 
+Delta encoding and remove zeros time, 15, 450156715, 16294 
+Total Pipeline Time, 47, 450156715, 16294 
+write time, 47, 0, 16295 
+Render and get color array time delta, 28, 1238655495, 16333 
+Time to copy new frame into temporrary frame, 4, 1238655495, 16338 
+Delta encoding and remove zeros time, 13, 1238655495, 16351 
+Total Pipeline Time, 49, 1238655495, 16353 
+write time, 59, 0, 16354 
+Render and get color array time delta, 25, 175340328, 16379 
+Time to copy new frame into temporrary frame, 3, 175340328, 16384 
+Delta encoding and remove zeros time, 14, 175340328, 16399 
+Total Pipeline Time, 47, 175340328, 16401 
+write time, 48, 0, 16402 
+Render and get color array time delta, 25, 450156715, 16426 
+Time to copy new frame into temporrary frame, 3, 450156715, 16432 
+Delta encoding and remove zeros time, 15, 450156715, 16447 
+Total Pipeline Time, 46, 450156715, 16447 
+write time, 45, 0, 16448 
+Render and get color array time delta, 29, 1238655495, 16482 
+Time to copy new frame into temporrary frame, 3, 1238655495, 16487 
+Delta encoding and remove zeros time, 12, 1238655495, 16499 
+Total Pipeline Time, 46, 1238655495, 16500 
+write time, 51, 0, 16500 
+Render and get color array time delta, 25, 175340328, 16527 
+Time to copy new frame into temporrary frame, 3, 175340328, 16530 
+Delta encoding and remove zeros time, 12, 175340328, 16542 
+Total Pipeline Time, 43, 175340328, 16543 
+write time, 43, 0, 16544 
+Render and get color array time delta, 24, 450156715, 16568 
+Time to copy new frame into temporrary frame, 3, 450156715, 16572 
+Delta encoding and remove zeros time, 15, 450156715, 16587 
+Total Pipeline Time, 44, 450156715, 16587 
+write time, 44, 0, 16588 
+Render and get color array time delta, 27, 1238655495, 16620 
+Time to copy new frame into temporrary frame, 3, 1238655495, 16625 
+Delta encoding and remove zeros time, 12, 1238655495, 16637 
+Total Pipeline Time, 45, 1238655495, 16637 
+write time, 50, 0, 16638 
+Render and get color array time delta, 27, 175340328, 16666 
+Time to copy new frame into temporrary frame, 3, 175340328, 16670 
+Delta encoding and remove zeros time, 12, 175340328, 16682 
+Total Pipeline Time, 45, 175340328, 16683 
+write time, 45, 0, 16683 
+Render and get color array time delta, 25, 450156715, 16710 
+Time to copy new frame into temporrary frame, 3, 450156715, 16713 
+Delta encoding and remove zeros time, 15, 450156715, 16729 
+Total Pipeline Time, 46, 450156715, 16729 
+write time, 46, 0, 16730 
+Render and get color array time delta, 30, 1238655495, 16764 
+Time to copy new frame into temporrary frame, 3, 1238655495, 16768 
+Delta encoding and remove zeros time, 12, 1238655495, 16781 
+Total Pipeline Time, 47, 1238655495, 16781 
+write time, 51, 0, 16781 
+Render and get color array time delta, 27, 175340328, 16810 
+Time to copy new frame into temporrary frame, 3, 175340328, 16813 
+Delta encoding and remove zeros time, 12, 175340328, 16826 
+Total Pipeline Time, 45, 175340328, 16826 
+write time, 45, 0, 16827 
+Render and get color array time delta, 26, 450156715, 16854 
+Time to copy new frame into temporrary frame, 3, 450156715, 16857 
+Delta encoding and remove zeros time, 15, 450156715, 16872 
+Total Pipeline Time, 46, 450156715, 16873 
+write time, 46, 0, 16873 
+Render and get color array time delta, 28, 1238655495, 16905 
+Time to copy new frame into temporrary frame, 3, 1238655495, 16910 
+Delta encoding and remove zeros time, 12, 1238655495, 16922 
+Total Pipeline Time, 45, 1238655495, 16923 
+write time, 50, 0, 16924 
+Render and get color array time delta, 27, 175340328, 16951 
+Time to copy new frame into temporrary frame, 3, 175340328, 16955 
+Delta encoding and remove zeros time, 12, 175340328, 16967 
+Total Pipeline Time, 44, 175340328, 16967 
+write time, 44, 0, 16968 
+Render and get color array time delta, 26, 450156715, 16995 
+Time to copy new frame into temporrary frame, 3, 450156715, 16998 
+Delta encoding and remove zeros time, 15, 450156715, 17014 
+Total Pipeline Time, 46, 450156715, 17014 
+write time, 46, 0, 17015 
+Render and get color array time delta, 31, 1238655495, 17050 
+Time to copy new frame into temporrary frame, 3, 1238655495, 17055 
+Delta encoding and remove zeros time, 12, 1238655495, 17067 
+Total Pipeline Time, 48, 1238655495, 17067 
+write time, 52, 0, 17068 
+Render and get color array time delta, 28, 175340328, 17097 
+Time to copy new frame into temporrary frame, 3, 175340328, 17100 
+Delta encoding and remove zeros time, 12, 175340328, 17112 
+Total Pipeline Time, 45, 175340328, 17112 
+write time, 45, 0, 17113 
+Render and get color array time delta, 26, 450156715, 17140 
+Time to copy new frame into temporrary frame, 3, 450156715, 17143 
+Delta encoding and remove zeros time, 15, 450156715, 17159 
+Total Pipeline Time, 46, 450156715, 17159 
+write time, 46, 0, 17160 
+Render and get color array time delta, 30, 1238655495, 17194 
+Time to copy new frame into temporrary frame, 3, 1238655495, 17199 
+Delta encoding and remove zeros time, 12, 1238655495, 17211 
+Total Pipeline Time, 47, 1238655495, 17212 
+write time, 52, 0, 17212 
+Render and get color array time delta, 26, 175340328, 17240 
+Time to copy new frame into temporrary frame, 3, 175340328, 17243 
+Delta encoding and remove zeros time, 12, 175340328, 17255 
+Total Pipeline Time, 44, 175340328, 17256 
+write time, 44, 0, 17257 
+Render and get color array time delta, 26, 450156715, 17284 
+Time to copy new frame into temporrary frame, 3, 450156715, 17287 
+Delta encoding and remove zeros time, 15, 450156715, 17303 
+Total Pipeline Time, 47, 450156715, 17303 
+write time, 47, 0, 17304 
+Render and get color array time delta, 27, 1238655495, 17337 
+Time to copy new frame into temporrary frame, 3, 1238655495, 17342 
+Delta encoding and remove zeros time, 13, 1238655495, 17356 
+Total Pipeline Time, 46, 1238655495, 17356 
+write time, 55, 0, 17360 
+Render and get color array time delta, 30, 175340328, 17388 
+Time to copy new frame into temporrary frame, 3, 175340328, 17392 
+Delta encoding and remove zeros time, 12, 175340328, 17405 
+Total Pipeline Time, 49, 175340328, 17405 
+write time, 46, 0, 17406 
+Render and get color array time delta, 28, 450156715, 17435 
+Time to copy new frame into temporrary frame, 3, 450156715, 17438 
+Delta encoding and remove zeros time, 16, 450156715, 17455 
+Total Pipeline Time, 49, 450156715, 17455 
+write time, 51, 0, 17458 
+Render and get color array time delta, 27, 1238655495, 17525 
+Time to copy new frame into temporrary frame, 3, 1238655495, 17530 
+Delta encoding and remove zeros time, 12, 1238655495, 17543 
+Total Pipeline Time, 45, 1238655495, 17543 
+write time, 85, 0, 17544 
+Render and get color array time delta, 28, 175340328, 17573 
+Time to copy new frame into temporrary frame, 3, 175340328, 17576 
+Delta encoding and remove zeros time, 12, 175340328, 17589 
+Total Pipeline Time, 45, 175340328, 17589 
+write time, 46, 0, 17591 
+Render and get color array time delta, 29, 450156715, 17620 
+Time to copy new frame into temporrary frame, 4, 450156715, 17624 
+Delta encoding and remove zeros time, 14, 450156715, 17639 
+Total Pipeline Time, 51, 450156715, 17640 
+write time, 62, 0, 17653 
+Render and get color array time delta, 28, 1238655495, 17677 
+Time to copy new frame into temporrary frame, 3, 1238655495, 17682 
+Delta encoding and remove zeros time, 13, 1238655495, 17695 
+Total Pipeline Time, 47, 1238655495, 17696 
+write time, 56, 0, 17710 
+Render and get color array time delta, 26, 175340328, 17723 
+Time to copy new frame into temporrary frame, 3, 175340328, 17727 
+Delta encoding and remove zeros time, 12, 175340328, 17740 
+Total Pipeline Time, 44, 175340328, 17740 
+write time, 30, 0, 17741 
+Render and get color array time delta, 27, 450156715, 17769 
+Time to copy new frame into temporrary frame, 3, 450156715, 17772 
+Delta encoding and remove zeros time, 15, 450156715, 17788 
+Total Pipeline Time, 47, 450156715, 17788 
+write time, 47, 0, 17789 
+Render and get color array time delta, 28, 1238655495, 17823 
+Time to copy new frame into temporrary frame, 4, 1238655495, 17829 
+Delta encoding and remove zeros time, 13, 1238655495, 17843 
+Total Pipeline Time, 48, 1238655495, 17843 
+write time, 54, 0, 17843 
+Render and get color array time delta, 26, 175340328, 17870 
+Time to copy new frame into temporrary frame, 3, 175340328, 17874 
+Delta encoding and remove zeros time, 12, 175340328, 17886 
+Total Pipeline Time, 43, 175340328, 17887 
+write time, 44, 0, 17888 
+Render and get color array time delta, 27, 450156715, 17916 
+Time to copy new frame into temporrary frame, 3, 450156715, 17919 
+Delta encoding and remove zeros time, 13, 450156715, 17933 
+Total Pipeline Time, 48, 450156715, 17935 
+write time, 48, 0, 17936 
+Render and get color array time delta, 30, 1238655495, 17971 
+Time to copy new frame into temporrary frame, 3, 1238655495, 17976 
+Delta encoding and remove zeros time, 11, 1238655495, 17988 
+Total Pipeline Time, 47, 1238655495, 17988 
+write time, 52, 0, 17988 
+Render and get color array time delta, 26, 175340328, 18015 
+Time to copy new frame into temporrary frame, 3, 175340328, 18019 
+Delta encoding and remove zeros time, 12, 175340328, 18031 
+Total Pipeline Time, 43, 175340328, 18031 
+write time, 43, 0, 18032 
+Render and get color array time delta, 27, 450156715, 18060 
+Time to copy new frame into temporrary frame, 3, 450156715, 18063 
+Delta encoding and remove zeros time, 12, 450156715, 18075 
+Total Pipeline Time, 44, 450156715, 18076 
+write time, 44, 0, 18077 
+Render and get color array time delta, 29, 1238655495, 18113 
+Time to copy new frame into temporrary frame, 3, 1238655495, 18116 
+Delta encoding and remove zeros time, 12, 1238655495, 18128 
+Total Pipeline Time, 46, 1238655495, 18128 
+write time, 52, 0, 18130 
+Render and get color array time delta, 26, 175340328, 18156 
+Time to copy new frame into temporrary frame, 3, 175340328, 18159 
+Delta encoding and remove zeros time, 12, 175340328, 18172 
+Total Pipeline Time, 44, 175340328, 18172 
+write time, 43, 0, 18173 
+Render and get color array time delta, 26, 450156715, 18200 
+Time to copy new frame into temporrary frame, 3, 450156715, 18203 
+Delta encoding and remove zeros time, 15, 450156715, 18219 
+Total Pipeline Time, 46, 450156715, 18219 
+write time, 46, 0, 18220 
+Render and get color array time delta, 28, 1238655495, 18253 
+Time to copy new frame into temporrary frame, 3, 1238655495, 18258 
+Delta encoding and remove zeros time, 12, 1238655495, 18270 
+Total Pipeline Time, 45, 1238655495, 18270 
+write time, 50, 0, 18271 
+Render and get color array time delta, 26, 175340328, 18298 
+Time to copy new frame into temporrary frame, 3, 175340328, 18302 
+Delta encoding and remove zeros time, 12, 175340328, 18314 
+Total Pipeline Time, 43, 175340328, 18314 
+write time, 44, 0, 18315 
+Render and get color array time delta, 27, 450156715, 18343 
+Time to copy new frame into temporrary frame, 3, 450156715, 18346 
+Delta encoding and remove zeros time, 15, 450156715, 18362 
+Total Pipeline Time, 48, 450156715, 18362 
+write time, 47, 0, 18363 
+Render and get color array time delta, 27, 1238655495, 18395 
+Time to copy new frame into temporrary frame, 3, 1238655495, 18400 
+Delta encoding and remove zeros time, 12, 1238655495, 18412 
+Total Pipeline Time, 44, 1238655495, 18412 
+write time, 49, 0, 18413 
+Render and get color array time delta, 25, 175340328, 18439 
+Time to copy new frame into temporrary frame, 3, 175340328, 18443 
+Delta encoding and remove zeros time, 12, 175340328, 18455 
+Total Pipeline Time, 42, 175340328, 18455 
+write time, 42, 0, 18455 
+Render and get color array time delta, 28, 450156715, 18485 
+Time to copy new frame into temporrary frame, 3, 450156715, 18488 
+Delta encoding and remove zeros time, 16, 450156715, 18504 
+Total Pipeline Time, 49, 450156715, 18504 
+write time, 50, 0, 18505 
+Render and get color array time delta, 29, 1238655495, 18539 
+Time to copy new frame into temporrary frame, 3, 1238655495, 18544 
+Delta encoding and remove zeros time, 11, 1238655495, 18556 
+Total Pipeline Time, 45, 1238655495, 18556 
+write time, 51, 0, 18557 
+Render and get color array time delta, 25, 175340328, 18582 
+Time to copy new frame into temporrary frame, 3, 175340328, 18586 
+Delta encoding and remove zeros time, 12, 175340328, 18598 
+Total Pipeline Time, 42, 175340328, 18598 
+write time, 42, 0, 18599 
+Render and get color array time delta, 26, 450156715, 18626 
+Time to copy new frame into temporrary frame, 3, 450156715, 18629 
+Delta encoding and remove zeros time, 15, 450156715, 18644 
+Total Pipeline Time, 46, 450156715, 18645 
+write time, 46, 0, 18645 
+Render and get color array time delta, 27, 1238655495, 18677 
+Time to copy new frame into temporrary frame, 3, 1238655495, 18682 
+Delta encoding and remove zeros time, 12, 1238655495, 18694 
+Total Pipeline Time, 45, 1238655495, 18694 
+write time, 49, 0, 18695 
+Render and get color array time delta, 27, 175340328, 18723 
+Time to copy new frame into temporrary frame, 3, 175340328, 18726 
+Delta encoding and remove zeros time, 12, 175340328, 18739 
+Total Pipeline Time, 45, 175340328, 18739 
+write time, 45, 0, 18740 
+Render and get color array time delta, 24, 450156715, 18765 
+Time to copy new frame into temporrary frame, 3, 450156715, 18768 
+Delta encoding and remove zeros time, 15, 450156715, 18784 
+Total Pipeline Time, 47, 450156715, 18786 
+write time, 47, 0, 18788 
+Render and get color array time delta, 34, 1238655495, 18827 
+Time to copy new frame into temporrary frame, 3, 1238655495, 18832 
+Delta encoding and remove zeros time, 13, 1238655495, 18845 
+Total Pipeline Time, 54, 1238655495, 18847 
+write time, 60, 0, 18848 
+Render and get color array time delta, 26, 175340328, 18873 
+Time to copy new frame into temporrary frame, 3, 175340328, 18878 
+Delta encoding and remove zeros time, 13, 175340328, 18892 
+Total Pipeline Time, 46, 175340328, 18894 
+write time, 46, 0, 18895 
+Render and get color array time delta, 23, 450156715, 18918 
+Time to copy new frame into temporrary frame, 3, 450156715, 18923 
+Delta encoding and remove zeros time, 15, 450156715, 18938 
+Total Pipeline Time, 44, 450156715, 18938 
+write time, 44, 0, 18939 
+Render and get color array time delta, 28, 1238655495, 18972 
+Time to copy new frame into temporrary frame, 3, 1238655495, 18976 
+Delta encoding and remove zeros time, 13, 1238655495, 18990 
+Total Pipeline Time, 47, 1238655495, 18991 
+write time, 52, 0, 18992 
+Render and get color array time delta, 25, 175340328, 19017 
+Time to copy new frame into temporrary frame, 3, 175340328, 19022 
+Delta encoding and remove zeros time, 13, 175340328, 19036 
+Total Pipeline Time, 45, 175340328, 19037 
+write time, 45, 0, 19038 
+Render and get color array time delta, 24, 450156715, 19062 
+Time to copy new frame into temporrary frame, 3, 450156715, 19067 
+Delta encoding and remove zeros time, 15, 450156715, 19083 
+Total Pipeline Time, 45, 450156715, 19083 
+write time, 45, 0, 19084 
+Render and get color array time delta, 27, 1238655495, 19115 
+Time to copy new frame into temporrary frame, 3, 1238655495, 19120 
+Delta encoding and remove zeros time, 12, 1238655495, 19132 
+Total Pipeline Time, 44, 1238655495, 19132 
+write time, 49, 0, 19133 
+Render and get color array time delta, 25, 175340328, 19159 
+Time to copy new frame into temporrary frame, 3, 175340328, 19163 
+Delta encoding and remove zeros time, 12, 175340328, 19175 
+Total Pipeline Time, 42, 175340328, 19175 
+write time, 42, 0, 19176 
+Render and get color array time delta, 24, 450156715, 19201 
+Time to copy new frame into temporrary frame, 3, 450156715, 19205 
+Delta encoding and remove zeros time, 15, 450156715, 19220 
+Total Pipeline Time, 44, 450156715, 19220 
+write time, 44, 0, 19221 
+Render and get color array time delta, 27, 1238655495, 19252 
+Time to copy new frame into temporrary frame, 3, 1238655495, 19257 
+Delta encoding and remove zeros time, 13, 1238655495, 19270 
+Total Pipeline Time, 47, 1238655495, 19272 
+write time, 52, 0, 19273 
+Render and get color array time delta, 24, 175340328, 19297 
+Time to copy new frame into temporrary frame, 3, 175340328, 19302 
+Delta encoding and remove zeros time, 12, 175340328, 19314 
+Total Pipeline Time, 42, 175340328, 19315 
+write time, 42, 0, 19315 
+Render and get color array time delta, 25, 450156715, 19342 
+Time to copy new frame into temporrary frame, 3, 450156715, 19345 
+Delta encoding and remove zeros time, 15, 450156715, 19361 
+Total Pipeline Time, 46, 450156715, 19361 
+write time, 46, 0, 19362 
+Render and get color array time delta, 28, 1238655495, 19394 
+Time to copy new frame into temporrary frame, 3, 1238655495, 19399 
+Delta encoding and remove zeros time, 12, 1238655495, 19411 
+Total Pipeline Time, 45, 1238655495, 19411 
+write time, 49, 0, 19412 
+Render and get color array time delta, 27, 175340328, 19440 
+Time to copy new frame into temporrary frame, 3, 175340328, 19443 
+Delta encoding and remove zeros time, 12, 175340328, 19456 
+Total Pipeline Time, 44, 175340328, 19456 
+write time, 45, 0, 19457 
+Render and get color array time delta, 25, 450156715, 19482 
+Time to copy new frame into temporrary frame, 3, 450156715, 19486 
+Delta encoding and remove zeros time, 15, 450156715, 19501 
+Total Pipeline Time, 45, 450156715, 19501 
+write time, 45, 0, 19502 
+Render and get color array time delta, 26, 1238655495, 19533 
+Time to copy new frame into temporrary frame, 3, 1238655495, 19538 
+Delta encoding and remove zeros time, 12, 1238655495, 19550 
+Total Pipeline Time, 44, 1238655495, 19550 
+write time, 49, 0, 19551 
+Render and get color array time delta, 26, 175340328, 19578 
+Time to copy new frame into temporrary frame, 3, 175340328, 19581 
+Delta encoding and remove zeros time, 12, 175340328, 19594 
+Total Pipeline Time, 43, 175340328, 19594 
+write time, 43, 0, 19594 
+Render and get color array time delta, 25, 450156715, 19620 
+Time to copy new frame into temporrary frame, 3, 450156715, 19623 
+Delta encoding and remove zeros time, 15, 450156715, 19639 
+Total Pipeline Time, 44, 450156715, 19639 
+write time, 44, 0, 19639 
+Render and get color array time delta, 27, 1238655495, 19671 
+Time to copy new frame into temporrary frame, 3, 1238655495, 19676 
+Delta encoding and remove zeros time, 12, 1238655495, 19688 
+Total Pipeline Time, 44, 1238655495, 19688 
+write time, 49, 0, 19689 
+Render and get color array time delta, 25, 175340328, 19715 
+Time to copy new frame into temporrary frame, 3, 175340328, 19718 
+Delta encoding and remove zeros time, 12, 175340328, 19730 
+Total Pipeline Time, 42, 175340328, 19731 
+write time, 42, 0, 19731 
+Render and get color array time delta, 25, 450156715, 19757 
+Time to copy new frame into temporrary frame, 3, 450156715, 19761 
+Delta encoding and remove zeros time, 15, 450156715, 19776 
+Total Pipeline Time, 45, 450156715, 19776 
+write time, 45, 0, 19777 
+Render and get color array time delta, 29, 1238655495, 19810 
+Time to copy new frame into temporrary frame, 3, 1238655495, 19815 
+Delta encoding and remove zeros time, 12, 1238655495, 19828 
+Total Pipeline Time, 46, 1238655495, 19828 
+write time, 51, 0, 19828 
+Render and get color array time delta, 26, 175340328, 19855 
+Time to copy new frame into temporrary frame, 3, 175340328, 19859 
+Delta encoding and remove zeros time, 12, 175340328, 19871 
+Total Pipeline Time, 43, 175340328, 19871 
+write time, 43, 0, 19872 
+Render and get color array time delta, 26, 450156715, 19899 
+Time to copy new frame into temporrary frame, 3, 450156715, 19902 
+Delta encoding and remove zeros time, 16, 450156715, 19919 
+Total Pipeline Time, 47, 450156715, 19919 
+write time, 49, 0, 19921 
+Render and get color array time delta, 31, 1238655495, 19958 
+Time to copy new frame into temporrary frame, 3, 1238655495, 19963 
+Delta encoding and remove zeros time, 12, 1238655495, 19975 
+Total Pipeline Time, 49, 1238655495, 19976 
+write time, 55, 0, 19977 
+Render and get color array time delta, 28, 175340328, 20005 
+Time to copy new frame into temporrary frame, 3, 175340328, 20009 
+Delta encoding and remove zeros time, 12, 175340328, 20021 
+Total Pipeline Time, 45, 175340328, 20021 
+write time, 45, 0, 20022 
+Render and get color array time delta, 26, 450156715, 20049 
+Time to copy new frame into temporrary frame, 3, 450156715, 20052 
+Delta encoding and remove zeros time, 15, 450156715, 20068 
+Total Pipeline Time, 46, 450156715, 20068 
+write time, 46, 0, 20068 
+Render and get color array time delta, 26, 1238655495, 20101 
+Time to copy new frame into temporrary frame, 3, 1238655495, 20106 
+Delta encoding and remove zeros time, 12, 1238655495, 20118 
+Total Pipeline Time, 44, 1238655495, 20118 
+write time, 50, 0, 20119 
+Render and get color array time delta, 27, 175340328, 20147 
+Time to copy new frame into temporrary frame, 3, 175340328, 20151 
+Delta encoding and remove zeros time, 12, 175340328, 20163 
+Total Pipeline Time, 44, 175340328, 20163 
+write time, 44, 0, 20164 
+Render and get color array time delta, 26, 450156715, 20191 
+Time to copy new frame into temporrary frame, 3, 450156715, 20194 
+Delta encoding and remove zeros time, 15, 450156715, 20210 
+Total Pipeline Time, 46, 450156715, 20210 
+write time, 46, 0, 20210 
+Render and get color array time delta, 28, 1238655495, 20243 
+Time to copy new frame into temporrary frame, 3, 1238655495, 20248 
+Delta encoding and remove zeros time, 12, 1238655495, 20260 
+Total Pipeline Time, 45, 1238655495, 20260 
+write time, 50, 0, 20261 
+Render and get color array time delta, 27, 175340328, 20289 
+Time to copy new frame into temporrary frame, 3, 175340328, 20292 
+Delta encoding and remove zeros time, 12, 175340328, 20304 
+Total Pipeline Time, 44, 175340328, 20305 
+write time, 44, 0, 20305 
+Render and get color array time delta, 25, 450156715, 20332 
+Time to copy new frame into temporrary frame, 3, 450156715, 20335 
+Delta encoding and remove zeros time, 15, 450156715, 20350 
+Total Pipeline Time, 45, 450156715, 20350 
+write time, 45, 0, 20351 
+Render and get color array time delta, 29, 1238655495, 20385 
+Time to copy new frame into temporrary frame, 3, 1238655495, 20390 
+Delta encoding and remove zeros time, 13, 1238655495, 20403 
+Total Pipeline Time, 47, 1238655495, 20403 
+write time, 52, 0, 20404 
+Render and get color array time delta, 26, 175340328, 20432 
+Time to copy new frame into temporrary frame, 3, 175340328, 20435 
+Delta encoding and remove zeros time, 12, 175340328, 20447 
+Total Pipeline Time, 44, 175340328, 20447 
+write time, 44, 0, 20448 
+Render and get color array time delta, 28, 450156715, 20477 
+Time to copy new frame into temporrary frame, 3, 450156715, 20481 
+Delta encoding and remove zeros time, 14, 450156715, 20495 
+Total Pipeline Time, 48, 450156715, 20496 
+write time, 49, 0, 20497 
+Render and get color array time delta, 28, 1238655495, 20530 
+Time to copy new frame into temporrary frame, 3, 1238655495, 20535 
+Delta encoding and remove zeros time, 12, 1238655495, 20547 
+Total Pipeline Time, 45, 1238655495, 20547 
+write time, 50, 0, 20548 
+Render and get color array time delta, 29, 175340328, 20578 
+Time to copy new frame into temporrary frame, 3, 175340328, 20581 
+Delta encoding and remove zeros time, 12, 175340328, 20594 
+Total Pipeline Time, 46, 175340328, 20594 
+write time, 46, 0, 20594 
+Render and get color array time delta, 26, 450156715, 20621 
+Time to copy new frame into temporrary frame, 3, 450156715, 20624 
+Delta encoding and remove zeros time, 13, 450156715, 20638 
+Total Pipeline Time, 46, 450156715, 20640 
+write time, 46, 0, 20641 
+Render and get color array time delta, 29, 1238655495, 20674 
+Time to copy new frame into temporrary frame, 3, 1238655495, 20679 
+Delta encoding and remove zeros time, 12, 1238655495, 20692 
+Total Pipeline Time, 47, 1238655495, 20692 
+write time, 51, 0, 20693 
+Render and get color array time delta, 26, 175340328, 20720 
+Time to copy new frame into temporrary frame, 3, 175340328, 20723 
+Delta encoding and remove zeros time, 12, 175340328, 20736 
+Total Pipeline Time, 43, 175340328, 20736 
+write time, 44, 0, 20737 
+Render and get color array time delta, 31, 450156715, 20769 
+Time to copy new frame into temporrary frame, 4, 450156715, 20773 
+Delta encoding and remove zeros time, 14, 450156715, 20788 
+Total Pipeline Time, 53, 450156715, 20790 
+write time, 53, 0, 20791 
+Render and get color array time delta, 32, 1238655495, 20828 
+Time to copy new frame into temporrary frame, 3, 1238655495, 20833 
+Delta encoding and remove zeros time, 12, 1238655495, 20845 
+Total Pipeline Time, 50, 1238655495, 20845 
+write time, 55, 0, 20846 
+Render and get color array time delta, 28, 175340328, 20875 
+Time to copy new frame into temporrary frame, 3, 175340328, 20879 
+Delta encoding and remove zeros time, 12, 175340328, 20891 
+Total Pipeline Time, 45, 175340328, 20891 
+write time, 45, 0, 20892 
+Render and get color array time delta, 28, 450156715, 20921 
+Time to copy new frame into temporrary frame, 3, 450156715, 20925 
+Delta encoding and remove zeros time, 14, 450156715, 20939 
+Total Pipeline Time, 49, 450156715, 20941 
+write time, 50, 0, 20942 
+Render and get color array time delta, 29, 1238655495, 20976 
+Time to copy new frame into temporrary frame, 3, 1238655495, 20981 
+Delta encoding and remove zeros time, 12, 1238655495, 20993 
+Total Pipeline Time, 46, 1238655495, 20994 
+write time, 52, 0, 20994 
+Render and get color array time delta, 26, 175340328, 21022 
+Time to copy new frame into temporrary frame, 3, 175340328, 21025 
+Delta encoding and remove zeros time, 12, 175340328, 21037 
+Total Pipeline Time, 43, 175340328, 21037 
+write time, 43, 0, 21038 
+Render and get color array time delta, 29, 450156715, 21068 
+Time to copy new frame into temporrary frame, 3, 450156715, 21071 
+Delta encoding and remove zeros time, 13, 450156715, 21085 
+Total Pipeline Time, 48, 450156715, 21086 
+write time, 49, 0, 21087 
+Render and get color array time delta, 28, 1238655495, 21120 
+Time to copy new frame into temporrary frame, 3, 1238655495, 21125 
+Delta encoding and remove zeros time, 12, 1238655495, 21137 
+Total Pipeline Time, 45, 1238655495, 21137 
+write time, 50, 0, 21138 
+Render and get color array time delta, 29, 175340328, 21169 
+Time to copy new frame into temporrary frame, 4, 175340328, 21173 
+Delta encoding and remove zeros time, 12, 175340328, 21185 
+Total Pipeline Time, 47, 175340328, 21185 
+write time, 47, 0, 21186 
+Render and get color array time delta, 25, 450156715, 21211 
+Time to copy new frame into temporrary frame, 3, 450156715, 21215 
+Delta encoding and remove zeros time, 13, 450156715, 21228 
+Total Pipeline Time, 45, 450156715, 21230 
+write time, 44, 0, 21231 
+Render and get color array time delta, 34, 1238655495, 21270 
+Time to copy new frame into temporrary frame, 3, 1238655495, 21275 
+Delta encoding and remove zeros time, 12, 1238655495, 21287 
+Total Pipeline Time, 52, 1238655495, 21287 
+write time, 57, 0, 21288 
+Render and get color array time delta, 27, 175340328, 21316 
+Time to copy new frame into temporrary frame, 3, 175340328, 21319 
+Delta encoding and remove zeros time, 12, 175340328, 21331 
+Total Pipeline Time, 44, 175340328, 21331 
+write time, 44, 0, 21332 
+Render and get color array time delta, 28, 450156715, 21361 
+Time to copy new frame into temporrary frame, 3, 450156715, 21365 
+Delta encoding and remove zeros time, 15, 450156715, 21380 
+Total Pipeline Time, 48, 450156715, 21380 
+write time, 50, 0, 21382 
+Render and get color array time delta, 28, 1238655495, 21414 
+Time to copy new frame into temporrary frame, 3, 1238655495, 21419 
+Delta encoding and remove zeros time, 12, 1238655495, 21431 
+Total Pipeline Time, 45, 1238655495, 21431 
+write time, 49, 0, 21432 
+Render and get color array time delta, 27, 175340328, 21460 
+Time to copy new frame into temporrary frame, 3, 175340328, 21464 
+Delta encoding and remove zeros time, 12, 175340328, 21476 
+Total Pipeline Time, 44, 175340328, 21476 
+write time, 44, 0, 21477 
+Render and get color array time delta, 26, 450156715, 21504 
+Time to copy new frame into temporrary frame, 3, 450156715, 21507 
+Delta encoding and remove zeros time, 15, 450156715, 21523 
+Total Pipeline Time, 47, 450156715, 21523 
+write time, 47, 0, 21524 
+Render and get color array time delta, 30, 1238655495, 21559 
+Time to copy new frame into temporrary frame, 3, 1238655495, 21564 
+Delta encoding and remove zeros time, 12, 1238655495, 21576 
+Total Pipeline Time, 47, 1238655495, 21577 
+write time, 53, 0, 21577 
+Render and get color array time delta, 27, 175340328, 21605 
+Time to copy new frame into temporrary frame, 3, 175340328, 21609 
+Delta encoding and remove zeros time, 12, 175340328, 21621 
+Total Pipeline Time, 44, 175340328, 21621 
+write time, 44, 0, 21622 
+Render and get color array time delta, 25, 450156715, 21648 
+Time to copy new frame into temporrary frame, 3, 450156715, 21651 
+Delta encoding and remove zeros time, 15, 450156715, 21667 
+Total Pipeline Time, 45, 450156715, 21667 
+write time, 45, 0, 21667 
+Render and get color array time delta, 24, 1238655495, 21696 
+Time to copy new frame into temporrary frame, 3, 1238655495, 21701 
+Delta encoding and remove zeros time, 12, 1238655495, 21713 
+Total Pipeline Time, 41, 1238655495, 21714 
+write time, 47, 0, 21714 
+Render and get color array time delta, 26, 175340328, 21741 
+Time to copy new frame into temporrary frame, 3, 175340328, 21745 
+Delta encoding and remove zeros time, 12, 175340328, 21757 
+Total Pipeline Time, 42, 175340328, 21757 
+write time, 42, 0, 21757 
+Render and get color array time delta, 25, 450156715, 21784 
+Time to copy new frame into temporrary frame, 3, 450156715, 21787 
+Delta encoding and remove zeros time, 15, 450156715, 21802 
+Total Pipeline Time, 45, 450156715, 21802 
+write time, 45, 0, 21803 
+Render and get color array time delta, 26, 1238655495, 21833 
+Time to copy new frame into temporrary frame, 3, 1238655495, 21838 
+Delta encoding and remove zeros time, 12, 1238655495, 21851 
+Total Pipeline Time, 43, 1238655495, 21851 
+write time, 48, 0, 21851 
+Render and get color array time delta, 25, 175340328, 21878 
+Time to copy new frame into temporrary frame, 3, 175340328, 21881 
+Delta encoding and remove zeros time, 12, 175340328, 21893 
+Total Pipeline Time, 42, 175340328, 21893 
+write time, 42, 0, 21894 
+Render and get color array time delta, 26, 450156715, 21921 
+Time to copy new frame into temporrary frame, 3, 450156715, 21924 
+Delta encoding and remove zeros time, 13, 450156715, 21937 
+Total Pipeline Time, 45, 450156715, 21939 
+write time, 45, 0, 21940 
+Render and get color array time delta, 29, 1238655495, 21974 
+Time to copy new frame into temporrary frame, 3, 1238655495, 21979 
+Delta encoding and remove zeros time, 12, 1238655495, 21991 
+Total Pipeline Time, 47, 1238655495, 21991 
+write time, 52, 0, 21992 
+Render and get color array time delta, 26, 175340328, 22019 
+Time to copy new frame into temporrary frame, 3, 175340328, 22023 
+Delta encoding and remove zeros time, 12, 175340328, 22035 
+Total Pipeline Time, 43, 175340328, 22035 
+write time, 43, 0, 22035 
+Render and get color array time delta, 25, 450156715, 22061 
+Time to copy new frame into temporrary frame, 3, 450156715, 22065 
+Delta encoding and remove zeros time, 13, 450156715, 22079 
+Total Pipeline Time, 45, 450156715, 22080 
+write time, 44, 0, 22081 
+Render and get color array time delta, 31, 1238655495, 22116 
+Time to copy new frame into temporrary frame, 3, 1238655495, 22121 
+Delta encoding and remove zeros time, 12, 1238655495, 22133 
+Total Pipeline Time, 48, 1238655495, 22134 
+write time, 53, 0, 22134 
+Render and get color array time delta, 26, 175340328, 22162 
+Time to copy new frame into temporrary frame, 3, 175340328, 22165 
+Delta encoding and remove zeros time, 12, 175340328, 22177 
+Total Pipeline Time, 43, 175340328, 22177 
+write time, 43, 0, 22178 
+Render and get color array time delta, 25, 450156715, 22204 
+Time to copy new frame into temporrary frame, 3, 450156715, 22207 
+Delta encoding and remove zeros time, 15, 450156715, 22223 
+Total Pipeline Time, 45, 450156715, 22223 
+write time, 45, 0, 22223 
+Render and get color array time delta, 29, 1238655495, 22257 
+Time to copy new frame into temporrary frame, 3, 1238655495, 22262 
+Delta encoding and remove zeros time, 12, 1238655495, 22274 
+Total Pipeline Time, 46, 1238655495, 22274 
+write time, 52, 0, 22276 
+Render and get color array time delta, 26, 175340328, 22302 
+Time to copy new frame into temporrary frame, 3, 175340328, 22305 
+Delta encoding and remove zeros time, 12, 175340328, 22317 
+Total Pipeline Time, 43, 175340328, 22318 
+write time, 42, 0, 22318 
+Render and get color array time delta, 25, 450156715, 22345 
+Time to copy new frame into temporrary frame, 3, 450156715, 22348 
+Delta encoding and remove zeros time, 15, 450156715, 22363 
+Total Pipeline Time, 45, 450156715, 22363 
+write time, 45, 0, 22364 
+Render and get color array time delta, 29, 1238655495, 22398 
+Time to copy new frame into temporrary frame, 3, 1238655495, 22403 
+Delta encoding and remove zeros time, 12, 1238655495, 22415 
+Total Pipeline Time, 46, 1238655495, 22415 
+write time, 52, 0, 22416 
+Render and get color array time delta, 26, 175340328, 22443 
+Time to copy new frame into temporrary frame, 3, 175340328, 22446 
+Delta encoding and remove zeros time, 12, 175340328, 22458 
+Total Pipeline Time, 43, 175340328, 22459 
+write time, 43, 0, 22459 
+Render and get color array time delta, 26, 450156715, 22486 
+Time to copy new frame into temporrary frame, 3, 450156715, 22489 
+Delta encoding and remove zeros time, 15, 450156715, 22505 
+Total Pipeline Time, 46, 450156715, 22505 
+write time, 46, 0, 22506 
+Render and get color array time delta, 28, 1238655495, 22538 
+Time to copy new frame into temporrary frame, 3, 1238655495, 22543 
+Delta encoding and remove zeros time, 12, 1238655495, 22555 
+Total Pipeline Time, 45, 1238655495, 22555 
+write time, 50, 0, 22556 
+Render and get color array time delta, 26, 175340328, 22583 
+Time to copy new frame into temporrary frame, 3, 175340328, 22586 
+Delta encoding and remove zeros time, 12, 175340328, 22598 
+Total Pipeline Time, 43, 175340328, 22598 
+write time, 43, 0, 22599 
+Render and get color array time delta, 25, 450156715, 22625 
+Time to copy new frame into temporrary frame, 3, 450156715, 22628 
+Delta encoding and remove zeros time, 13, 450156715, 22642 
+Total Pipeline Time, 45, 450156715, 22644 
+write time, 45, 0, 22645 
+Render and get color array time delta, 29, 1238655495, 22678 
+Time to copy new frame into temporrary frame, 3, 1238655495, 22684 
+Delta encoding and remove zeros time, 12, 1238655495, 22696 
+Total Pipeline Time, 47, 1238655495, 22696 
+write time, 52, 0, 22697 
+Render and get color array time delta, 25, 175340328, 22723 
+Time to copy new frame into temporrary frame, 3, 175340328, 22727 
+Delta encoding and remove zeros time, 12, 175340328, 22739 
+Total Pipeline Time, 42, 175340328, 22739 
+write time, 42, 0, 22740 
+Render and get color array time delta, 26, 450156715, 22767 
+Time to copy new frame into temporrary frame, 3, 450156715, 22770 
+Delta encoding and remove zeros time, 12, 450156715, 22783 
+Total Pipeline Time, 44, 450156715, 22783 
+write time, 44, 0, 22784 
+Render and get color array time delta, 31, 1238655495, 22822 
+Time to copy new frame into temporrary frame, 3, 1238655495, 22825 
+Delta encoding and remove zeros time, 12, 1238655495, 22838 
+Total Pipeline Time, 49, 1238655495, 22838 
+write time, 54, 0, 22839 
+Render and get color array time delta, 25, 175340328, 22865 
+Time to copy new frame into temporrary frame, 3, 175340328, 22868 
+Delta encoding and remove zeros time, 12, 175340328, 22880 
+Total Pipeline Time, 42, 175340328, 22881 
+write time, 42, 0, 22881 
+Render and get color array time delta, 26, 450156715, 22909 
+Time to copy new frame into temporrary frame, 3, 450156715, 22912 
+Delta encoding and remove zeros time, 13, 450156715, 22926 
+Total Pipeline Time, 46, 450156715, 22927 
+write time, 46, 0, 22928 
+Render and get color array time delta, 30, 1238655495, 22963 
+Time to copy new frame into temporrary frame, 3, 1238655495, 22968 
+Delta encoding and remove zeros time, 12, 1238655495, 22980 
+Total Pipeline Time, 47, 1238655495, 22980 
+write time, 52, 0, 22981 
+Render and get color array time delta, 26, 175340328, 23008 
+Time to copy new frame into temporrary frame, 3, 175340328, 23011 
+Delta encoding and remove zeros time, 12, 175340328, 23023 
+Total Pipeline Time, 43, 175340328, 23024 
+write time, 44, 0, 23025 
+Render and get color array time delta, 26, 450156715, 23052 
+Time to copy new frame into temporrary frame, 3, 450156715, 23055 
+Delta encoding and remove zeros time, 15, 450156715, 23071 
+Total Pipeline Time, 46, 450156715, 23071 
+write time, 46, 0, 23071 
+Render and get color array time delta, 26, 1238655495, 23103 
+Time to copy new frame into temporrary frame, 3, 1238655495, 23108 
+Delta encoding and remove zeros time, 12, 1238655495, 23120 
+Total Pipeline Time, 44, 1238655495, 23120 
+write time, 49, 0, 23121 
+Render and get color array time delta, 27, 175340328, 23148 
+Time to copy new frame into temporrary frame, 3, 175340328, 23152 
+Delta encoding and remove zeros time, 11, 175340328, 23163 
+Total Pipeline Time, 43, 175340328, 23164 
+write time, 43, 0, 23164 
+Render and get color array time delta, 25, 450156715, 23190 
+Time to copy new frame into temporrary frame, 3, 450156715, 23193 
+Delta encoding and remove zeros time, 15, 450156715, 23208 
+Total Pipeline Time, 44, 450156715, 23209 
+write time, 44, 0, 23209 
+Render and get color array time delta, 27, 1238655495, 23241 
+Time to copy new frame into temporrary frame, 3, 1238655495, 23246 
+Delta encoding and remove zeros time, 12, 1238655495, 23258 
+Total Pipeline Time, 45, 1238655495, 23258 
+write time, 50, 0, 23260 
+Render and get color array time delta, 26, 175340328, 23286 
+Time to copy new frame into temporrary frame, 3, 175340328, 23290 
+Delta encoding and remove zeros time, 12, 175340328, 23302 
+Total Pipeline Time, 43, 175340328, 23302 
+write time, 44, 0, 23304 
+Render and get color array time delta, 28, 450156715, 23332 
+Time to copy new frame into temporrary frame, 3, 450156715, 23336 
+Delta encoding and remove zeros time, 14, 450156715, 23351 
+Total Pipeline Time, 48, 450156715, 23351 
+write time, 47, 0, 23351 
+Render and get color array time delta, 27, 1238655495, 23383 
+Time to copy new frame into temporrary frame, 3, 1238655495, 23387 
+Delta encoding and remove zeros time, 12, 1238655495, 23399 
+Total Pipeline Time, 44, 1238655495, 23399 
+write time, 48, 0, 23400 
+Render and get color array time delta, 27, 175340328, 23429 
+Time to copy new frame into temporrary frame, 3, 175340328, 23432 
+Delta encoding and remove zeros time, 12, 175340328, 23445 
+Total Pipeline Time, 45, 175340328, 23445 
+write time, 44, 0, 23445 
+Render and get color array time delta, 27, 450156715, 23474 
+Time to copy new frame into temporrary frame, 3, 450156715, 23477 
+Delta encoding and remove zeros time, 14, 450156715, 23492 
+Total Pipeline Time, 48, 450156715, 23493 
+write time, 49, 0, 23495 
+Render and get color array time delta, 25, 1238655495, 23528 
+Time to copy new frame into temporrary frame, 4, 1238655495, 23534 
+Delta encoding and remove zeros time, 13, 1238655495, 23547 
+Total Pipeline Time, 44, 1238655495, 23547 
+write time, 53, 0, 23548 
+Render and get color array time delta, 29, 175340328, 23578 
+Time to copy new frame into temporrary frame, 3, 175340328, 23581 
+Delta encoding and remove zeros time, 12, 175340328, 23594 
+Total Pipeline Time, 46, 175340328, 23594 
+write time, 46, 0, 23595 
+Render and get color array time delta, 25, 450156715, 23621 
+Time to copy new frame into temporrary frame, 4, 450156715, 23626 
+Delta encoding and remove zeros time, 15, 450156715, 23642 
+Total Pipeline Time, 47, 450156715, 23642 
+write time, 47, 0, 23642 
+Render and get color array time delta, 35, 1238655495, 23684 
+Time to copy new frame into temporrary frame, 3, 1238655495, 23689 
+Delta encoding and remove zeros time, 13, 1238655495, 23703 
+Total Pipeline Time, 56, 1238655495, 23705 
+write time, 63, 0, 23706 
+Render and get color array time delta, 26, 175340328, 23731 
+Time to copy new frame into temporrary frame, 4, 175340328, 23737 
+Delta encoding and remove zeros time, 12, 175340328, 23749 
+Total Pipeline Time, 44, 175340328, 23749 
+write time, 44, 0, 23750 
+Render and get color array time delta, 27, 450156715, 23778 
+Time to copy new frame into temporrary frame, 3, 450156715, 23782 
+Delta encoding and remove zeros time, 15, 450156715, 23797 
+Total Pipeline Time, 48, 450156715, 23797 
+write time, 48, 0, 23798 
+Render and get color array time delta, 28, 1238655495, 23832 
+Time to copy new frame into temporrary frame, 3, 1238655495, 23837 
+Delta encoding and remove zeros time, 12, 1238655495, 23849 
+Total Pipeline Time, 46, 1238655495, 23850 
+write time, 52, 0, 23851 
+Render and get color array time delta, 30, 175340328, 23882 
+Time to copy new frame into temporrary frame, 3, 175340328, 23885 
+Delta encoding and remove zeros time, 12, 175340328, 23898 
+Total Pipeline Time, 48, 175340328, 23898 
+write time, 48, 0, 23899 
+Render and get color array time delta, 25, 450156715, 23925 
+Time to copy new frame into temporrary frame, 4, 450156715, 23929 
+Delta encoding and remove zeros time, 15, 450156715, 23944 
+Total Pipeline Time, 46, 450156715, 23944 
+write time, 46, 0, 23945 
+Render and get color array time delta, 30, 1238655495, 23980 
+Time to copy new frame into temporrary frame, 3, 1238655495, 23985 
+Delta encoding and remove zeros time, 12, 1238655495, 23997 
+Total Pipeline Time, 47, 1238655495, 23997 
+write time, 52, 0, 23998 
+Render and get color array time delta, 27, 175340328, 24026 
+Time to copy new frame into temporrary frame, 3, 175340328, 24030 
+Delta encoding and remove zeros time, 12, 175340328, 24042 
+Total Pipeline Time, 44, 175340328, 24042 
+write time, 44, 0, 24042 
+Render and get color array time delta, 26, 450156715, 24070 
+Time to copy new frame into temporrary frame, 3, 450156715, 24073 
+Delta encoding and remove zeros time, 13, 450156715, 24087 
+Total Pipeline Time, 46, 450156715, 24088 
+write time, 46, 0, 24089 
+Render and get color array time delta, 29, 1238655495, 24123 
+Time to copy new frame into temporrary frame, 3, 1238655495, 24128 
+Delta encoding and remove zeros time, 12, 1238655495, 24140 
+Total Pipeline Time, 46, 1238655495, 24140 
+write time, 51, 0, 24140 
+Render and get color array time delta, 27, 175340328, 24169 
+Time to copy new frame into temporrary frame, 3, 175340328, 24172 
+Delta encoding and remove zeros time, 11, 175340328, 24184 
+Total Pipeline Time, 44, 175340328, 24184 
+write time, 44, 0, 24185 
+Render and get color array time delta, 25, 450156715, 24211 
+Time to copy new frame into temporrary frame, 3, 450156715, 24214 
+Delta encoding and remove zeros time, 12, 450156715, 24226 
+Total Pipeline Time, 42, 450156715, 24226 
+write time, 42, 0, 24227 
+Render and get color array time delta, 31, 1238655495, 24265 
+Time to copy new frame into temporrary frame, 3, 1238655495, 24268 
+Delta encoding and remove zeros time, 11, 1238655495, 24280 
+Total Pipeline Time, 48, 1238655495, 24280 
+write time, 53, 0, 24280 
+Render and get color array time delta, 29, 175340328, 24310 
+Time to copy new frame into temporrary frame, 3, 175340328, 24313 
+Delta encoding and remove zeros time, 11, 175340328, 24325 
+Total Pipeline Time, 45, 175340328, 24325 
+write time, 45, 0, 24326 
+Render and get color array time delta, 26, 450156715, 24353 
+Time to copy new frame into temporrary frame, 3, 450156715, 24356 
+Delta encoding and remove zeros time, 11, 450156715, 24368 
+Total Pipeline Time, 42, 450156715, 24368 
+write time, 42, 0, 24369 
+Render and get color array time delta, 40, 1238655495, 24415 
+Time to copy new frame into temporrary frame, 3, 1238655495, 24419 
+Delta encoding and remove zeros time, 11, 1238655495, 24430 
+Total Pipeline Time, 57, 1238655495, 24430 
+write time, 62, 0, 24431 
+Render and get color array time delta, 28, 175340328, 24460 
+Time to copy new frame into temporrary frame, 3, 175340328, 24463 
+Delta encoding and remove zeros time, 11, 175340328, 24475 
+Total Pipeline Time, 44, 175340328, 24475 
+write time, 44, 0, 24476 
+Render and get color array time delta, 27, 450156715, 24504 
+Time to copy new frame into temporrary frame, 3, 450156715, 24508 
+Delta encoding and remove zeros time, 11, 450156715, 24520 
+Total Pipeline Time, 44, 450156715, 24520 
+write time, 44, 0, 24520 
+Render and get color array time delta, 31, 1238655495, 24558 
+Time to copy new frame into temporrary frame, 3, 1238655495, 24561 
+Delta encoding and remove zeros time, 11, 1238655495, 24573 
+Total Pipeline Time, 48, 1238655495, 24573 
+write time, 53, 0, 24574 
+Render and get color array time delta, 28, 175340328, 24603 
+Time to copy new frame into temporrary frame, 3, 175340328, 24606 
+Delta encoding and remove zeros time, 11, 175340328, 24618 
+Total Pipeline Time, 45, 175340328, 24618 
+write time, 45, 0, 24619 
+Render and get color array time delta, 26, 450156715, 24646 
+Time to copy new frame into temporrary frame, 3, 450156715, 24649 
+Delta encoding and remove zeros time, 11, 450156715, 24661 
+Total Pipeline Time, 42, 450156715, 24661 
+write time, 42, 0, 24661 
+Render and get color array time delta, 32, 1238655495, 24699 
+Time to copy new frame into temporrary frame, 3, 1238655495, 24703 
+Delta encoding and remove zeros time, 11, 1238655495, 24715 
+Total Pipeline Time, 49, 1238655495, 24715 
+write time, 55, 0, 24717 
+Render and get color array time delta, 32, 175340328, 24749 
+Time to copy new frame into temporrary frame, 3, 175340328, 24752 
+Delta encoding and remove zeros time, 12, 175340328, 24764 
+Total Pipeline Time, 49, 175340328, 24764 
+write time, 47, 0, 24765 
+Render and get color array time delta, 28, 450156715, 24794 
+Time to copy new frame into temporrary frame, 3, 450156715, 24798 
+Delta encoding and remove zeros time, 11, 450156715, 24810 
+Total Pipeline Time, 45, 450156715, 24810 
+write time, 45, 0, 24810 
+Render and get color array time delta, 27, 1238655495, 24993 
+Time to copy new frame into temporrary frame, 3, 1238655495, 24996 
+Delta encoding and remove zeros time, 11, 1238655495, 25008 
+Total Pipeline Time, 43, 1238655495, 25008 
+write time, 197, 0, 25008 
+Render and get color array time delta, 26, 175340328, 25036 
+Time to copy new frame into temporrary frame, 3, 175340328, 25040 
+Delta encoding and remove zeros time, 11, 175340328, 25051 
+Total Pipeline Time, 43, 175340328, 25051 
+write time, 43, 0, 25052 
+Render and get color array time delta, 26, 450156715, 25079 
+Time to copy new frame into temporrary frame, 3, 450156715, 25082 
+Delta encoding and remove zeros time, 11, 450156715, 25094 
+Total Pipeline Time, 42, 450156715, 25094 
+write time, 42, 0, 25095 
+Render and get color array time delta, 30, 1238655495, 25131 
+Time to copy new frame into temporrary frame, 3, 1238655495, 25134 
+Delta encoding and remove zeros time, 11, 1238655495, 25146 
+Total Pipeline Time, 47, 1238655495, 25146 
+write time, 52, 0, 25147 
+Render and get color array time delta, 26, 175340328, 25173 
+Time to copy new frame into temporrary frame, 3, 175340328, 25177 
+Delta encoding and remove zeros time, 11, 175340328, 25189 
+Total Pipeline Time, 42, 175340328, 25189 
+write time, 42, 0, 25189 
+Render and get color array time delta, 26, 450156715, 25217 
+Time to copy new frame into temporrary frame, 3, 450156715, 25220 
+Delta encoding and remove zeros time, 11, 450156715, 25232 
+Total Pipeline Time, 43, 450156715, 25232 
+write time, 43, 0, 25233 
+Render and get color array time delta, 31, 1238655495, 25270 
+Time to copy new frame into temporrary frame, 3, 1238655495, 25274 
+Delta encoding and remove zeros time, 11, 1238655495, 25286 
+Total Pipeline Time, 48, 1238655495, 25286 
+write time, 53, 0, 25286 
+Render and get color array time delta, 26, 175340328, 25313 
+Time to copy new frame into temporrary frame, 3, 175340328, 25317 
+Delta encoding and remove zeros time, 11, 175340328, 25328 
+Total Pipeline Time, 42, 175340328, 25329 
+write time, 42, 0, 25329 
+Render and get color array time delta, 27, 450156715, 25357 
+Time to copy new frame into temporrary frame, 3, 450156715, 25361 
+Delta encoding and remove zeros time, 11, 450156715, 25373 
+Total Pipeline Time, 44, 450156715, 25373 
+write time, 44, 0, 25373 
+Render and get color array time delta, 29, 1238655495, 25409 
+Time to copy new frame into temporrary frame, 3, 1238655495, 25412 
+Delta encoding and remove zeros time, 11, 1238655495, 25424 
+Total Pipeline Time, 46, 1238655495, 25424 
+write time, 51, 0, 25424 
+Render and get color array time delta, 25, 175340328, 25451 
+Time to copy new frame into temporrary frame, 3, 175340328, 25454 
+Delta encoding and remove zeros time, 11, 175340328, 25466 
+Total Pipeline Time, 42, 175340328, 25466 
+write time, 42, 0, 25466 
+Render and get color array time delta, 24, 450156715, 25492 
+Time to copy new frame into temporrary frame, 3, 450156715, 25496 
+Delta encoding and remove zeros time, 11, 450156715, 25507 
+Total Pipeline Time, 41, 450156715, 25507 
+write time, 41, 0, 25508 
+Render and get color array time delta, 31, 1238655495, 25545 
+Time to copy new frame into temporrary frame, 3, 1238655495, 25548 
+Delta encoding and remove zeros time, 11, 1238655495, 25560 
+Total Pipeline Time, 47, 1238655495, 25560 
+write time, 52, 0, 25561 
+Render and get color array time delta, 29, 175340328, 25592 
+Time to copy new frame into temporrary frame, 3, 175340328, 25595 
+Delta encoding and remove zeros time, 12, 175340328, 25607 
+Total Pipeline Time, 47, 175340328, 25607 
+write time, 47, 0, 25608 
+Render and get color array time delta, 29, 450156715, 25638 
+Time to copy new frame into temporrary frame, 3, 450156715, 25641 
+Delta encoding and remove zeros time, 12, 450156715, 25654 
+Total Pipeline Time, 46, 450156715, 25654 
+write time, 46, 0, 25654 
+Render and get color array time delta, 31, 1238655495, 25692 
+Time to copy new frame into temporrary frame, 3, 1238655495, 25696 
+Delta encoding and remove zeros time, 11, 1238655495, 25708 
+Total Pipeline Time, 47, 1238655495, 25708 
+write time, 53, 0, 25708 
+Render and get color array time delta, 27, 175340328, 25736 
+Time to copy new frame into temporrary frame, 3, 175340328, 25740 
+Delta encoding and remove zeros time, 11, 175340328, 25752 
+Total Pipeline Time, 43, 175340328, 25752 
+write time, 44, 0, 25752 
+Render and get color array time delta, 25, 450156715, 25778 
+Time to copy new frame into temporrary frame, 3, 450156715, 25781 
+Delta encoding and remove zeros time, 11, 450156715, 25793 
+Total Pipeline Time, 41, 450156715, 25793 
+write time, 41, 0, 25794 
+Render and get color array time delta, 32, 1238655495, 25832 
+Time to copy new frame into temporrary frame, 3, 1238655495, 25835 
+Delta encoding and remove zeros time, 11, 1238655495, 25847 
+Total Pipeline Time, 48, 1238655495, 25847 
+write time, 53, 0, 25848 
+Render and get color array time delta, 27, 175340328, 25876 
+Time to copy new frame into temporrary frame, 3, 175340328, 25880 
+Delta encoding and remove zeros time, 12, 175340328, 25892 
+Total Pipeline Time, 45, 175340328, 25892 
+write time, 45, 0, 25893 
+Render and get color array time delta, 26, 450156715, 25920 
+Time to copy new frame into temporrary frame, 3, 450156715, 25923 
+Delta encoding and remove zeros time, 11, 450156715, 25935 
+Total Pipeline Time, 42, 450156715, 25935 
+write time, 42, 0, 25936 
+Render and get color array time delta, 30, 1238655495, 25972 
+Time to copy new frame into temporrary frame, 3, 1238655495, 25975 
+Delta encoding and remove zeros time, 11, 1238655495, 25987 
+Total Pipeline Time, 46, 1238655495, 25987 
+write time, 51, 0, 25987 
+Render and get color array time delta, 25, 175340328, 26013 
+Time to copy new frame into temporrary frame, 3, 175340328, 26017 
+Delta encoding and remove zeros time, 11, 175340328, 26028 
+Total Pipeline Time, 41, 175340328, 26028 
+write time, 41, 0, 26029 
+Render and get color array time delta, 24, 450156715, 26054 
+Time to copy new frame into temporrary frame, 3, 450156715, 26058 
+Delta encoding and remove zeros time, 11, 450156715, 26070 
+Total Pipeline Time, 41, 450156715, 26070 
+write time, 41, 0, 26070 
+Render and get color array time delta, 31, 1238655495, 26107 
+Time to copy new frame into temporrary frame, 3, 1238655495, 26111 
+Delta encoding and remove zeros time, 11, 1238655495, 26123 
+Total Pipeline Time, 48, 1238655495, 26123 
+write time, 53, 0, 26123 
+Render and get color array time delta, 26, 175340328, 26150 
+Time to copy new frame into temporrary frame, 3, 175340328, 26153 
+Delta encoding and remove zeros time, 12, 175340328, 26165 
+Total Pipeline Time, 42, 175340328, 26165 
+write time, 42, 0, 26166 
+Render and get color array time delta, 27, 450156715, 26194 
+Time to copy new frame into temporrary frame, 3, 450156715, 26198 
+Delta encoding and remove zeros time, 12, 450156715, 26210 
+Total Pipeline Time, 44, 450156715, 26210 
+write time, 44, 0, 26210 
+Render and get color array time delta, 32, 1238655495, 26249 
+Time to copy new frame into temporrary frame, 3, 1238655495, 26252 
+Delta encoding and remove zeros time, 12, 1238655495, 26264 
+Total Pipeline Time, 49, 1238655495, 26264 
+write time, 54, 0, 26265 
+Render and get color array time delta, 26, 175340328, 26292 
+Time to copy new frame into temporrary frame, 3, 175340328, 26295 
+Delta encoding and remove zeros time, 11, 175340328, 26307 
+Total Pipeline Time, 42, 175340328, 26307 
+write time, 42, 0, 26308 
+Render and get color array time delta, 26, 450156715, 26335 
+Time to copy new frame into temporrary frame, 3, 450156715, 26338 
+Delta encoding and remove zeros time, 12, 450156715, 26350 
+Total Pipeline Time, 42, 450156715, 26350 
+write time, 42, 0, 26351 
+Render and get color array time delta, 30, 1238655495, 26387 
+Time to copy new frame into temporrary frame, 4, 1238655495, 26392 
+Delta encoding and remove zeros time, 11, 1238655495, 26404 
+Total Pipeline Time, 47, 1238655495, 26404 
+write time, 53, 0, 26404 
+Render and get color array time delta, 25, 175340328, 26431 
+Time to copy new frame into temporrary frame, 3, 175340328, 26434 
+Delta encoding and remove zeros time, 12, 175340328, 26447 
+Total Pipeline Time, 42, 175340328, 26447 
+write time, 42, 0, 26447 
+Render and get color array time delta, 31, 450156715, 26479 
+Time to copy new frame into temporrary frame, 3, 450156715, 26482 
+Delta encoding and remove zeros time, 11, 450156715, 26494 
+Total Pipeline Time, 47, 450156715, 26494 
+write time, 47, 0, 26495 
+Render and get color array time delta, 31, 1238655495, 26532 
+Time to copy new frame into temporrary frame, 3, 1238655495, 26535 
+Delta encoding and remove zeros time, 12, 1238655495, 26547 
+Total Pipeline Time, 48, 1238655495, 26547 
+write time, 53, 0, 26548 
+Render and get color array time delta, 25, 175340328, 26574 
+Time to copy new frame into temporrary frame, 3, 175340328, 26578 
+Delta encoding and remove zeros time, 11, 175340328, 26590 
+Total Pipeline Time, 42, 175340328, 26590 
+write time, 42, 0, 26590 
+Render and get color array time delta, 26, 450156715, 26618 
+Time to copy new frame into temporrary frame, 3, 450156715, 26621 
+Delta encoding and remove zeros time, 12, 450156715, 26634 
+Total Pipeline Time, 43, 450156715, 26634 
+write time, 43, 0, 26634 
+Render and get color array time delta, 30, 1238655495, 26671 
+Time to copy new frame into temporrary frame, 3, 1238655495, 26674 
+Delta encoding and remove zeros time, 11, 1238655495, 26686 
+Total Pipeline Time, 47, 1238655495, 26686 
+write time, 52, 0, 26687 
+Render and get color array time delta, 25, 175340328, 26713 
+Time to copy new frame into temporrary frame, 4, 175340328, 26717 
+Delta encoding and remove zeros time, 11, 175340328, 26729 
+Total Pipeline Time, 43, 175340328, 26729 
+write time, 42, 0, 26730 
+Render and get color array time delta, 27, 450156715, 26757 
+Time to copy new frame into temporrary frame, 3, 450156715, 26761 
+Delta encoding and remove zeros time, 11, 450156715, 26773 
+Total Pipeline Time, 43, 450156715, 26773 
+write time, 43, 0, 26773 
+Render and get color array time delta, 30, 1238655495, 26809 
+Time to copy new frame into temporrary frame, 3, 1238655495, 26812 
+Delta encoding and remove zeros time, 11, 1238655495, 26824 
+Total Pipeline Time, 46, 1238655495, 26824 
+write time, 51, 0, 26825 
+Render and get color array time delta, 26, 175340328, 26852 
+Time to copy new frame into temporrary frame, 3, 175340328, 26855 
+Delta encoding and remove zeros time, 12, 175340328, 26868 
+Total Pipeline Time, 43, 175340328, 26868 
+write time, 43, 0, 26868 
+Render and get color array time delta, 26, 450156715, 26895 
+Time to copy new frame into temporrary frame, 4, 450156715, 26899 
+Delta encoding and remove zeros time, 11, 450156715, 26911 
+Total Pipeline Time, 43, 450156715, 26911 
+write time, 43, 0, 26912 
+Render and get color array time delta, 30, 1238655495, 26948 
+Time to copy new frame into temporrary frame, 3, 1238655495, 26952 
+Delta encoding and remove zeros time, 11, 1238655495, 26964 
+Total Pipeline Time, 47, 1238655495, 26964 
+write time, 52, 0, 26964 
+Render and get color array time delta, 26, 175340328, 26991 
+Time to copy new frame into temporrary frame, 3, 175340328, 26995 
+Delta encoding and remove zeros time, 12, 175340328, 27007 
+Total Pipeline Time, 42, 175340328, 27007 
+write time, 42, 0, 27007 
+Render and get color array time delta, 27, 450156715, 27035 
+Time to copy new frame into temporrary frame, 3, 450156715, 27039 
+Delta encoding and remove zeros time, 11, 450156715, 27051 
+Total Pipeline Time, 43, 450156715, 27051 
+write time, 43, 0, 27051 
+Render and get color array time delta, 31, 1238655495, 27088 
+Time to copy new frame into temporrary frame, 3, 1238655495, 27091 
+Delta encoding and remove zeros time, 12, 1238655495, 27103 
+Total Pipeline Time, 48, 1238655495, 27103 
+write time, 52, 0, 27104 
+Render and get color array time delta, 25, 175340328, 27130 
+Time to copy new frame into temporrary frame, 3, 175340328, 27134 
+Delta encoding and remove zeros time, 12, 175340328, 27146 
+Total Pipeline Time, 42, 175340328, 27146 
+write time, 52, 0, 27156 
+Render and get color array time delta, 25, 450156715, 27173 
+Time to copy new frame into temporrary frame, 3, 450156715, 27176 
+Delta encoding and remove zeros time, 11, 450156715, 27188 
+Total Pipeline Time, 42, 450156715, 27188 
+write time, 32, 0, 27189 
+Render and get color array time delta, 33, 1238655495, 27228 
+Time to copy new frame into temporrary frame, 3, 1238655495, 27232 
+Delta encoding and remove zeros time, 12, 1238655495, 27244 
+Total Pipeline Time, 51, 1238655495, 27244 
+write time, 56, 0, 27245 
+Render and get color array time delta, 31, 175340328, 27277 
+Time to copy new frame into temporrary frame, 3, 175340328, 27280 
+Delta encoding and remove zeros time, 11, 175340328, 27292 
+Total Pipeline Time, 48, 175340328, 27292 
+write time, 48, 0, 27293 
+Render and get color array time delta, 27, 450156715, 27321 
+Time to copy new frame into temporrary frame, 3, 450156715, 27325 
+Delta encoding and remove zeros time, 11, 450156715, 27336 
+Total Pipeline Time, 44, 450156715, 27336 
+write time, 44, 0, 27337 
+Render and get color array time delta, 30, 1238655495, 27374 
+Time to copy new frame into temporrary frame, 3, 1238655495, 27377 
+Delta encoding and remove zeros time, 11, 1238655495, 27389 
+Total Pipeline Time, 47, 1238655495, 27389 
+write time, 52, 0, 27390 
+Render and get color array time delta, 26, 175340328, 27417 
+Time to copy new frame into temporrary frame, 3, 175340328, 27420 
+Delta encoding and remove zeros time, 11, 175340328, 27432 
+Total Pipeline Time, 42, 175340328, 27432 
+write time, 43, 0, 27433 
+Render and get color array time delta, 27, 450156715, 27461 
+Time to copy new frame into temporrary frame, 3, 450156715, 27465 
+Delta encoding and remove zeros time, 11, 450156715, 27477 
+Total Pipeline Time, 44, 450156715, 27477 
+write time, 44, 0, 27477 
+Render and get color array time delta, 29, 1238655495, 27512 
+Time to copy new frame into temporrary frame, 3, 1238655495, 27516 
+Delta encoding and remove zeros time, 11, 1238655495, 27528 
+Total Pipeline Time, 46, 1238655495, 27528 
+write time, 51, 0, 27528 
+Render and get color array time delta, 26, 175340328, 27556 
+Time to copy new frame into temporrary frame, 3, 175340328, 27559 
+Delta encoding and remove zeros time, 11, 175340328, 27571 
+Total Pipeline Time, 43, 175340328, 27571 
+write time, 43, 0, 27572 
+Render and get color array time delta, 27, 450156715, 27600 
+Time to copy new frame into temporrary frame, 3, 450156715, 27603 
+Delta encoding and remove zeros time, 11, 450156715, 27615 
+Total Pipeline Time, 43, 450156715, 27615 
+write time, 43, 0, 27615 
+Render and get color array time delta, 29, 1238655495, 27656 
+Time to copy new frame into temporrary frame, 3, 1238655495, 27659 
+Delta encoding and remove zeros time, 11, 1238655495, 27671 
+Total Pipeline Time, 46, 1238655495, 27671 
+write time, 55, 0, 27671 
+Render and get color array time delta, 27, 175340328, 27700 
+Time to copy new frame into temporrary frame, 3, 175340328, 27703 
+Delta encoding and remove zeros time, 11, 175340328, 27715 
+Total Pipeline Time, 44, 175340328, 27715 
+write time, 44, 0, 27716 
+Render and get color array time delta, 29, 450156715, 27746 
+Time to copy new frame into temporrary frame, 3, 450156715, 27749 
+Delta encoding and remove zeros time, 11, 450156715, 27761 
+Total Pipeline Time, 45, 450156715, 27761 
+write time, 45, 0, 27761 
+Render and get color array time delta, 26, 1238655495, 27800 
+Time to copy new frame into temporrary frame, 3, 1238655495, 27803 
+Delta encoding and remove zeros time, 12, 1238655495, 27815 
+Total Pipeline Time, 43, 1238655495, 27815 
+write time, 54, 0, 27816 
+Render and get color array time delta, 26, 175340328, 27843 
+Time to copy new frame into temporrary frame, 3, 175340328, 27847 
+Delta encoding and remove zeros time, 11, 175340328, 27858 
+Total Pipeline Time, 42, 175340328, 27858 
+write time, 43, 0, 27859 
+Render and get color array time delta, 26, 450156715, 27886 
+Time to copy new frame into temporrary frame, 3, 450156715, 27890 
+Delta encoding and remove zeros time, 11, 450156715, 27901 
+Total Pipeline Time, 42, 450156715, 27901 
+write time, 43, 0, 27902 
+Render and get color array time delta, 29, 1238655495, 27938 
+Time to copy new frame into temporrary frame, 3, 1238655495, 27941 
+Delta encoding and remove zeros time, 12, 1238655495, 27954 
+Total Pipeline Time, 46, 1238655495, 27954 
+write time, 52, 0, 27954 
+Render and get color array time delta, 31, 175340328, 27987 
+Time to copy new frame into temporrary frame, 3, 175340328, 27990 
+Delta encoding and remove zeros time, 11, 175340328, 28002 
+Total Pipeline Time, 48, 175340328, 28002 
+write time, 48, 0, 28003 
+Render and get color array time delta, 25, 450156715, 28029 
+Time to copy new frame into temporrary frame, 3, 450156715, 28033 
+Delta encoding and remove zeros time, 12, 450156715, 28045 
+Total Pipeline Time, 42, 450156715, 28045 
+write time, 42, 0, 28045 
+Render and get color array time delta, 29, 1238655495, 28146 
+Time to copy new frame into temporrary frame, 3, 1238655495, 28150 
+Delta encoding and remove zeros time, 12, 1238655495, 28162 
+Total Pipeline Time, 46, 1238655495, 28162 
+write time, 117, 0, 28163 
+Render and get color array time delta, 26, 175340328, 28190 
+Time to copy new frame into temporrary frame, 3, 175340328, 28194 
+Delta encoding and remove zeros time, 11, 175340328, 28205 
+Total Pipeline Time, 43, 175340328, 28205 
+write time, 43, 0, 28206 
+Render and get color array time delta, 26, 450156715, 28233 
+Time to copy new frame into temporrary frame, 3, 450156715, 28236 
+Delta encoding and remove zeros time, 11, 450156715, 28248 
+Total Pipeline Time, 42, 450156715, 28248 
+write time, 42, 0, 28249 

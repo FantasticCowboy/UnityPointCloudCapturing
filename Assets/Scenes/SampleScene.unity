@@ -135,8 +135,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 485775277137744801, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
+      propertyPath: deltaShader
+      value: 
+      objectReference: {fileID: 7200000, guid: ccad2686c899e44968439cbb25804fed, type: 3}
+    - target: {fileID: 485775277137744801, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: maxTimesRun
-      value: 1
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 1709719613093177675, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_Enabled
@@ -203,16 +207,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4342882117102366765, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
+      propertyPath: deltaShader
+      value: 
+      objectReference: {fileID: 7200000, guid: ccad2686c899e44968439cbb25804fed, type: 3}
+    - target: {fileID: 4342882117102366765, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: maxTimesRun
-      value: 1
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4438047485137996161, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4438047485137996161, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
+      propertyPath: deltaShader
+      value: 
+      objectReference: {fileID: 7200000, guid: ccad2686c899e44968439cbb25804fed, type: 3}
+    - target: {fileID: 4438047485137996161, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: maxTimesRun
-      value: 1
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8516456043628870076, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_Name
@@ -244,7 +256,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622282242}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84a607c7969eb48e5bb2b80194986f2e, type: 3}
   m_Name: 

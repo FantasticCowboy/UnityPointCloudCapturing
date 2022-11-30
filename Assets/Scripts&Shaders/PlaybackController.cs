@@ -9,7 +9,7 @@ public class PlaybackController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Application.targetFrameRate = 1;        
+        Application.targetFrameRate = 24;        
     }
 
     // Update is called once per frame

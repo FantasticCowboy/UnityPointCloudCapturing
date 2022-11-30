@@ -5,6 +5,8 @@ using UnityEngine;
 using System.IO;
 using UnityEngine.Profiling;
 using System.Diagnostics;
+using System;
+using Unity.Collections;
 
 
 
@@ -18,20 +20,29 @@ public class DataProcessor : MonoBehaviour
     int resolutionY;
     int uid;
     
-    
 
     static DiskWriter ds = new DiskWriter(1920, 1080);
     static RenderTexture target;
 
+    static ComputeBuffer newFrameComputeBuffer;
+    static ComputeBuffer oldFrameComputeBuffer;
+
+    public ComputeShader deltaShader;
+
+    byte[] oldFrame;
+
 
     void Start() {
-        uid = (int) (UnityEngine.Random.Range(0,10000));
+        uid = (int) (UnityEngine.Random.Range(0,int.MaxValue));
         //Debug.Log(uid);        
         resolutionX = Screen.width;
         resolutionY = Screen.height;
         if(target == null){
-            target = new RenderTexture(1920, 1080, 0);
+            target = new RenderTexture(resolutionX, resolutionY, 0);
         }
+        
+        StatsCollector.initialize();
+        DiskWriter.initialize();
         ran = false;
     }
 
@@ -41,7 +52,10 @@ public class DataProcessor : MonoBehaviour
         resolutionY = Screen.height;
 
         if(timesRun < maxTimesRun){
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
             SendDepthFrameToDisk();
+            StatsCollector.writeStatistic<long>("Total Pipeline Time", uid, sw.ElapsedMilliseconds);
             timesRun++;
             ran = true;
         }
@@ -50,119 +64,144 @@ public class DataProcessor : MonoBehaviour
         Stopwatch sw = new Stopwatch();
 
         sw.Start();
-        byte[] pixelArray = RenderAndGetColorArray();
-        sw.Stop();
+        byte[] newFrame = RenderAndGetColorArray();
+        StatsCollector.writeStatistic<long>("Render and get color array time delta", uid, sw.ElapsedMilliseconds);
+        sw.Restart();
 
-        UnityEngine.Debug.Log("RenderAndGetColorArrayTime:" + sw.ElapsedMilliseconds);
-        sw.Reset();
-        sw.Start();
-        ds.SaveDepthFrameReuseByteArray(pixelArray);
-        sw.Stop();
-        UnityEngine.Debug.Log("SendDepthFrame Time:" + sw.ElapsedMilliseconds);
-    }
-    string FormatWorldCoordianteAsString(Vector3 coord){
-        return "[" + coord.x + "," + coord.y + "," + coord.z + "]";
+
+        // TODO: we do not need to be allocating this memory every single iteration
+        byte[] temp = new byte[newFrame.Length];
+        Buffer.BlockCopy(newFrame, 0, temp, 0, newFrame.Length); 
+        StatsCollector.writeStatistic<long>("Time to copy new frame into temporrary frame", uid, sw.ElapsedMilliseconds);    
+
+
+
+        // Note Pixel array is modified
+        sw.Restart();
+        byte[] encodedArray = DeltaEncodingCPU(newFrame);
+        oldFrame = temp;
+
+        StatsCollector.writeStatistic<Double>("Compression", uid, encodedArray.Length / (newFrame.Length * 1.0));    
+
+
+
+        StatsCollector.writeStatistic<long>("Delta encoding and remove zeros time", uid, sw.ElapsedMilliseconds);    
+        sw.Restart();
+ 
+        //byte[] encodedArray = RemoveZeros(newFrame);
+        //StatsCollector.writeStatistic<long>("Copy array and remove zeros", uid, sw.ElapsedMilliseconds);         
+        
+        ds.SaveDepthFramePipelineNaive(encodedArray);
     }
 
-    void WriteWorldCoordinateArrayToDisk(Vector3[] coordinates){
+    // Debug method to see if two byte arrays have the same values
+    // Requires that the arrayas have the same length
+    bool CompareByteArrayContents(byte[] arr1, byte[] arr2){
+        for(int i = 0; i < arr1.Length; i++){
+            if(arr1[i] != arr2[i]){
+                return false;
+            }
+        }
+        return true;
+
+    }
+
+    void initializeComputeBuffers(int lengthOfByteArray, int stride){
+        if(newFrameComputeBuffer == null || oldFrameComputeBuffer == null){
+            newFrameComputeBuffer = new(lengthOfByteArray/stride, stride);
+            oldFrameComputeBuffer = new(lengthOfByteArray/stride, stride);
+        }
+    }
+
+    // Runs the compute shader on the new frame, updates the new frame
+    void DeltaEncodingGPU(byte[] NewFrame){
+
         Stopwatch sw = new Stopwatch();
         sw.Start();
-        WriteDataToFile("[");
-        foreach(Vector3 c in coordinates){
-            WriteDataToFile(FormatWorldCoordianteAsString(c) + ",");
-        }
-        WriteDataToFile("]");
-        sw.Stop();
-        UnityEngine.Debug.Log("Time to write data to file:" + sw.ElapsedMilliseconds);
-    }
-    void WriteWorldCoordinateArrayToDisk_V2(Vector3[] coordinates){
-        string val = "[";
-        long totalElapsedTime = 0;
-        foreach(Vector3 c in coordinates){
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
-            val += (FormatWorldCoordianteAsString(c) + ",");
-            sw.Stop();
-            totalElapsedTime += sw.ElapsedTicks;
-        }
-        val += ("]");
-        long averageElapsedTime = totalElapsedTime / coordinates.Length;
-        UnityEngine.Debug.Log("Total Elapsed Time:" + totalElapsedTime);
-        UnityEngine.Debug.Log("Elements Visited:" + coordinates.Length);
-        UnityEngine.Debug.Log("Average Time To Format:" + averageElapsedTime);
-    }    
 
-    string FormatColorAsString(Color c){
-        return  "[" + c.r.ToString() + "," + c.g.ToString() + "," + c.b.ToString() + "]";
-    }
+        if(oldFrame==null){
+            return;
+        }
 
-    Vector3 GetXYZCoordinate(int arrayPos, Color pixel){
-        int y = arrayPos / resolutionX;
-        int x = arrayPos % resolutionX;
+        initializeComputeBuffers(NewFrame.Length, 4);
+
+        newFrameComputeBuffer.SetData(NewFrame);        
+        oldFrameComputeBuffer.SetData(oldFrame);
+
+        UnityEngine.Debug.Log(CompareByteArrayContents(NewFrame, oldFrame));
+
+        int kernel = deltaShader.FindKernel("CSMain");
+        deltaShader.SetBuffer(kernel,"OldFrame", oldFrameComputeBuffer);
+        deltaShader.SetBuffer(kernel, "NewFrame", newFrameComputeBuffer);
         
-        float z = pixel[0] * GetComponent<Camera>().farClipPlane;
 
-        return GetComponent<Camera>().ScreenToWorldPoint(new Vector3(x,y,z));
+        // I have no clue why I picked this number of threads
+        // Sends the buffers to the GPU for processing
+        deltaShader.Dispatch(kernel, NewFrame.Length/4/1024, 1,1);
+        StatsCollector.writeStatistic<long>("GPU dispatch time", uid, sw.ElapsedMilliseconds);
+        sw.Restart();
+
+        // Retrieves that data from the GPU, should probably be a nonblocking call but unsure of how it all works
+        newFrameComputeBuffer.GetData(NewFrame); 
+        StatsCollector.writeStatistic<long>("Get Data from GPU time", uid, sw.ElapsedMilliseconds);
     }
 
-    Vector3[] ConvertPixelsToCoordinates(Color[] pixelArray){
-        Vector3[] output = new Vector3[resolutionX * resolutionY];
-        int i = 0;
-        foreach(Color pixel in pixelArray){
-            output[i] = GetXYZCoordinate(i, pixel);
-            i++;
+    byte[] DeltaEncodingCPU(byte[] newFrame){
+        
+        List<byte> encoding = new();
+
+        if(oldFrame == null){
+            return encoding.ToArray();
         }
-        return output;
-    }
 
-    string FormatColorArrayAsString(Color[] colors){
-        string ret = "[";
-        WriteDataToFile("[");
-        foreach(Color c in colors){
-            WriteDataToFile(FormatColorAsString(c));
+        for(int i = 0; i < newFrame.Length; i++){
+            newFrame[i] ^= oldFrame[i];
+            if(!newFrame[i].Equals(0) ){
+                encoding.Add(newFrame[i]);
+            }
+
         }
-        WriteDataToFile("]");
-        return ret;
+        return encoding.ToArray();
+    }
+
+    // TODO: this needs to add in each non-zero byte's position in the array
+    byte[] RemoveZeros(byte[] frame){
+        List<byte> newArray = new List<byte>();
+        foreach(byte b in frame){
+            if(!b.Equals(0)){
+                newArray.Add(b);
+            }
+        }
+        return newArray.ToArray();        
     }
 
 
-    Color[] TextureToPixelArray(Texture2D tex2d){
-        string[] output = new string[resolutionX * resolutionY];
-        Color[] pixelInfo = tex2d.GetPixels();
-        return pixelInfo;
+    RenderTexture RenderColorArray(){
+        RenderTexture tex = new RenderTexture(resolutionX, resolutionY, 0);
+        GetComponent<Camera>().targetTexture = target;
+        GetComponent<Camera>().Render();    
+        return tex;    
     }
-
     byte[] RenderAndGetColorArray(){
         int resolutionX = Screen.width;
         int resolutionY = Screen.height;
-    
-        //RenderTexture tempRt = target;
-        GetComponent<Camera>().targetTexture = target;
 
-        Stopwatch sw = new Stopwatch();
-        sw.Start();
+
+        GetComponent<Camera>().targetTexture = target;
         GetComponent<Camera>().Render();
-        UnityEngine.Debug.Log("Time to render camera" + sw.ElapsedMilliseconds);
-        sw.Restart();
+
+
 
         RenderTexture.active = target;
         Texture2D tex2d = new Texture2D(resolutionX, resolutionY, TextureFormat.ARGB32, false);
-        byte[] rawBytes = tex2d.GetRawTextureData();
-        UnityEngine.Debug.Log("Time to read pixels into texture" + sw.ElapsedMilliseconds);
-        sw.Restart();
 
-        return rawBytes;
+        // This is required!
+        tex2d.ReadPixels(new Rect(0, 0, resolutionX, resolutionY), 0, 0);
+
+        // For some reason when trying to encode the image and then saving it to disk, the saved image
+        // is corrupted, i need to look into that
+        
+        return tex2d.GetRawTextureData();
     }
 
-
-    // Creates a render texture that the camera can write to/
-    RenderTexture CreateRenderTexture(){
-        return new RenderTexture(Screen.width, Screen.height, 0);
-    }
-
-    void WriteDataToFile(string message){
-        string path = "./testUnitySaveData_" + uid.ToString();
-        File.WriteAllText(path, message);
-
-    }
 }
