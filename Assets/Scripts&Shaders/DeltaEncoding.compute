@@ -7,9 +7,8 @@ RWStructuredBuffer<int> OldFrame;
 RWStructuredBuffer<int> NewFrame;
 
 // I have no clue why I picked this number of threads
-[numthreads(1024,1,1)]
+[numthreads(64,1,1)]
 void CSMain (uint3 id : SV_DispatchThreadID){
     int temp = NewFrame[id.x] - OldFrame[id.x];
     NewFrame[id.x] = temp;
-
 }

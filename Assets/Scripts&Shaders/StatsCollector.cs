@@ -35,7 +35,7 @@ public class StatsCollector{
     static public void initialize(){
         if(!initialized){
             sw.Start();
-            File.AppendAllText("stats.txt", String.Format("Starting New Test\n"));
+            File.WriteAllText("stats.txt", String.Format("Starting New Test\n"));
             ThreadStart start = writerThread;
             Thread t = new Thread(start);
             t.Start();

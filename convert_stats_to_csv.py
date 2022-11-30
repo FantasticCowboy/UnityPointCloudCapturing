@@ -32,7 +32,7 @@ with open("stats.txt") as f:
             continue
         if line == "Starting New Test\n":
             print(line)
-            writeStats(stats=stats, test_count=test_count)
+            #writeStats(stats=stats, test_count=test_count)
             makeHistogram(stats=stats)    
 
             stats = {}
@@ -43,7 +43,6 @@ with open("stats.txt") as f:
         if not stat in stats:
             stats[stat] = []
         stats[stat].append(str(val) + "\n")
-
-    writeStats(stats=stats, test_count=test_count)
+    #writeStats(stats=stats, test_count=test_count)
     makeHistogram(stats=stats)    
         

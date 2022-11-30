@@ -72,26 +72,31 @@ public class DataProcessor : MonoBehaviour
         // TODO: we do not need to be allocating this memory every single iteration
         byte[] temp = new byte[newFrame.Length];
         Buffer.BlockCopy(newFrame, 0, temp, 0, newFrame.Length); 
-        StatsCollector.writeStatistic<long>("Time to copy new frame into temporrary frame", uid, sw.ElapsedMilliseconds);    
+        StatsCollector.writeStatistic<long>("Time to copy new frame into temporary frame", uid, sw.ElapsedMilliseconds);    
 
 
 
         // Note Pixel array is modified
         sw.Restart();
-        byte[] encodedArray = DeltaEncodingCPU(newFrame);
+        DeltaEncodingGPU(newFrame);
         oldFrame = temp;
 
-        StatsCollector.writeStatistic<Double>("Compression", uid, encodedArray.Length / (newFrame.Length * 1.0));    
+        //StatsCollector.writeStatistic<Double>("Compression", uid, encodedArray.Length / (newFrame.Length * 1.0));    
 
 
 
         StatsCollector.writeStatistic<long>("Delta encoding and remove zeros time", uid, sw.ElapsedMilliseconds);    
         sw.Restart();
  
-        //byte[] encodedArray = RemoveZeros(newFrame);
-        //StatsCollector.writeStatistic<long>("Copy array and remove zeros", uid, sw.ElapsedMilliseconds);         
+        byte[] encodedArray = RemoveZeros(newFrame);
+        StatsCollector.writeStatistic<long>("Copy array and remove zeros", uid, sw.ElapsedMilliseconds);         
         
         ds.SaveDepthFramePipelineNaive(encodedArray);
+    }
+
+    void NewSendDepthFrameToDisk(){
+        RenderTexture tex = RenderColorArray();
+        
     }
 
     // Debug method to see if two byte arrays have the same values
@@ -111,6 +116,10 @@ public class DataProcessor : MonoBehaviour
             newFrameComputeBuffer = new(lengthOfByteArray/stride, stride);
             oldFrameComputeBuffer = new(lengthOfByteArray/stride, stride);
         }
+    }
+
+    void DeltaEncodingGPU(RenderTexture tex){
+            
     }
 
     // Runs the compute shader on the new frame, updates the new frame
@@ -137,7 +146,7 @@ public class DataProcessor : MonoBehaviour
 
         // I have no clue why I picked this number of threads
         // Sends the buffers to the GPU for processing
-        deltaShader.Dispatch(kernel, NewFrame.Length/4/1024, 1,1);
+        deltaShader.Dispatch(kernel, NewFrame.Length/4/64, 1,1);
         StatsCollector.writeStatistic<long>("GPU dispatch time", uid, sw.ElapsedMilliseconds);
         sw.Restart();
 
