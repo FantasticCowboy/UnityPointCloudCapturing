@@ -10,13 +10,17 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Collections.Concurrent;
 using System.Threading;
+using System.Text;
+using UnityEngine.Rendering;
 
 
 
 // Probably do not need the DiskWriter writer part of this, I can delete it later on
 struct writeInformation{
-    public byte[] data;
     public DiskWriter writer;
+
+    public byte[] data;    
+
     public writeInformation(byte[] dataIn, DiskWriter writerIn){
         data = dataIn;
         writer = writerIn;
@@ -34,8 +38,7 @@ public class DiskWriter{
     static void writeThread(){
         Stopwatch sw = new Stopwatch();
         while(true){
-            sw.Start();
-            writeInformation info = collection.Take();
+            writeInformation info = collection.Take(); 
             info.writer.SaveDepthFrameNaive(info.data);            
             StatsCollector.writeStatistic<long>("write time", 0,  sw.ElapsedMilliseconds);
             sw.Restart();
@@ -68,66 +71,27 @@ public class DiskWriter{
     }
     
 
-    public void SaveDepthFrameZipFile(byte[] pixels){
-        Stopwatch sw = new Stopwatch();
-        sw.Start();        
-        
-        using MemoryStream compressedArray = new MemoryStream();
-        UnityEngine.Debug.Log("Time to open file" + sw.ElapsedMilliseconds);
-        sw.Restart();
-        using GZipStream compressor = new GZipStream(compressedArray, CompressionMode.Compress);
-        compressor.Write(pixels, 0, pixels.Length);
-        UnityEngine.Debug.Log("Time to compress" + sw.ElapsedMilliseconds);
-        sw.Restart();
-        
-        File.WriteAllBytes("test_file.gz", compressedArray.ToArray());
-        UnityEngine.Debug.Log("Time to write to file" + sw.ElapsedMilliseconds);
+    byte[] encodePixels(Color[] pixels){
+        string tmp = "";
+        tmp += pixels[518400].r;
+        return Encoding.ASCII.GetBytes(tmp);
     }
 
-    public void SaveDepthFrameGzip(byte[] pixels){
-        Stopwatch sw = new Stopwatch();
-        sw.Start();        
-        using MemoryStream compressedArray = new MemoryStream();
-        UnityEngine.Debug.Log("Time to open file" + sw.ElapsedMilliseconds);
-        sw.Restart();
-        using GZipStream compressor = new GZipStream(compressedArray, CompressionMode.Compress);
-        compressor.Write(pixels);
-        UnityEngine.Debug.Log("Time to compress" + sw.ElapsedMilliseconds);
-        sw.Restart();
-        File.WriteAllBytes("test_file.gz", compressedArray.ToArray());
-        UnityEngine.Debug.Log("Time to write to file" + sw.ElapsedMilliseconds);
-    }
+    // need to make a deepcopy of pixels because it will get overwritten next frame
+    //public void SaveDepthFramePipelineNaiveString(Color[] pixels){
+    //    writeInformation info = new writeInformation(encodePixels(pixels), this);
+    //    collection.Add(info);
+    //}
 
-    public void SaveDepthFrameGzipDirectlyToFile(byte[] pixels){
-        Stopwatch sw = new Stopwatch();
-        sw.Start();        
-        using FileStream fs = File.Open("test_file.gz", FileMode.OpenOrCreate);
-        UnityEngine.Debug.Log("Time to open file" + sw.ElapsedMilliseconds);
-        sw.Restart();
-        using GZipStream compressor = new GZipStream(fs, System.IO.Compression.CompressionLevel.Fastest);
-        compressor.Write(pixels);
-        UnityEngine.Debug.Log("Time to compress and write toe file" + sw.ElapsedMilliseconds);
-    }
-
-    public void SaveDepthFrameDeflateStream(byte[] pixels){
-        Stopwatch sw = new Stopwatch();
-        sw.Start();        
-        using MemoryStream compressedArray = new MemoryStream();
-        UnityEngine.Debug.Log("Time to open file" + sw.ElapsedMilliseconds);
-        sw.Restart();
-        using DeflateStream compressor = new DeflateStream(compressedArray, CompressionMode.Compress);
-        compressor.Write(pixels, 0, pixels.Length);
-        UnityEngine.Debug.Log("Time to compress" + sw.ElapsedMilliseconds);
-        sw.Restart();
-        
-        File.WriteAllBytes("test_file.gz", compressedArray.ToArray());
-        UnityEngine.Debug.Log("Time to write to file" + sw.ElapsedMilliseconds);
-    }
+    //// need to make a deepcopy of pixels because it will get overwritten next frame
+    //public void SaveDepthFramePipelineNaiveRenderTexture(RenderTexture texture){
+    //    AsyncGPUReadbackRequest req = AsyncGPUReadback.Request(texture);
+    //    collection.Add(new writeInformation(req, this));
+    //}    
 
     public void SaveDepthFrameNaive(byte[] pixels){
         Stopwatch sw = new Stopwatch();
         sw.Start();                
-        File.WriteAllBytes("test_file.png", pixels);
-        UnityEngine.Debug.Log("Time to write to file" + sw.ElapsedMilliseconds);
+        File.WriteAllBytes("test_file", pixels);
     }
 }

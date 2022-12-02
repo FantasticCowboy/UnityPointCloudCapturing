@@ -6,21 +6,18 @@ public class PlaybackController : MonoBehaviour
 {
 
     bool slowed = false;
-    // Start is called before the first frame update
+    public int targetFrameRate;
+    public float timeScale;
     void Start()
     {
-        Application.targetFrameRate = 24;        
+      
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (!slowed && Input.GetMouseButtonDown(0)){
-        //    Time.timeScale = 1/72f;
-        //    slowed = true;
-        //}else if(slowed && Input.GetMouseButtonDown(0)){
-        //    Time.timeScale = 1f;            
-        //    slowed = false;
-        //}
+        Application.targetFrameRate = targetFrameRate;  
+        Time.timeScale = timeScale;
+
     }
 }

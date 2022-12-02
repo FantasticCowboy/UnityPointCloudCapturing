@@ -1,0 +1,13 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<int> Result;
+Texture2D<int> OldTexture;
+Texture2D<int> NewTexture;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID){
+    Result[id.xy] = OldTexture[id.xy] - NewTexture[id.xy];
+}

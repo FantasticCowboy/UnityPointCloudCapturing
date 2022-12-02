@@ -1,12 +1,8 @@
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
-using UnityEngine.Profiling;
 using System.Diagnostics;
 using System;
-using Unity.Collections;
+using System.Collections.Generic;
 
 
 
@@ -28,6 +24,8 @@ public class DataProcessor : MonoBehaviour
     static ComputeBuffer oldFrameComputeBuffer;
 
     public ComputeShader deltaShader;
+    public ComputeShader newDeltaShader;
+
 
     byte[] oldFrame;
 
@@ -91,7 +89,7 @@ public class DataProcessor : MonoBehaviour
         byte[] encodedArray = RemoveZeros(newFrame);
         StatsCollector.writeStatistic<long>("Copy array and remove zeros", uid, sw.ElapsedMilliseconds);         
         
-        ds.SaveDepthFramePipelineNaive(encodedArray);
+        //ds.SaveDepthFramePipelineNaive(encodedArray);
     }
 
     void NewSendDepthFrameToDisk(){
@@ -212,5 +210,6 @@ public class DataProcessor : MonoBehaviour
         
         return tex2d.GetRawTextureData();
     }
+
 
 }
