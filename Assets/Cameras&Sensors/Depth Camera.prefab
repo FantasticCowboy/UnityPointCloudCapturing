@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8622171008166806063}
   - component: {fileID: 8622171008166806056}
   - component: {fileID: 8764740357975218350}
-  - component: {fileID: 8174407871086950406}
+  - component: {fileID: 9110388727753982983}
   m_Layer: 0
   m_Name: Depth Camera
   m_TagString: MainCamera
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curShader: {fileID: 4800000, guid: fceaff49a0f3d40daa622813775da6dc, type: 3}
   depthPower: 0.3
---- !u!114 &8174407871086950406
+--- !u!114 &9110388727753982983
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,6 +100,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8622171008166806058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee32b8549ea6940c5acf293f32a7b672, type: 3}
+  m_Script: {fileID: 11500000, guid: cbc7776f159d346298ca7a15709aa26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxTimesRun: 10
+  deltaShader: {fileID: 7200000, guid: d4e094d32994247109ead33e9f219e72, type: 3}

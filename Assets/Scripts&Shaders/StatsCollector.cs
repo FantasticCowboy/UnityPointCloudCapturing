@@ -49,12 +49,12 @@ public class StatsCollector{
 
     // Requires that T can be formated in astring
     static public void writeStatistic<T>(string metricName, string filename, T val){
-        string valueToWrite  = String.Format("{0}, {1}, {2} \n", metricName, val, getUnixTimestamp());
+        string valueToWrite  = String.Format("{0}, {1}, {2} \n", metricName, val.ToString(), getUnixTimestamp());
         writeJob job = new writeJob(valueToWrite, filename);
         queue.Add(job);
     }
     static public void writeStatistic<T>(string metricName, int executionId, T val){
-        string valueToWrite  = String.Format("{0}, {1}, {2}, {3} \n", metricName, val, executionId, getUnixTimestamp());
+        string valueToWrite  = String.Format("{0}, {1}, {2}, {3} \n", metricName, val.ToString(), executionId, getUnixTimestamp());
         writeJob job = new writeJob(valueToWrite, "stats.txt");
         queue.Add(job);
     }    

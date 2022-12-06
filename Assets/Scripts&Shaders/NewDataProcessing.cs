@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine.Rendering;
+using System.Threading;
 
 public class NewDataProcessing : MonoBehaviour
 {
@@ -14,15 +15,47 @@ public class NewDataProcessing : MonoBehaviour
     int resolutionY;
     int uid;
 
-    
+    struct AsyncRead{
+        public AsyncGPUReadbackRequest req;
+        public RenderTexture old;
 
-    static DiskWriter ds = new DiskWriter(1920, 1080);
+        public RenderTexture newTexture;        
+        public RenderTexture result;
+        public AsyncRead(AsyncGPUReadbackRequest reqIn, RenderTexture oldIn, RenderTexture resultIn, RenderTexture newTextureIn){
+            req = reqIn;
+            old = oldIn;
+            result = resultIn;
+            newTexture = newTextureIn;
+        }
+    }    
+
+    void release(AsyncRead read){
+        if(read.newTexture!=null){
+            renderTextureToReferences[read.newTexture]-=1;
+            if(renderTextureToReferences[read.newTexture]==0){
+                read.newTexture.Release();
+            }
+        }        
+        if(read.old!=null){
+            renderTextureToReferences[read.old]-=1;
+            if(renderTextureToReferences[read.old]==0){
+                read.old.Release();
+            }            
+        }
+        if(read.result!=null){
+            read.result.Release();
+        }        
+    }
+
+    DiskWriter ds = new DiskWriter(1920, 1080);
 
     public ComputeShader deltaShader;
 
-    public RenderTexture oldTexture;
+    RenderTexture oldTexture;
 
-    HashSet<AsyncGPUReadbackRequest> pendingGpuRequests; 
+    HashSet<AsyncRead> pendingGpuRequests = new(); 
+
+    Dictionary<RenderTexture, int> renderTextureToReferences = new();
 
     void Start() {
         uid = (int) (UnityEngine.Random.Range(0,int.MaxValue));
@@ -33,11 +66,13 @@ public class NewDataProcessing : MonoBehaviour
         DiskWriter.initialize();
         ran = false;
 
-        oldTexture = new RenderTexture(resolutionX, resolutionY, 0);
+        //oldTexture = new RenderTexture(resolutionX, resolutionY, 0);
     }
 
     // Update is called once per frame
-    void Update(){
+
+
+    public void run(){
         resolutionX = Screen.width;
         resolutionY = Screen.height;
 
@@ -49,13 +84,26 @@ public class NewDataProcessing : MonoBehaviour
             timesRun++;
             ran = true;
         }
+        ServePendingGpuRequests();
     }
+    
 
-    void gpuDataCoroutine(){
-        foreach(var req in pendingGpuRequests){
-            if(req.done){
-                ds.SaveDepthFramePipelineNaive(req.GetData<byte>().ToArray());
+    public void ServePendingGpuRequests(){
+        List<AsyncRead> doneRequests = new();
+        foreach(var read in pendingGpuRequests){
+            if(read.req.hasError){
+                UnityEngine.Debug.Log(read.req.hasError);
             }
+            else if(read.req.done){
+                Stopwatch sw = new();
+                sw.Start();
+                ds.SaveDepthFramePipelineNaive(read.req.GetData<byte>().ToArray());                
+                doneRequests.Add(read);
+                StatsCollector.writeStatistic<long>("Get Data Time", uid, sw.ElapsedMilliseconds);
+                release(read);
+            }
+        }
+        foreach(var req in doneRequests){
             pendingGpuRequests.Remove(req);
         }
     }
@@ -71,10 +119,6 @@ public class NewDataProcessing : MonoBehaviour
 
     void SendDepthFrameToDisk(){
         RenderTexture newTexture = RenderColorArray();
-        
-        Stopwatch sw = new Stopwatch();
-        sw.Start();
-
         RenderTexture result = new RenderTexture(
             resolutionX, 
             resolutionY, 
@@ -82,9 +126,6 @@ public class NewDataProcessing : MonoBehaviour
             RenderTextureFormat.ARGB32, 
             RenderTextureReadWrite.sRGB
         );
-
-
-
         result.enableRandomWrite = true;
         result.Create();
         
@@ -94,32 +135,46 @@ public class NewDataProcessing : MonoBehaviour
             deltaShader.SetTexture(0,"OldTexture", oldTexture);
             deltaShader.SetTexture(0,"Result", result);
 
+            ComputeBuffer incrementer = new ComputeBuffer(1, 4);
+            int[] tmp = new int[]{0};
+            incrementer.SetData(tmp);
+            deltaShader.SetBuffer(0, "Increment", incrementer);
+
+            Stopwatch sw = new();
+            sw.Start();
             deltaShader.Dispatch(kernel, newTexture.width / 8, newTexture.height / 8, 1);
 
+            
+            // For debug only delete later 
+            incrementer.GetData(tmp);
+            StatsCollector.writeStatistic<long>("Dispatch Time", 0, sw.ElapsedMilliseconds);
+
+            StatsCollector.writeStatistic<int>("Number of times incremented", 0, tmp[0]);
+            //////////////////////////////
+            incrementer.Release();
+
+
             RenderTexture.active = result;        
+            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(result, 0), oldTexture, result, newTexture);
+            pendingGpuRequests.Add(read);        
         }else{
+            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(newTexture, 0), null, null, newTexture);
+            pendingGpuRequests.Add(read);        
             RenderTexture.active = newTexture;
         }
 
-        StatsCollector.writeStatistic<long>("Dispatch Time", uid, sw.ElapsedMilliseconds);
-        sw.Restart();
-
-        Texture2D tex = new Texture2D(result.width, result.height);
-
-        tex.ReadPixels(new Rect(0, 0, tex.width, tex.height), 0, 0);
-
-        StatsCollector.writeStatistic<long>("Read Pixels Time", uid, sw.ElapsedMilliseconds);
-        ds.SaveDepthFramePipelineNaiveRenderTexture(result);
-
         // Cleanup render texture
         RenderTexture.active = null;
-        result.Release();
-        if(oldTexture != null){
-            oldTexture.Release();
-        }
 
-        // Swap for next iteration
-        Graphics.CopyTexture(newTexture, oldTexture);
+        // NOTE. TODO. Figure out if we can release eventhough we have a pending gpu readback!!!!!!!!!!!
+        //result.Release();
+        //if(oldTexture != null){
+        //    oldTexture.Release();
+        //}
+        //// Swap for next iteration
+        //
+        //newTexture.Release();
+        oldTexture = newTexture;
     }
 
     RenderTexture RenderColorArray(){
@@ -128,6 +183,8 @@ public class NewDataProcessing : MonoBehaviour
         GetComponent<Camera>().targetTexture = renderTex;
         GetComponent<Camera>().Render();  
         GetComponent<Camera>().targetTexture = null;
+
+        renderTextureToReferences[renderTex] = 2;
         return renderTex;    
     }
 
