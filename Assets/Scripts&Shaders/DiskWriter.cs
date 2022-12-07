@@ -70,7 +70,9 @@ public class DiskWriter{
             writeInformation info = collection.Take(); 
             info.writer.SaveDepthFrameNaive(info.data);                
             //writeCompressionRatio(info.data);
+            UnityEngine.Debug.Log(info.data.Length);
             StatsCollector.writeStatistic<long>("write time", 0,  sw.ElapsedMilliseconds);
+            
             if(sw.ElapsedMilliseconds > 200){
                 StatsCollector.writeStatistic<long>("Anomally at", 0, timeSinceStart.ElapsedMilliseconds / 1000);
             }

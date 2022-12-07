@@ -3,19 +3,19 @@
 
 // Create a RenderTexture with enableRandomWrite flag and set it
 // with cs.SetTexture
-RWTexture2D<float4> Result;
 Texture2D<float4> OldTexture;
 Texture2D<float4> NewTexture;
-
-RWBuffer<int> Increment;
-
+AppendStructuredBuffer<float4> Encoding;
 
 //groupshared int NextPos;
 
 [numthreads(8,8,1)]
-void CSMain (uint3 id : SV_DispatchThreadID){
-    Result[id.xy] = float4(OldTexture[id.xy].r - NewTexture[id.xy].r, id.x, id.y, 0) ;
-    int temp = int(Result[id.xy].r != 0);
-    int val = 0;
-    InterlockedAdd(Increment[0], temp, val);
+void CSMain (uint3 id : SV_DispatchThreadID){    
+    [branch]
+    if(OldTexture[id.xy].r - NewTexture[id.xy].r != 0){
+        Encoding.Append(float4(OldTexture[id.xy].r - NewTexture[id.xy].r, id.x, id.y, 0));
+    }
+
+    //Encoding[val] = float4(OldTexture[id.xy].r - NewTexture[id.xy].r, id.x, id.y, 0);
+    //Encoding[id.x] = float4(2147483647,2147483647,2147483647,2147483647);
 }

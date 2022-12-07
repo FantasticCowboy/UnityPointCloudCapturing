@@ -21,11 +21,15 @@ public class NewDataProcessing : MonoBehaviour
 
         public RenderTexture newTexture;        
         public RenderTexture result;
-        public AsyncRead(AsyncGPUReadbackRequest reqIn, RenderTexture oldIn, RenderTexture resultIn, RenderTexture newTextureIn){
+
+        public ComputeBuffer encoding;
+
+        public AsyncRead(AsyncGPUReadbackRequest reqIn, RenderTexture oldIn, RenderTexture resultIn, RenderTexture newTextureIn, ComputeBuffer encodingIn){
             req = reqIn;
             old = oldIn;
             result = resultIn;
             newTexture = newTextureIn;
+            encoding = encodingIn;
         }
     }    
 
@@ -45,6 +49,10 @@ public class NewDataProcessing : MonoBehaviour
         if(read.result!=null){
             read.result.Release();
         }        
+        if(read.encoding !=null){
+            UnityEngine.Debug.Log(read.encoding.IsValid());
+            read.encoding.Release();
+        }
     }
 
     DiskWriter ds = new DiskWriter(1920, 1080);
@@ -93,11 +101,10 @@ public class NewDataProcessing : MonoBehaviour
         foreach(var read in pendingGpuRequests){
             if(read.req.hasError){
                 UnityEngine.Debug.Log(read.req.hasError);
-            }
-            else if(read.req.done){
+            }else if(read.req.done){
                 Stopwatch sw = new();
                 sw.Start();
-                ds.SaveDepthFramePipelineNaive(read.req.GetData<byte>().ToArray());                
+                ds.SaveDepthFramePipelineNaive(read.req.GetData<byte>().ToArray());    
                 doneRequests.Add(read);
                 StatsCollector.writeStatistic<long>("Get Data Time", uid, sw.ElapsedMilliseconds);
                 release(read);
@@ -128,37 +135,30 @@ public class NewDataProcessing : MonoBehaviour
         );
         result.enableRandomWrite = true;
         result.Create();
+
+        ComputeBuffer Encoding = new ComputeBuffer(Screen.width * Screen.height, sizeof(float) * 4 );
+        
         
         if(oldTexture != null){
             int kernel = deltaShader.FindKernel("CSMain");
             deltaShader.SetTexture(0,"NewTexture", newTexture);
             deltaShader.SetTexture(0,"OldTexture", oldTexture);
-            deltaShader.SetTexture(0,"Result", result);
-
-            ComputeBuffer incrementer = new ComputeBuffer(1, 4);
-            int[] tmp = new int[]{0};
-            incrementer.SetData(tmp);
-            deltaShader.SetBuffer(0, "Increment", incrementer);
+            deltaShader.SetBuffer(0, "Encoding", Encoding);
 
             Stopwatch sw = new();
             sw.Start();
             deltaShader.Dispatch(kernel, newTexture.width / 8, newTexture.height / 8, 1);
 
-            
             // For debug only delete later 
-            incrementer.GetData(tmp);
-            StatsCollector.writeStatistic<long>("Dispatch Time", 0, sw.ElapsedMilliseconds);
-
-            StatsCollector.writeStatistic<int>("Number of times incremented", 0, tmp[0]);
+            // incrementer.GetData(tmp);
+            // StatsCollector.writeStatistic<int>("Number of times incremented", 0, tmp[0]);
             //////////////////////////////
-            incrementer.Release();
-
-
+            StatsCollector.writeStatistic<long>("Dispatch Time", 0, sw.ElapsedMilliseconds);
             RenderTexture.active = result;        
-            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(result, 0), oldTexture, result, newTexture);
+            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(Encoding), oldTexture, result, newTexture, Encoding);
             pendingGpuRequests.Add(read);        
         }else{
-            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(newTexture, 0), null, null, newTexture);
+            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(newTexture, 0), null, null, newTexture, Encoding);
             pendingGpuRequests.Add(read);        
             RenderTexture.active = newTexture;
         }
@@ -175,6 +175,7 @@ public class NewDataProcessing : MonoBehaviour
         //
         //newTexture.Release();
         oldTexture = newTexture;
+
     }
 
     RenderTexture RenderColorArray(){
