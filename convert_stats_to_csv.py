@@ -14,7 +14,10 @@ def writeStats(stats, test_count):
 def makeHistogram(stats : dict[str, list[float]]):
     for stat in stats:          
         buckets = {}
+
+        cumsum = 0
         for val in stats[stat]:
+            cumsum += float(val)            
             buckets[val] = True
         vals = [float(x) for x in stats[stat]]        
         plt.hist(vals, len(buckets) + 10)
@@ -22,7 +25,13 @@ def makeHistogram(stats : dict[str, list[float]]):
         plt.title(stat)
         plt.xlabel("Time in ms")
         plt.ylabel("Frequency")
-        plt.show()        
+        plt.show()     
+
+        print(f"\n{stat}'s Statistics")   
+        print(f"Cummulative Sum={cumsum}")
+        #pdb.set_trace()
+        print(f"Average Value={cumsum / len(vals)}")
+
 
 with open("stats.txt") as f:
     stats : dict[str, list[float]] = {}
@@ -43,6 +52,6 @@ with open("stats.txt") as f:
         if not stat in stats:
             stats[stat] = []
         stats[stat].append(str(val) + "\n")
-    #writeStats(stats=stats, test_count=test_count)
+    writeStats(stats=stats, test_count=test_count)
     makeHistogram(stats=stats)    
         

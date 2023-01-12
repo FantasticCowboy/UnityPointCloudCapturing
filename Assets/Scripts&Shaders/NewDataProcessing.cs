@@ -50,12 +50,11 @@ public class NewDataProcessing : MonoBehaviour
             read.result.Release();
         }        
         if(read.encoding !=null){
-            UnityEngine.Debug.Log(read.encoding.IsValid());
             read.encoding.Release();
         }
     }
 
-    DiskWriter ds = new DiskWriter(1920, 1080);
+    DiskWriter ds = new DiskWriter(3840, 2160);
 
     public ComputeShader deltaShader;
 
@@ -136,7 +135,7 @@ public class NewDataProcessing : MonoBehaviour
         result.enableRandomWrite = true;
         result.Create();
 
-        ComputeBuffer Encoding = new ComputeBuffer(Screen.width * Screen.height, sizeof(float) * 4 );
+        ComputeBuffer Encoding = new ComputeBuffer(Screen.width * Screen.height / 20 , sizeof(float) * 4 );
         
         
         if(oldTexture != null){
@@ -158,7 +157,7 @@ public class NewDataProcessing : MonoBehaviour
             AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(Encoding), oldTexture, result, newTexture, Encoding);
             pendingGpuRequests.Add(read);        
         }else{
-            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(newTexture, 0), null, null, newTexture, Encoding);
+            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(newTexture, 0, TextureFormat.RGBA32), null, null, newTexture, Encoding);
             pendingGpuRequests.Add(read);        
             RenderTexture.active = newTexture;
         }

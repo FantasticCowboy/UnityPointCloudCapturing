@@ -144,7 +144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 694149088282865568, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: maxTimesRun
-      value: 100
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252962298261197669, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
+      propertyPath: field of view
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1709719613093177675, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_Enabled
@@ -156,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1776082967707997514, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: maxTimesRun
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 2263600463544846819, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_Enabled
@@ -208,11 +212,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3641391530939512192, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: maxTimesRun
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 3700492866028358700, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: maxTimesRun
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4223332160187615748, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_LocalScale.z
@@ -277,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a607c7969eb48e5bb2b80194986f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetFrameRate: 40
+  targetFrameRate: 70
   timeScale: 1
 --- !u!4 &622282244
 Transform:

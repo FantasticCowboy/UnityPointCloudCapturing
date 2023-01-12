@@ -70,7 +70,6 @@ public class DiskWriter{
             writeInformation info = collection.Take(); 
             info.writer.SaveDepthFrameNaive(info.data);                
             //writeCompressionRatio(info.data);
-            UnityEngine.Debug.Log(info.data.Length);
             StatsCollector.writeStatistic<long>("write time", 0,  sw.ElapsedMilliseconds);
             
             if(sw.ElapsedMilliseconds > 200){
@@ -91,8 +90,6 @@ public class DiskWriter{
 
     byte[] reusedByteArray;
     public DiskWriter(int width, int height){
-        UnityEngine.Debug.Log("Width=" + width);
-        UnityEngine.Debug.Log("Height=" + height);
         reusedByteArray = new byte[width * height * sizeof(float)];
         timeSinceStart.Start();
     }

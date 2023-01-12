@@ -52,13 +52,13 @@ public class DataProcessor : MonoBehaviour
         if(timesRun < maxTimesRun){
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            SendDepthFrameToDisk();
+            RunPipeline();
             StatsCollector.writeStatistic<long>("Total Pipeline Time", uid, sw.ElapsedMilliseconds);
             timesRun++;
-            ran = true;
         }
     }
-    void SendDepthFrameToDisk(){
+    
+    void RunPipeline(){
         Stopwatch sw = new Stopwatch();
 
         sw.Start();
@@ -72,29 +72,18 @@ public class DataProcessor : MonoBehaviour
         Buffer.BlockCopy(newFrame, 0, temp, 0, newFrame.Length); 
         StatsCollector.writeStatistic<long>("Time to copy new frame into temporary frame", uid, sw.ElapsedMilliseconds);    
 
-
-
         // Note Pixel array is modified
         sw.Restart();
+
         DeltaEncodingGPU(newFrame);
         oldFrame = temp;
-
-        //StatsCollector.writeStatistic<Double>("Compression", uid, encodedArray.Length / (newFrame.Length * 1.0));    
-
-
-
-        StatsCollector.writeStatistic<long>("Delta encoding and remove zeros time", uid, sw.ElapsedMilliseconds);    
+     StatsCollector.writeStatistic<long>("Delta encoding and remove zeros time", uid, sw.ElapsedMilliseconds);    
         sw.Restart();
- 
-        byte[] encodedArray = RemoveZeros(newFrame);
-        StatsCollector.writeStatistic<long>("Copy array and remove zeros", uid, sw.ElapsedMilliseconds);         
-        
-        //ds.SaveDepthFramePipelineNaive(encodedArray);
+        ds.SaveDepthFramePipelineNaive(newFrame);
     }
 
     void NewSendDepthFrameToDisk(){
-        RenderTexture tex = RenderColorArray();
-        
+        RenderTexture tex = RenderColorArray();        
     }
 
     // Debug method to see if two byte arrays have the same values
@@ -116,9 +105,6 @@ public class DataProcessor : MonoBehaviour
         }
     }
 
-    void DeltaEncodingGPU(RenderTexture tex){
-            
-    }
 
     // Runs the compute shader on the new frame, updates the new frame
     void DeltaEncodingGPU(byte[] NewFrame){

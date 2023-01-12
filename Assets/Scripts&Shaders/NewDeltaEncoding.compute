@@ -15,7 +15,4 @@ void CSMain (uint3 id : SV_DispatchThreadID){
     if(OldTexture[id.xy].r - NewTexture[id.xy].r != 0){
         Encoding.Append(float4(OldTexture[id.xy].r - NewTexture[id.xy].r, id.x, id.y, 0));
     }
-
-    //Encoding[val] = float4(OldTexture[id.xy].r - NewTexture[id.xy].r, id.x, id.y, 0);
-    //Encoding[id.x] = float4(2147483647,2147483647,2147483647,2147483647);
 }
