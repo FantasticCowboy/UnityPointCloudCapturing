@@ -8,26 +8,14 @@ using System.Threading;
 
 public class DepthCameraArrayController : MonoBehaviour
 {
-    public struct RenderCameraJob : IJob
-    {
-        NewDataProcessing dataProcessor;
-        public void Execute()
-        {
-            dataProcessor.run();
-        }
 
-        public RenderCameraJob(NewDataProcessing dataProcessorIn){
-            dataProcessor = dataProcessorIn;
-        }
-
-    }    
     // Update is called once per frame
     void Update()
     {
         Stopwatch sw = new();
         sw.Start();
         List<Thread> threads = new();
-        foreach( var dataProcessor in gameObject.GetComponentsInChildren<NewDataProcessing>()){
+        foreach( var dataProcessor in gameObject.GetComponentsInChildren<DataProcessing>()){
             dataProcessor.run();
         }        
         //foreach( var dataProcessor in gameObject.GetComponentsInChildren<NewDataProcessing>()){

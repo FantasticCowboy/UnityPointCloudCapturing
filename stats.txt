@@ -1,20 +1,10 @@
 Starting New Test
-Total Pipeline Time, 28, 1901291993, 60 
-Total Pipeline Time, 3, 957550183, 80 
-Total Pipeline Time, 16, 1099202049, 97 
-Total Pipeline Time, 0, 428057034, 98 
-Concurrent Pipeline Time, 69, 232, 99 
-Concurrent Pipeline Time, 0, 232, 107 
-Get Data Time, 8, 1901291993, 2083 
-write time, 0, 0, 2087 
-Get Data Time, 1, 957550183, 2089 
-Get Data Time, 0, 1099202049, 2089 
-Get Data Time, 0, 428057034, 2090 
-Concurrent Pipeline Time, 15, 232, 2090 
-write time, 1, 0, 2090 
-write time, 0, 0, 2090 
-write time, 0, 0, 2090 
-Concurrent Pipeline Time, 0, 232, 2145 
-Concurrent Pipeline Time, 0, 232, 3474 
-Concurrent Pipeline Time, 0, 232, 4474 
-Concurrent Pipeline Time, 0, 232, 5474 
+Total Pipeline Time, 65, 312484835, 104 
+write time, 0, 0, 117 
+Concurrent Pipeline Time, 82, 232, 117 
+Concurrent Pipeline Time, 0, 232, 125 
+Concurrent Pipeline Time, 0, 232, 2501 
+Concurrent Pipeline Time, 0, 232, 2904 
+Concurrent Pipeline Time, 0, 232, 3904 
+Concurrent Pipeline Time, 0, 232, 4924 
+Concurrent Pipeline Time, 0, 232, 5961 

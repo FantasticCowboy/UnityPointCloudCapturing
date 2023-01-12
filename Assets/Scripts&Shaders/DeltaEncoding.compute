@@ -3,12 +3,16 @@
 
 // Create a RenderTexture with enableRandomWrite flag and set it
 // with cs.SetTexture
-RWStructuredBuffer<int> OldFrame;
-RWStructuredBuffer<int> NewFrame;
+Texture2D<float4> OldTexture;
+Texture2D<float4> NewTexture;
+AppendStructuredBuffer<float4> Encoding;
 
-// I have no clue why I picked this number of threads
-[numthreads(64,1,1)]
-void CSMain (uint3 id : SV_DispatchThreadID){
-    int temp = NewFrame[id.x] - OldFrame[id.x];
-    NewFrame[id.x] = temp;
+//groupshared int NextPos;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID){    
+    [branch]
+    if(OldTexture[id.xy].r - NewTexture[id.xy].r != 0){
+        Encoding.Append(float4(OldTexture[id.xy].r - NewTexture[id.xy].r, id.x, id.y, 0));
+    }
 }

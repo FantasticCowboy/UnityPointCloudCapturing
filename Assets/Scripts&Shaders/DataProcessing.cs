@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.Rendering;
 using System.Threading;
 
-public class NewDataProcessing : MonoBehaviour
+public class DataProcessing : MonoBehaviour
 {
     bool ran;
 
@@ -157,9 +157,12 @@ public class NewDataProcessing : MonoBehaviour
             AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(Encoding), oldTexture, result, newTexture, Encoding);
             pendingGpuRequests.Add(read);        
         }else{
-            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(newTexture, 0, TextureFormat.RGBA32), null, null, newTexture, Encoding);
-            pendingGpuRequests.Add(read);        
-            RenderTexture.active = newTexture;
+            // Note probably a small 1 time memory leak of newtexture here
+            RenderTexture.active = newTexture;            
+            Texture2D tmp = new(Screen.width, Screen.height, TextureFormat.RGBA32, false);
+            Rect regionToReadFrom = new Rect(0, 0, Screen.width, Screen.height);
+            tmp.ReadPixels(regionToReadFrom, 0, 0);
+            ds.SaveDepthFramePipelineNaive(tmp.GetRawTextureData());            
         }
 
         // Cleanup render texture
