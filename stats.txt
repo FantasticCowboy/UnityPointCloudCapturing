@@ -1,10 +1,1285 @@
 Starting New Test
-Total Pipeline Time, 65, 312484835, 104 
-write time, 0, 0, 117 
-Concurrent Pipeline Time, 82, 232, 117 
-Concurrent Pipeline Time, 0, 232, 125 
-Concurrent Pipeline Time, 0, 232, 2501 
-Concurrent Pipeline Time, 0, 232, 2904 
-Concurrent Pipeline Time, 0, 232, 3904 
-Concurrent Pipeline Time, 0, 232, 4924 
-Concurrent Pipeline Time, 0, 232, 5961 
+Total Pipeline Time, 55, 1532721526, 100 
+write time, 0, 0, 113 
+Concurrent Pipeline Time, 78, 232, 114 
+Dispatch Time, 0, 0, 124 
+Total Pipeline Time, 9, 1532721526, 129 
+Concurrent Pipeline Time, 11, 232, 131 
+Dispatch Time, 0, 0, 2487 
+Total Pipeline Time, 1, 1532721526, 2487 
+Concurrent Pipeline Time, 2, 232, 2488 
+Dispatch Time, 0, 0, 2545 
+Total Pipeline Time, 1, 1532721526, 2545 
+write time, 2442, 0, 2556 
+Get Data Time, 11, 1532721526, 2557 
+Anomally at, 7, 0, 2557 
+Concurrent Pipeline Time, 18, 232, 2562 
+Dispatch Time, 0, 0, 2582 
+Total Pipeline Time, 2, 1532721526, 2582 
+Get Data Time, 1, 1532721526, 2584 
+Concurrent Pipeline Time, 5, 232, 2585 
+write time, 27, 0, 2585 
+Dispatch Time, 0, 0, 2625 
+Total Pipeline Time, 0, 1532721526, 2625 
+Get Data Time, 0, 1532721526, 2626 
+Concurrent Pipeline Time, 1, 232, 2626 
+write time, 40, 0, 2626 
+Dispatch Time, 0, 0, 2667 
+Total Pipeline Time, 0, 1532721526, 2667 
+Get Data Time, 0, 1532721526, 2668 
+Concurrent Pipeline Time, 0, 232, 2668 
+write time, 42, 0, 2669 
+Dispatch Time, 0, 0, 2708 
+Total Pipeline Time, 0, 1532721526, 2709 
+Get Data Time, 0, 1532721526, 2709 
+Concurrent Pipeline Time, 1, 232, 2709 
+write time, 41, 0, 2710 
+Dispatch Time, 0, 0, 2750 
+Total Pipeline Time, 0, 1532721526, 2750 
+Get Data Time, 0, 1532721526, 2750 
+Concurrent Pipeline Time, 0, 232, 2750 
+write time, 40, 0, 2750 
+Dispatch Time, 0, 0, 2791 
+Total Pipeline Time, 0, 1532721526, 2792 
+Get Data Time, 0, 1532721526, 2792 
+Concurrent Pipeline Time, 0, 232, 2792 
+write time, 41, 0, 2792 
+Dispatch Time, 0, 0, 2834 
+Total Pipeline Time, 0, 1532721526, 2834 
+Get Data Time, 0, 1532721526, 2834 
+Concurrent Pipeline Time, 0, 232, 2834 
+write time, 41, 0, 2834 
+Dispatch Time, 0, 0, 2876 
+Total Pipeline Time, 1, 1532721526, 2877 
+Get Data Time, 0, 1532721526, 2877 
+Concurrent Pipeline Time, 1, 232, 2877 
+write time, 42, 0, 2877 
+Dispatch Time, 0, 0, 2918 
+Total Pipeline Time, 0, 1532721526, 2918 
+Get Data Time, 0, 1532721526, 2918 
+Concurrent Pipeline Time, 0, 232, 2918 
+write time, 41, 0, 2918 
+Dispatch Time, 0, 0, 2959 
+Total Pipeline Time, 0, 1532721526, 2959 
+Get Data Time, 0, 1532721526, 2959 
+Concurrent Pipeline Time, 0, 232, 2959 
+write time, 42, 0, 2961 
+Dispatch Time, 0, 0, 3002 
+Total Pipeline Time, 0, 1532721526, 3002 
+Get Data Time, 0, 1532721526, 3002 
+Concurrent Pipeline Time, 0, 232, 3002 
+write time, 41, 0, 3003 
+Dispatch Time, 0, 0, 3042 
+Total Pipeline Time, 0, 1532721526, 3042 
+Get Data Time, 0, 1532721526, 3042 
+Concurrent Pipeline Time, 0, 232, 3042 
+write time, 39, 0, 3043 
+Dispatch Time, 0, 0, 3084 
+Total Pipeline Time, 0, 1532721526, 3084 
+Get Data Time, 0, 1532721526, 3084 
+Concurrent Pipeline Time, 0, 232, 3084 
+write time, 41, 0, 3084 
+Dispatch Time, 0, 0, 3126 
+Total Pipeline Time, 1, 1532721526, 3126 
+Get Data Time, 0, 1532721526, 3131 
+Concurrent Pipeline Time, 6, 232, 3131 
+write time, 47, 0, 3132 
+Dispatch Time, 0, 0, 3167 
+Total Pipeline Time, 0, 1532721526, 3167 
+Get Data Time, 0, 1532721526, 3167 
+Concurrent Pipeline Time, 0, 232, 3167 
+write time, 35, 0, 3168 
+Dispatch Time, 0, 0, 3208 
+Total Pipeline Time, 0, 1532721526, 3208 
+Get Data Time, 0, 1532721526, 3209 
+Concurrent Pipeline Time, 0, 232, 3209 
+write time, 40, 0, 3209 
+Dispatch Time, 0, 0, 3250 
+Total Pipeline Time, 0, 1532721526, 3250 
+Get Data Time, 0, 1532721526, 3250 
+Concurrent Pipeline Time, 0, 232, 3250 
+write time, 42, 0, 3251 
+Dispatch Time, 0, 0, 3292 
+Total Pipeline Time, 0, 1532721526, 3292 
+Get Data Time, 0, 1532721526, 3292 
+Concurrent Pipeline Time, 0, 232, 3292 
+write time, 41, 0, 3293 
+Dispatch Time, 0, 0, 3334 
+Total Pipeline Time, 0, 1532721526, 3334 
+Get Data Time, 0, 1532721526, 3334 
+Concurrent Pipeline Time, 0, 232, 3334 
+write time, 42, 0, 3335 
+Dispatch Time, 0, 0, 3375 
+Total Pipeline Time, 0, 1532721526, 3375 
+Get Data Time, 0, 1532721526, 3375 
+Concurrent Pipeline Time, 0, 232, 3375 
+write time, 40, 0, 3375 
+Dispatch Time, 0, 0, 3418 
+Total Pipeline Time, 0, 1532721526, 3418 
+Get Data Time, 0, 1532721526, 3418 
+Concurrent Pipeline Time, 0, 232, 3418 
+write time, 43, 0, 3418 
+Dispatch Time, 0, 0, 3459 
+Total Pipeline Time, 1, 1532721526, 3459 
+Get Data Time, 0, 1532721526, 3459 
+Concurrent Pipeline Time, 1, 232, 3459 
+write time, 41, 0, 3460 
+Dispatch Time, 0, 0, 3500 
+Total Pipeline Time, 0, 1532721526, 3500 
+Get Data Time, 0, 1532721526, 3500 
+Concurrent Pipeline Time, 0, 232, 3500 
+write time, 40, 0, 3501 
+Dispatch Time, 0, 0, 3541 
+Total Pipeline Time, 0, 1532721526, 3542 
+Get Data Time, 0, 1532721526, 3542 
+Concurrent Pipeline Time, 0, 232, 3542 
+write time, 41, 0, 3542 
+Dispatch Time, 0, 0, 3584 
+Total Pipeline Time, 0, 1532721526, 3584 
+Get Data Time, 0, 1532721526, 3584 
+Concurrent Pipeline Time, 0, 232, 3584 
+write time, 42, 0, 3584 
+Dispatch Time, 0, 0, 3625 
+Total Pipeline Time, 0, 1532721526, 3625 
+Get Data Time, 0, 1532721526, 3625 
+Concurrent Pipeline Time, 0, 232, 3625 
+write time, 40, 0, 3625 
+Dispatch Time, 0, 0, 3666 
+Total Pipeline Time, 0, 1532721526, 3666 
+Get Data Time, 0, 1532721526, 3666 
+Concurrent Pipeline Time, 0, 232, 3666 
+write time, 41, 0, 3667 
+Dispatch Time, 0, 0, 3708 
+Total Pipeline Time, 0, 1532721526, 3708 
+Get Data Time, 0, 1532721526, 3708 
+Concurrent Pipeline Time, 1, 232, 3709 
+write time, 41, 0, 3709 
+Dispatch Time, 0, 0, 3754 
+Total Pipeline Time, 0, 1532721526, 3754 
+Get Data Time, 0, 1532721526, 3754 
+Concurrent Pipeline Time, 0, 232, 3754 
+write time, 61, 0, 3770 
+Dispatch Time, 0, 0, 3792 
+Total Pipeline Time, 0, 1532721526, 3792 
+Get Data Time, 0, 1532721526, 3792 
+Concurrent Pipeline Time, 0, 232, 3792 
+write time, 22, 0, 3793 
+Dispatch Time, 0, 0, 3835 
+Total Pipeline Time, 0, 1532721526, 3835 
+Get Data Time, 0, 1532721526, 3835 
+Concurrent Pipeline Time, 0, 232, 3835 
+write time, 42, 0, 3835 
+Dispatch Time, 0, 0, 3875 
+Total Pipeline Time, 0, 1532721526, 3875 
+Get Data Time, 0, 1532721526, 3875 
+Concurrent Pipeline Time, 0, 232, 3875 
+write time, 40, 0, 3875 
+Dispatch Time, 0, 0, 3917 
+Total Pipeline Time, 0, 1532721526, 3917 
+Get Data Time, 0, 1532721526, 3917 
+Concurrent Pipeline Time, 0, 232, 3917 
+write time, 45, 0, 3921 
+Dispatch Time, 0, 0, 3959 
+Total Pipeline Time, 0, 1532721526, 3959 
+Get Data Time, 0, 1532721526, 3959 
+Concurrent Pipeline Time, 0, 232, 3959 
+write time, 39, 0, 3960 
+Dispatch Time, 0, 0, 4000 
+Total Pipeline Time, 0, 1532721526, 4000 
+Get Data Time, 0, 1532721526, 4000 
+Concurrent Pipeline Time, 0, 232, 4000 
+write time, 39, 0, 4000 
+Dispatch Time, 0, 0, 4042 
+Total Pipeline Time, 0, 1532721526, 4042 
+Get Data Time, 0, 1532721526, 4042 
+Concurrent Pipeline Time, 0, 232, 4042 
+write time, 42, 0, 4043 
+Dispatch Time, 0, 0, 4083 
+Total Pipeline Time, 0, 1532721526, 4083 
+Get Data Time, 0, 1532721526, 4083 
+Concurrent Pipeline Time, 0, 232, 4083 
+write time, 40, 0, 4084 
+Dispatch Time, 0, 0, 4125 
+Total Pipeline Time, 0, 1532721526, 4125 
+Get Data Time, 0, 1532721526, 4125 
+Concurrent Pipeline Time, 0, 232, 4125 
+write time, 42, 0, 4126 
+Dispatch Time, 0, 0, 4167 
+Total Pipeline Time, 0, 1532721526, 4167 
+Get Data Time, 0, 1532721526, 4167 
+Concurrent Pipeline Time, 0, 232, 4167 
+write time, 41, 0, 4167 
+Dispatch Time, 0, 0, 4209 
+Total Pipeline Time, 0, 1532721526, 4209 
+Get Data Time, 0, 1532721526, 4209 
+Concurrent Pipeline Time, 0, 232, 4209 
+write time, 42, 0, 4210 
+Dispatch Time, 0, 0, 4250 
+Total Pipeline Time, 0, 1532721526, 4250 
+Get Data Time, 0, 1532721526, 4250 
+Concurrent Pipeline Time, 0, 232, 4250 
+write time, 40, 0, 4250 
+Dispatch Time, 0, 0, 4292 
+Total Pipeline Time, 0, 1532721526, 4292 
+Get Data Time, 0, 1532721526, 4292 
+Concurrent Pipeline Time, 0, 232, 4292 
+write time, 41, 0, 4292 
+Dispatch Time, 0, 0, 4334 
+Total Pipeline Time, 0, 1532721526, 4334 
+Get Data Time, 0, 1532721526, 4334 
+Concurrent Pipeline Time, 0, 232, 4334 
+write time, 41, 0, 4334 
+Dispatch Time, 0, 0, 4375 
+Total Pipeline Time, 0, 1532721526, 4375 
+Get Data Time, 0, 1532721526, 4375 
+Concurrent Pipeline Time, 0, 232, 4375 
+write time, 41, 0, 4375 
+Dispatch Time, 0, 0, 4416 
+Total Pipeline Time, 0, 1532721526, 4416 
+Get Data Time, 0, 1532721526, 4417 
+Concurrent Pipeline Time, 0, 232, 4417 
+write time, 41, 0, 4417 
+Dispatch Time, 0, 0, 4458 
+Total Pipeline Time, 0, 1532721526, 4458 
+Get Data Time, 0, 1532721526, 4458 
+Concurrent Pipeline Time, 0, 232, 4458 
+write time, 42, 0, 4459 
+Dispatch Time, 0, 0, 4504 
+Total Pipeline Time, 0, 1532721526, 4504 
+Get Data Time, 0, 1532721526, 4504 
+Concurrent Pipeline Time, 0, 232, 4504 
+write time, 45, 0, 4504 
+Dispatch Time, 0, 0, 4542 
+Total Pipeline Time, 0, 1532721526, 4542 
+Get Data Time, 0, 1532721526, 4542 
+Concurrent Pipeline Time, 0, 232, 4542 
+write time, 37, 0, 4542 
+Dispatch Time, 0, 0, 4584 
+Total Pipeline Time, 0, 1532721526, 4584 
+Get Data Time, 0, 1532721526, 4584 
+Concurrent Pipeline Time, 0, 232, 4584 
+write time, 42, 0, 4584 
+Dispatch Time, 0, 0, 4625 
+Total Pipeline Time, 0, 1532721526, 4625 
+Get Data Time, 0, 1532721526, 4626 
+Concurrent Pipeline Time, 0, 232, 4626 
+write time, 41, 0, 4626 
+Dispatch Time, 0, 0, 4667 
+Total Pipeline Time, 0, 1532721526, 4667 
+Get Data Time, 0, 1532721526, 4667 
+Concurrent Pipeline Time, 0, 232, 4667 
+write time, 41, 0, 4667 
+Dispatch Time, 0, 0, 4709 
+Total Pipeline Time, 0, 1532721526, 4709 
+Get Data Time, 0, 1532721526, 4709 
+Concurrent Pipeline Time, 0, 232, 4709 
+write time, 41, 0, 4709 
+Dispatch Time, 0, 0, 4750 
+Total Pipeline Time, 0, 1532721526, 4750 
+Get Data Time, 0, 1532721526, 4750 
+Concurrent Pipeline Time, 0, 232, 4750 
+write time, 41, 0, 4751 
+Dispatch Time, 0, 0, 4792 
+Total Pipeline Time, 0, 1532721526, 4792 
+Get Data Time, 0, 1532721526, 4792 
+Concurrent Pipeline Time, 0, 232, 4792 
+write time, 41, 0, 4793 
+Dispatch Time, 0, 0, 4833 
+Total Pipeline Time, 0, 1532721526, 4834 
+Get Data Time, 0, 1532721526, 4834 
+Concurrent Pipeline Time, 0, 232, 4834 
+write time, 41, 0, 4834 
+Dispatch Time, 0, 0, 4875 
+Total Pipeline Time, 0, 1532721526, 4875 
+Get Data Time, 0, 1532721526, 4875 
+Concurrent Pipeline Time, 0, 232, 4875 
+write time, 41, 0, 4875 
+Dispatch Time, 0, 0, 4917 
+Total Pipeline Time, 0, 1532721526, 4917 
+Get Data Time, 0, 1532721526, 4917 
+Concurrent Pipeline Time, 0, 232, 4917 
+write time, 42, 0, 4918 
+Dispatch Time, 0, 0, 4955 
+Total Pipeline Time, 0, 1532721526, 4956 
+Get Data Time, 0, 1532721526, 4956 
+Concurrent Pipeline Time, 0, 232, 4956 
+write time, 38, 0, 4956 
+Dispatch Time, 0, 0, 5000 
+Total Pipeline Time, 0, 1532721526, 5000 
+Get Data Time, 0, 1532721526, 5000 
+Concurrent Pipeline Time, 0, 232, 5000 
+write time, 44, 0, 5000 
+Dispatch Time, 0, 0, 5042 
+Total Pipeline Time, 0, 1532721526, 5042 
+Get Data Time, 0, 1532721526, 5042 
+Concurrent Pipeline Time, 0, 232, 5042 
+write time, 41, 0, 5042 
+Dispatch Time, 0, 0, 5084 
+Total Pipeline Time, 0, 1532721526, 5084 
+Get Data Time, 0, 1532721526, 5084 
+Concurrent Pipeline Time, 0, 232, 5084 
+write time, 41, 0, 5084 
+Dispatch Time, 0, 0, 5125 
+Total Pipeline Time, 0, 1532721526, 5125 
+Get Data Time, 0, 1532721526, 5125 
+Concurrent Pipeline Time, 0, 232, 5125 
+write time, 41, 0, 5125 
+Dispatch Time, 0, 0, 5167 
+Total Pipeline Time, 0, 1532721526, 5167 
+Get Data Time, 0, 1532721526, 5167 
+Concurrent Pipeline Time, 0, 232, 5167 
+write time, 41, 0, 5167 
+Dispatch Time, 0, 0, 5208 
+Total Pipeline Time, 0, 1532721526, 5209 
+Get Data Time, 0, 1532721526, 5209 
+Concurrent Pipeline Time, 0, 232, 5209 
+write time, 41, 0, 5209 
+Dispatch Time, 0, 0, 5250 
+Total Pipeline Time, 0, 1532721526, 5250 
+Get Data Time, 0, 1532721526, 5250 
+Concurrent Pipeline Time, 0, 232, 5250 
+write time, 41, 0, 5251 
+Dispatch Time, 0, 0, 5293 
+Total Pipeline Time, 1, 1532721526, 5293 
+Get Data Time, 0, 1532721526, 5293 
+Concurrent Pipeline Time, 1, 232, 5293 
+write time, 42, 0, 5294 
+Dispatch Time, 0, 0, 5333 
+Total Pipeline Time, 0, 1532721526, 5333 
+Get Data Time, 0, 1532721526, 5333 
+Concurrent Pipeline Time, 0, 232, 5333 
+write time, 40, 0, 5334 
+Dispatch Time, 0, 0, 5375 
+Total Pipeline Time, 0, 1532721526, 5375 
+Get Data Time, 0, 1532721526, 5375 
+Concurrent Pipeline Time, 0, 232, 5375 
+write time, 42, 0, 5376 
+Dispatch Time, 0, 0, 5417 
+Total Pipeline Time, 0, 1532721526, 5417 
+Get Data Time, 0, 1532721526, 5417 
+Concurrent Pipeline Time, 0, 232, 5417 
+write time, 41, 0, 5418 
+Dispatch Time, 0, 0, 5458 
+Total Pipeline Time, 0, 1532721526, 5459 
+Get Data Time, 0, 1532721526, 5459 
+Concurrent Pipeline Time, 1, 232, 5459 
+write time, 41, 0, 5459 
+Dispatch Time, 0, 0, 5500 
+Total Pipeline Time, 0, 1532721526, 5500 
+Get Data Time, 0, 1532721526, 5500 
+Concurrent Pipeline Time, 0, 232, 5500 
+write time, 41, 0, 5501 
+Dispatch Time, 0, 0, 5542 
+Total Pipeline Time, 0, 1532721526, 5542 
+Get Data Time, 0, 1532721526, 5542 
+Concurrent Pipeline Time, 0, 232, 5542 
+write time, 42, 0, 5543 
+Dispatch Time, 0, 0, 5583 
+Total Pipeline Time, 0, 1532721526, 5583 
+Get Data Time, 0, 1532721526, 5584 
+Concurrent Pipeline Time, 0, 232, 5584 
+write time, 41, 0, 5584 
+Dispatch Time, 0, 0, 5625 
+Total Pipeline Time, 0, 1532721526, 5625 
+Get Data Time, 0, 1532721526, 5626 
+Concurrent Pipeline Time, 0, 232, 5626 
+write time, 41, 0, 5626 
+Dispatch Time, 0, 0, 5667 
+Total Pipeline Time, 0, 1532721526, 5667 
+Get Data Time, 0, 1532721526, 5667 
+Concurrent Pipeline Time, 0, 232, 5667 
+write time, 40, 0, 5667 
+Dispatch Time, 0, 0, 5708 
+Total Pipeline Time, 0, 1532721526, 5708 
+Get Data Time, 0, 1532721526, 5708 
+Concurrent Pipeline Time, 0, 232, 5708 
+write time, 41, 0, 5708 
+Dispatch Time, 0, 0, 5750 
+Total Pipeline Time, 0, 1532721526, 5750 
+Get Data Time, 0, 1532721526, 5750 
+Concurrent Pipeline Time, 0, 232, 5750 
+write time, 41, 0, 5750 
+Dispatch Time, 0, 0, 5793 
+Total Pipeline Time, 0, 1532721526, 5793 
+Get Data Time, 0, 1532721526, 5793 
+Concurrent Pipeline Time, 0, 232, 5793 
+write time, 43, 0, 5794 
+Dispatch Time, 0, 0, 5834 
+Total Pipeline Time, 0, 1532721526, 5834 
+Get Data Time, 0, 1532721526, 5834 
+Concurrent Pipeline Time, 0, 232, 5834 
+write time, 40, 0, 5834 
+Dispatch Time, 0, 0, 5875 
+Total Pipeline Time, 0, 1532721526, 5875 
+Get Data Time, 0, 1532721526, 5875 
+Concurrent Pipeline Time, 0, 232, 5875 
+write time, 41, 0, 5876 
+Dispatch Time, 0, 0, 5917 
+Total Pipeline Time, 0, 1532721526, 5917 
+Get Data Time, 0, 1532721526, 5917 
+Concurrent Pipeline Time, 0, 232, 5917 
+write time, 41, 0, 5917 
+Dispatch Time, 0, 0, 5959 
+Total Pipeline Time, 0, 1532721526, 5959 
+Get Data Time, 0, 1532721526, 5959 
+Concurrent Pipeline Time, 0, 232, 5959 
+write time, 41, 0, 5959 
+Dispatch Time, 0, 0, 6000 
+Total Pipeline Time, 0, 1532721526, 6000 
+Get Data Time, 0, 1532721526, 6000 
+Concurrent Pipeline Time, 0, 232, 6000 
+write time, 41, 0, 6000 
+Dispatch Time, 0, 0, 6042 
+Total Pipeline Time, 0, 1532721526, 6042 
+Get Data Time, 0, 1532721526, 6042 
+Concurrent Pipeline Time, 0, 232, 6042 
+write time, 42, 0, 6042 
+Dispatch Time, 0, 0, 6084 
+Total Pipeline Time, 0, 1532721526, 6084 
+Get Data Time, 0, 1532721526, 6084 
+Concurrent Pipeline Time, 0, 232, 6084 
+write time, 41, 0, 6084 
+Dispatch Time, 0, 0, 6125 
+Total Pipeline Time, 0, 1532721526, 6125 
+Get Data Time, 0, 1532721526, 6126 
+Concurrent Pipeline Time, 0, 232, 6126 
+write time, 41, 0, 6126 
+Dispatch Time, 0, 0, 6167 
+Total Pipeline Time, 0, 1532721526, 6167 
+Get Data Time, 0, 1532721526, 6167 
+Concurrent Pipeline Time, 0, 232, 6167 
+write time, 40, 0, 6167 
+Dispatch Time, 0, 0, 6208 
+Total Pipeline Time, 0, 1532721526, 6208 
+Get Data Time, 0, 1532721526, 6208 
+Concurrent Pipeline Time, 0, 232, 6208 
+write time, 41, 0, 6208 
+Dispatch Time, 0, 0, 6250 
+Total Pipeline Time, 0, 1532721526, 6251 
+Get Data Time, 0, 1532721526, 6251 
+Concurrent Pipeline Time, 0, 232, 6251 
+write time, 42, 0, 6251 
+Dispatch Time, 0, 0, 6292 
+Total Pipeline Time, 0, 1532721526, 6292 
+Get Data Time, 0, 1532721526, 6292 
+Concurrent Pipeline Time, 0, 232, 6292 
+write time, 41, 0, 6292 
+Dispatch Time, 0, 0, 6334 
+Total Pipeline Time, 0, 1532721526, 6334 
+Get Data Time, 0, 1532721526, 6334 
+Concurrent Pipeline Time, 0, 232, 6334 
+write time, 41, 0, 6334 
+Dispatch Time, 0, 0, 6375 
+Total Pipeline Time, 0, 1532721526, 6375 
+Get Data Time, 0, 1532721526, 6375 
+Concurrent Pipeline Time, 0, 232, 6375 
+write time, 41, 0, 6376 
+Dispatch Time, 0, 0, 6417 
+Total Pipeline Time, 0, 1532721526, 6417 
+Get Data Time, 0, 1532721526, 6417 
+Concurrent Pipeline Time, 0, 232, 6417 
+write time, 41, 0, 6418 
+Dispatch Time, 0, 0, 6460 
+Total Pipeline Time, 0, 1532721526, 6460 
+Get Data Time, 0, 1532721526, 6460 
+Concurrent Pipeline Time, 0, 232, 6460 
+write time, 43, 0, 6461 
+Dispatch Time, 0, 0, 6500 
+Total Pipeline Time, 0, 1532721526, 6500 
+Get Data Time, 0, 1532721526, 6500 
+Concurrent Pipeline Time, 0, 232, 6500 
+write time, 39, 0, 6501 
+Dispatch Time, 0, 0, 6542 
+Total Pipeline Time, 0, 1532721526, 6542 
+Get Data Time, 0, 1532721526, 6542 
+Concurrent Pipeline Time, 0, 232, 6542 
+write time, 41, 0, 6543 
+Dispatch Time, 0, 0, 6584 
+Total Pipeline Time, 0, 1532721526, 6584 
+Get Data Time, 0, 1532721526, 6584 
+Concurrent Pipeline Time, 0, 232, 6584 
+write time, 41, 0, 6584 
+Dispatch Time, 0, 0, 6625 
+Total Pipeline Time, 0, 1532721526, 6625 
+Get Data Time, 0, 1532721526, 6625 
+Concurrent Pipeline Time, 0, 232, 6625 
+write time, 41, 0, 6626 
+Dispatch Time, 0, 0, 6667 
+Total Pipeline Time, 0, 1532721526, 6667 
+Get Data Time, 0, 1532721526, 6667 
+Concurrent Pipeline Time, 0, 232, 6667 
+write time, 41, 0, 6667 
+Dispatch Time, 0, 0, 6708 
+Total Pipeline Time, 0, 1532721526, 6708 
+Get Data Time, 0, 1532721526, 6708 
+Concurrent Pipeline Time, 0, 232, 6708 
+write time, 41, 0, 6709 
+Dispatch Time, 0, 0, 6750 
+Total Pipeline Time, 0, 1532721526, 6750 
+Get Data Time, 0, 1532721526, 6750 
+Concurrent Pipeline Time, 0, 232, 6750 
+write time, 41, 0, 6751 
+Dispatch Time, 0, 0, 6792 
+Total Pipeline Time, 0, 1532721526, 6792 
+Get Data Time, 0, 1532721526, 6792 
+Concurrent Pipeline Time, 0, 232, 6792 
+write time, 41, 0, 6792 
+Dispatch Time, 0, 0, 6834 
+Total Pipeline Time, 0, 1532721526, 6834 
+Get Data Time, 0, 1532721526, 6834 
+Concurrent Pipeline Time, 0, 232, 6834 
+write time, 41, 0, 6834 
+Dispatch Time, 0, 0, 6875 
+Total Pipeline Time, 0, 1532721526, 6875 
+Get Data Time, 0, 1532721526, 6875 
+Concurrent Pipeline Time, 0, 232, 6876 
+write time, 41, 0, 6876 
+Dispatch Time, 0, 0, 6917 
+Total Pipeline Time, 0, 1532721526, 6917 
+Get Data Time, 0, 1532721526, 6917 
+Concurrent Pipeline Time, 0, 232, 6917 
+write time, 41, 0, 6917 
+Dispatch Time, 0, 0, 6958 
+Total Pipeline Time, 0, 1532721526, 6958 
+Get Data Time, 0, 1532721526, 6959 
+Concurrent Pipeline Time, 0, 232, 6959 
+write time, 41, 0, 6959 
+Dispatch Time, 0, 0, 7000 
+Total Pipeline Time, 0, 1532721526, 7000 
+Get Data Time, 0, 1532721526, 7000 
+Concurrent Pipeline Time, 0, 232, 7000 
+write time, 41, 0, 7000 
+Dispatch Time, 0, 0, 7042 
+Total Pipeline Time, 0, 1532721526, 7042 
+Get Data Time, 0, 1532721526, 7042 
+Concurrent Pipeline Time, 0, 232, 7042 
+write time, 42, 0, 7043 
+Dispatch Time, 0, 0, 7083 
+Total Pipeline Time, 0, 1532721526, 7083 
+Get Data Time, 0, 1532721526, 7083 
+Concurrent Pipeline Time, 0, 232, 7083 
+write time, 41, 0, 7084 
+Dispatch Time, 0, 0, 7125 
+Total Pipeline Time, 0, 1532721526, 7125 
+Get Data Time, 0, 1532721526, 7125 
+Concurrent Pipeline Time, 0, 232, 7125 
+write time, 41, 0, 7125 
+Dispatch Time, 0, 0, 7167 
+Total Pipeline Time, 0, 1532721526, 7167 
+Get Data Time, 0, 1532721526, 7167 
+Concurrent Pipeline Time, 0, 232, 7167 
+write time, 41, 0, 7167 
+Dispatch Time, 0, 0, 7212 
+Total Pipeline Time, 0, 1532721526, 7212 
+Get Data Time, 0, 1532721526, 7213 
+Concurrent Pipeline Time, 0, 232, 7213 
+write time, 45, 0, 7213 
+Dispatch Time, 0, 0, 7250 
+Total Pipeline Time, 0, 1532721526, 7250 
+Get Data Time, 0, 1532721526, 7250 
+Concurrent Pipeline Time, 0, 232, 7250 
+write time, 37, 0, 7250 
+Dispatch Time, 0, 0, 7292 
+Total Pipeline Time, 0, 1532721526, 7292 
+Get Data Time, 0, 1532721526, 7292 
+Concurrent Pipeline Time, 0, 232, 7292 
+write time, 42, 0, 7293 
+Dispatch Time, 0, 0, 7333 
+Total Pipeline Time, 0, 1532721526, 7334 
+Get Data Time, 0, 1532721526, 7334 
+Concurrent Pipeline Time, 0, 232, 7334 
+write time, 40, 0, 7334 
+Dispatch Time, 0, 0, 7375 
+Total Pipeline Time, 0, 1532721526, 7375 
+Get Data Time, 0, 1532721526, 7375 
+Concurrent Pipeline Time, 0, 232, 7375 
+write time, 41, 0, 7375 
+Dispatch Time, 0, 0, 7417 
+Total Pipeline Time, 0, 1532721526, 7417 
+Get Data Time, 0, 1532721526, 7417 
+Concurrent Pipeline Time, 0, 232, 7417 
+write time, 42, 0, 7417 
+Dispatch Time, 0, 0, 7459 
+Total Pipeline Time, 0, 1532721526, 7459 
+Get Data Time, 0, 1532721526, 7459 
+Concurrent Pipeline Time, 0, 232, 7459 
+write time, 41, 0, 7459 
+Dispatch Time, 0, 0, 7500 
+Total Pipeline Time, 0, 1532721526, 7501 
+Get Data Time, 0, 1532721526, 7501 
+Concurrent Pipeline Time, 0, 232, 7501 
+write time, 42, 0, 7501 
+Dispatch Time, 0, 0, 7542 
+Total Pipeline Time, 0, 1532721526, 7542 
+Get Data Time, 0, 1532721526, 7542 
+Concurrent Pipeline Time, 0, 232, 7542 
+write time, 41, 0, 7542 
+Dispatch Time, 0, 0, 7584 
+Total Pipeline Time, 0, 1532721526, 7584 
+Get Data Time, 0, 1532721526, 7584 
+Concurrent Pipeline Time, 0, 232, 7584 
+write time, 41, 0, 7584 
+Dispatch Time, 0, 0, 7625 
+Total Pipeline Time, 0, 1532721526, 7625 
+Get Data Time, 0, 1532721526, 7625 
+Concurrent Pipeline Time, 0, 232, 7625 
+write time, 41, 0, 7625 
+Dispatch Time, 0, 0, 7667 
+Total Pipeline Time, 0, 1532721526, 7667 
+Get Data Time, 0, 1532721526, 7667 
+Concurrent Pipeline Time, 0, 232, 7667 
+write time, 41, 0, 7667 
+Dispatch Time, 0, 0, 7708 
+Total Pipeline Time, 0, 1532721526, 7708 
+Get Data Time, 0, 1532721526, 7709 
+Concurrent Pipeline Time, 0, 232, 7709 
+write time, 41, 0, 7709 
+Dispatch Time, 0, 0, 7750 
+Total Pipeline Time, 0, 1532721526, 7750 
+Get Data Time, 0, 1532721526, 7750 
+Concurrent Pipeline Time, 0, 232, 7750 
+write time, 41, 0, 7751 
+Dispatch Time, 0, 0, 7792 
+Total Pipeline Time, 0, 1532721526, 7792 
+Get Data Time, 0, 1532721526, 7792 
+Concurrent Pipeline Time, 0, 232, 7792 
+write time, 41, 0, 7792 
+Dispatch Time, 0, 0, 7833 
+Total Pipeline Time, 0, 1532721526, 7833 
+Get Data Time, 0, 1532721526, 7833 
+Concurrent Pipeline Time, 0, 232, 7833 
+write time, 41, 0, 7834 
+Dispatch Time, 0, 0, 7875 
+Total Pipeline Time, 0, 1532721526, 7875 
+Get Data Time, 0, 1532721526, 7875 
+Concurrent Pipeline Time, 0, 232, 7875 
+write time, 41, 0, 7875 
+Dispatch Time, 0, 0, 7917 
+Total Pipeline Time, 0, 1532721526, 7917 
+Get Data Time, 0, 1532721526, 7917 
+Concurrent Pipeline Time, 0, 232, 7917 
+write time, 41, 0, 7917 
+Dispatch Time, 0, 0, 7964 
+Total Pipeline Time, 0, 1532721526, 7964 
+Get Data Time, 0, 1532721526, 7964 
+Concurrent Pipeline Time, 0, 232, 7964 
+write time, 47, 0, 7965 
+Dispatch Time, 0, 0, 8000 
+Total Pipeline Time, 0, 1532721526, 8000 
+Get Data Time, 0, 1532721526, 8000 
+Concurrent Pipeline Time, 1, 232, 8000 
+write time, 36, 0, 8001 
+Dispatch Time, 0, 0, 8042 
+Total Pipeline Time, 0, 1532721526, 8042 
+Get Data Time, 0, 1532721526, 8042 
+Concurrent Pipeline Time, 0, 232, 8042 
+write time, 41, 0, 8042 
+Dispatch Time, 0, 0, 8083 
+Total Pipeline Time, 0, 1532721526, 8083 
+Get Data Time, 0, 1532721526, 8084 
+Concurrent Pipeline Time, 0, 232, 8084 
+write time, 41, 0, 8084 
+Dispatch Time, 0, 0, 8125 
+Total Pipeline Time, 0, 1532721526, 8125 
+Get Data Time, 0, 1532721526, 8125 
+Concurrent Pipeline Time, 0, 232, 8125 
+write time, 41, 0, 8126 
+Dispatch Time, 0, 0, 8167 
+Total Pipeline Time, 0, 1532721526, 8167 
+Get Data Time, 0, 1532721526, 8167 
+Concurrent Pipeline Time, 0, 232, 8167 
+write time, 41, 0, 8167 
+Dispatch Time, 0, 0, 8209 
+Total Pipeline Time, 0, 1532721526, 8209 
+Get Data Time, 0, 1532721526, 8209 
+Concurrent Pipeline Time, 0, 232, 8209 
+write time, 41, 0, 8209 
+Dispatch Time, 0, 0, 8250 
+Total Pipeline Time, 0, 1532721526, 8250 
+Get Data Time, 0, 1532721526, 8250 
+Concurrent Pipeline Time, 0, 232, 8250 
+write time, 41, 0, 8250 
+Dispatch Time, 0, 0, 8292 
+Total Pipeline Time, 0, 1532721526, 8292 
+Get Data Time, 0, 1532721526, 8292 
+Concurrent Pipeline Time, 0, 232, 8292 
+write time, 42, 0, 8293 
+Dispatch Time, 0, 0, 8333 
+Total Pipeline Time, 0, 1532721526, 8333 
+Get Data Time, 0, 1532721526, 8333 
+Concurrent Pipeline Time, 0, 232, 8333 
+write time, 40, 0, 8333 
+Dispatch Time, 0, 0, 8375 
+Total Pipeline Time, 0, 1532721526, 8375 
+Get Data Time, 0, 1532721526, 8375 
+Concurrent Pipeline Time, 0, 232, 8375 
+write time, 42, 0, 8375 
+Dispatch Time, 0, 0, 8416 
+Total Pipeline Time, 0, 1532721526, 8416 
+Get Data Time, 0, 1532721526, 8416 
+Concurrent Pipeline Time, 0, 232, 8416 
+write time, 41, 0, 8417 
+Dispatch Time, 0, 0, 8459 
+Total Pipeline Time, 0, 1532721526, 8459 
+Get Data Time, 0, 1532721526, 8459 
+Concurrent Pipeline Time, 0, 232, 8459 
+write time, 42, 0, 8459 
+Dispatch Time, 0, 0, 8500 
+Total Pipeline Time, 0, 1532721526, 8500 
+Get Data Time, 0, 1532721526, 8500 
+Concurrent Pipeline Time, 0, 232, 8500 
+write time, 41, 0, 8500 
+Dispatch Time, 0, 0, 8542 
+Total Pipeline Time, 0, 1532721526, 8542 
+Get Data Time, 0, 1532721526, 8542 
+Concurrent Pipeline Time, 0, 232, 8542 
+write time, 41, 0, 8542 
+Dispatch Time, 0, 0, 8584 
+Total Pipeline Time, 0, 1532721526, 8584 
+Get Data Time, 0, 1532721526, 8584 
+Concurrent Pipeline Time, 0, 232, 8584 
+write time, 41, 0, 8584 
+Dispatch Time, 0, 0, 8625 
+Total Pipeline Time, 0, 1532721526, 8625 
+Get Data Time, 0, 1532721526, 8625 
+Concurrent Pipeline Time, 0, 232, 8625 
+write time, 41, 0, 8626 
+Dispatch Time, 0, 0, 8667 
+Total Pipeline Time, 0, 1532721526, 8667 
+Get Data Time, 0, 1532721526, 8667 
+Concurrent Pipeline Time, 0, 232, 8667 
+write time, 41, 0, 8667 
+Dispatch Time, 0, 0, 8708 
+Total Pipeline Time, 0, 1532721526, 8708 
+Get Data Time, 0, 1532721526, 8708 
+Concurrent Pipeline Time, 0, 232, 8708 
+write time, 41, 0, 8709 
+Dispatch Time, 0, 0, 8750 
+Total Pipeline Time, 0, 1532721526, 8750 
+Get Data Time, 0, 1532721526, 8750 
+Concurrent Pipeline Time, 0, 232, 8750 
+write time, 41, 0, 8751 
+Dispatch Time, 0, 0, 8792 
+Total Pipeline Time, 0, 1532721526, 8792 
+Get Data Time, 0, 1532721526, 8792 
+Concurrent Pipeline Time, 0, 232, 8792 
+write time, 41, 0, 8792 
+Dispatch Time, 0, 0, 8833 
+Total Pipeline Time, 0, 1532721526, 8833 
+Get Data Time, 0, 1532721526, 8834 
+Concurrent Pipeline Time, 0, 232, 8834 
+write time, 41, 0, 8834 
+Dispatch Time, 0, 0, 8875 
+Total Pipeline Time, 0, 1532721526, 8875 
+Get Data Time, 0, 1532721526, 8875 
+Concurrent Pipeline Time, 0, 232, 8875 
+write time, 42, 0, 8876 
+Dispatch Time, 0, 0, 8916 
+Total Pipeline Time, 0, 1532721526, 8917 
+Get Data Time, 0, 1532721526, 8917 
+Concurrent Pipeline Time, 0, 232, 8917 
+write time, 41, 0, 8917 
+Dispatch Time, 0, 0, 8959 
+Total Pipeline Time, 0, 1532721526, 8959 
+Get Data Time, 0, 1532721526, 8959 
+Concurrent Pipeline Time, 0, 232, 8959 
+write time, 42, 0, 8959 
+Dispatch Time, 0, 0, 9001 
+Total Pipeline Time, 0, 1532721526, 9001 
+Get Data Time, 0, 1532721526, 9001 
+Concurrent Pipeline Time, 0, 232, 9001 
+write time, 41, 0, 9001 
+Dispatch Time, 0, 0, 9042 
+Total Pipeline Time, 0, 1532721526, 9042 
+Get Data Time, 0, 1532721526, 9042 
+Concurrent Pipeline Time, 0, 232, 9042 
+write time, 40, 0, 9042 
+Dispatch Time, 0, 0, 9084 
+Total Pipeline Time, 0, 1532721526, 9084 
+Get Data Time, 0, 1532721526, 9084 
+Concurrent Pipeline Time, 0, 232, 9084 
+write time, 42, 0, 9084 
+Dispatch Time, 0, 0, 9125 
+Total Pipeline Time, 0, 1532721526, 9125 
+Get Data Time, 0, 1532721526, 9125 
+Concurrent Pipeline Time, 0, 232, 9125 
+write time, 41, 0, 9125 
+Dispatch Time, 0, 0, 9169 
+Total Pipeline Time, 0, 1532721526, 9169 
+Get Data Time, 0, 1532721526, 9170 
+Concurrent Pipeline Time, 0, 232, 9170 
+write time, 44, 0, 9170 
+Dispatch Time, 0, 0, 9208 
+Total Pipeline Time, 0, 1532721526, 9208 
+Get Data Time, 0, 1532721526, 9208 
+Concurrent Pipeline Time, 0, 232, 9208 
+write time, 38, 0, 9208 
+Dispatch Time, 0, 0, 9250 
+Total Pipeline Time, 0, 1532721526, 9250 
+Get Data Time, 0, 1532721526, 9250 
+Concurrent Pipeline Time, 0, 232, 9250 
+write time, 42, 0, 9251 
+Dispatch Time, 0, 0, 9292 
+Total Pipeline Time, 0, 1532721526, 9292 
+Get Data Time, 0, 1532721526, 9292 
+Concurrent Pipeline Time, 0, 232, 9292 
+write time, 41, 0, 9293 
+Dispatch Time, 0, 0, 9333 
+Total Pipeline Time, 0, 1532721526, 9333 
+Get Data Time, 0, 1532721526, 9333 
+Concurrent Pipeline Time, 0, 232, 9333 
+write time, 41, 0, 9334 
+Dispatch Time, 0, 0, 9375 
+Total Pipeline Time, 0, 1532721526, 9375 
+Get Data Time, 0, 1532721526, 9375 
+Concurrent Pipeline Time, 0, 232, 9375 
+write time, 41, 0, 9376 
+Dispatch Time, 0, 0, 9417 
+Total Pipeline Time, 0, 1532721526, 9417 
+Get Data Time, 0, 1532721526, 9417 
+Concurrent Pipeline Time, 0, 232, 9417 
+write time, 41, 0, 9417 
+Dispatch Time, 0, 0, 9459 
+Total Pipeline Time, 0, 1532721526, 9459 
+Get Data Time, 0, 1532721526, 9459 
+Concurrent Pipeline Time, 0, 232, 9459 
+write time, 42, 0, 9460 
+Dispatch Time, 0, 0, 9500 
+Total Pipeline Time, 0, 1532721526, 9500 
+Get Data Time, 0, 1532721526, 9500 
+Concurrent Pipeline Time, 0, 232, 9500 
+write time, 41, 0, 9501 
+Dispatch Time, 0, 0, 9542 
+Total Pipeline Time, 0, 1532721526, 9542 
+Get Data Time, 0, 1532721526, 9542 
+Concurrent Pipeline Time, 0, 232, 9542 
+write time, 41, 0, 9542 
+Dispatch Time, 0, 0, 9583 
+Total Pipeline Time, 0, 1532721526, 9584 
+Get Data Time, 0, 1532721526, 9584 
+Concurrent Pipeline Time, 0, 232, 9584 
+write time, 41, 0, 9584 
+Dispatch Time, 0, 0, 9626 
+Total Pipeline Time, 0, 1532721526, 9626 
+Get Data Time, 0, 1532721526, 9626 
+Concurrent Pipeline Time, 0, 232, 9626 
+write time, 42, 0, 9626 
+Dispatch Time, 0, 0, 9667 
+Total Pipeline Time, 0, 1532721526, 9667 
+Get Data Time, 0, 1532721526, 9667 
+Concurrent Pipeline Time, 0, 232, 9667 
+write time, 41, 0, 9667 
+Dispatch Time, 0, 0, 9708 
+Total Pipeline Time, 0, 1532721526, 9708 
+Get Data Time, 0, 1532721526, 9708 
+Concurrent Pipeline Time, 0, 232, 9708 
+write time, 41, 0, 9709 
+Dispatch Time, 0, 0, 9750 
+Total Pipeline Time, 0, 1532721526, 9750 
+Get Data Time, 0, 1532721526, 9750 
+Concurrent Pipeline Time, 0, 232, 9750 
+write time, 41, 0, 9750 
+Dispatch Time, 0, 0, 9792 
+Total Pipeline Time, 0, 1532721526, 9793 
+Get Data Time, 0, 1532721526, 9793 
+Concurrent Pipeline Time, 0, 232, 9793 
+write time, 42, 0, 9793 
+Dispatch Time, 0, 0, 9833 
+Total Pipeline Time, 0, 1532721526, 9833 
+Get Data Time, 0, 1532721526, 9833 
+Concurrent Pipeline Time, 0, 232, 9833 
+write time, 40, 0, 9834 
+Dispatch Time, 0, 0, 9875 
+Total Pipeline Time, 0, 1532721526, 9875 
+Get Data Time, 0, 1532721526, 9875 
+Concurrent Pipeline Time, 0, 232, 9875 
+write time, 41, 0, 9876 
+Dispatch Time, 0, 0, 9920 
+Total Pipeline Time, 0, 1532721526, 9920 
+Get Data Time, 0, 1532721526, 9920 
+Concurrent Pipeline Time, 0, 232, 9920 
+write time, 45, 0, 9921 
+Dispatch Time, 0, 0, 9958 
+Total Pipeline Time, 0, 1532721526, 9959 
+Get Data Time, 0, 1532721526, 9959 
+Concurrent Pipeline Time, 0, 232, 9959 
+write time, 38, 0, 9959 
+Dispatch Time, 0, 0, 10000 
+Total Pipeline Time, 0, 1532721526, 10000 
+Get Data Time, 0, 1532721526, 10000 
+Concurrent Pipeline Time, 0, 232, 10001 
+write time, 41, 0, 10001 
+Dispatch Time, 0, 0, 10041 
+Total Pipeline Time, 0, 1532721526, 10041 
+Get Data Time, 0, 1532721526, 10042 
+Concurrent Pipeline Time, 0, 232, 10042 
+write time, 41, 0, 10042 
+Dispatch Time, 0, 0, 10084 
+Total Pipeline Time, 0, 1532721526, 10084 
+Get Data Time, 0, 1532721526, 10084 
+Concurrent Pipeline Time, 0, 232, 10084 
+write time, 41, 0, 10084 
+Dispatch Time, 0, 0, 10125 
+Total Pipeline Time, 0, 1532721526, 10125 
+Get Data Time, 0, 1532721526, 10125 
+Concurrent Pipeline Time, 0, 232, 10125 
+write time, 41, 0, 10125 
+Dispatch Time, 0, 0, 10167 
+Total Pipeline Time, 0, 1532721526, 10167 
+Get Data Time, 0, 1532721526, 10167 
+Concurrent Pipeline Time, 0, 232, 10167 
+write time, 41, 0, 10167 
+Dispatch Time, 0, 0, 10208 
+Total Pipeline Time, 0, 1532721526, 10208 
+Get Data Time, 0, 1532721526, 10208 
+Concurrent Pipeline Time, 0, 232, 10208 
+write time, 41, 0, 10208 
+Dispatch Time, 0, 0, 10250 
+Total Pipeline Time, 0, 1532721526, 10250 
+Get Data Time, 0, 1532721526, 10250 
+Concurrent Pipeline Time, 0, 232, 10250 
+write time, 42, 0, 10251 
+Dispatch Time, 0, 0, 10292 
+Total Pipeline Time, 0, 1532721526, 10292 
+Get Data Time, 0, 1532721526, 10292 
+Concurrent Pipeline Time, 0, 232, 10292 
+write time, 41, 0, 10292 
+Dispatch Time, 0, 0, 10334 
+Total Pipeline Time, 0, 1532721526, 10334 
+Get Data Time, 0, 1532721526, 10334 
+Concurrent Pipeline Time, 0, 232, 10334 
+write time, 41, 0, 10334 
+Dispatch Time, 0, 0, 10375 
+Total Pipeline Time, 0, 1532721526, 10375 
+Get Data Time, 0, 1532721526, 10375 
+Concurrent Pipeline Time, 0, 232, 10375 
+write time, 41, 0, 10375 
+Dispatch Time, 0, 0, 10417 
+Total Pipeline Time, 0, 1532721526, 10417 
+Get Data Time, 0, 1532721526, 10417 
+Concurrent Pipeline Time, 0, 232, 10417 
+write time, 42, 0, 10418 
+Dispatch Time, 0, 0, 10458 
+Total Pipeline Time, 0, 1532721526, 10459 
+Get Data Time, 0, 1532721526, 10459 
+Concurrent Pipeline Time, 0, 232, 10459 
+write time, 41, 0, 10459 
+Dispatch Time, 0, 0, 10500 
+Total Pipeline Time, 0, 1532721526, 10500 
+Get Data Time, 0, 1532721526, 10500 
+Concurrent Pipeline Time, 0, 232, 10500 
+write time, 41, 0, 10500 
+Dispatch Time, 0, 0, 10542 
+Total Pipeline Time, 0, 1532721526, 10542 
+Get Data Time, 0, 1532721526, 10542 
+Concurrent Pipeline Time, 0, 232, 10542 
+write time, 42, 0, 10543 
+Dispatch Time, 0, 0, 10583 
+Total Pipeline Time, 0, 1532721526, 10583 
+Get Data Time, 0, 1532721526, 10583 
+Concurrent Pipeline Time, 0, 232, 10583 
+write time, 40, 0, 10583 
+Dispatch Time, 0, 0, 10625 
+Total Pipeline Time, 0, 1532721526, 10625 
+Get Data Time, 0, 1532721526, 10625 
+Concurrent Pipeline Time, 0, 232, 10625 
+write time, 42, 0, 10626 
+Dispatch Time, 0, 0, 10672 
+Total Pipeline Time, 0, 1532721526, 10672 
+Get Data Time, 0, 1532721526, 10672 
+Concurrent Pipeline Time, 0, 232, 10672 
+write time, 46, 0, 10672 
+Dispatch Time, 0, 0, 10708 
+Total Pipeline Time, 0, 1532721526, 10708 
+Get Data Time, 0, 1532721526, 10708 
+Concurrent Pipeline Time, 0, 232, 10708 
+write time, 36, 0, 10709 
+Dispatch Time, 0, 0, 10750 
+Total Pipeline Time, 0, 1532721526, 10750 
+Get Data Time, 0, 1532721526, 10750 
+Concurrent Pipeline Time, 0, 232, 10750 
+write time, 42, 0, 10751 
+Dispatch Time, 0, 0, 10792 
+Total Pipeline Time, 0, 1532721526, 10792 
+Get Data Time, 0, 1532721526, 10792 
+Concurrent Pipeline Time, 0, 232, 10792 
+write time, 41, 0, 10793 
+Dispatch Time, 0, 0, 10833 
+Total Pipeline Time, 0, 1532721526, 10833 
+Get Data Time, 0, 1532721526, 10833 
+Concurrent Pipeline Time, 0, 232, 10834 
+write time, 41, 0, 10834 
+Dispatch Time, 0, 0, 10875 
+Total Pipeline Time, 0, 1532721526, 10875 
+Get Data Time, 0, 1532721526, 10875 
+Concurrent Pipeline Time, 0, 232, 10875 
+write time, 41, 0, 10876 
+Dispatch Time, 0, 0, 10917 
+Total Pipeline Time, 0, 1532721526, 10917 
+Get Data Time, 0, 1532721526, 10917 
+Concurrent Pipeline Time, 0, 232, 10917 
+write time, 41, 0, 10917 
+Dispatch Time, 0, 0, 10959 
+Total Pipeline Time, 0, 1532721526, 10959 
+Get Data Time, 0, 1532721526, 10959 
+Concurrent Pipeline Time, 0, 232, 10959 
+write time, 42, 0, 10959 
+Dispatch Time, 0, 0, 11000 
+Total Pipeline Time, 0, 1532721526, 11000 
+Get Data Time, 0, 1532721526, 11000 
+Concurrent Pipeline Time, 0, 232, 11000 
+write time, 40, 0, 11000 
+Dispatch Time, 0, 0, 11042 
+Total Pipeline Time, 0, 1532721526, 11042 
+Get Data Time, 0, 1532721526, 11042 
+Concurrent Pipeline Time, 0, 232, 11042 
+write time, 41, 0, 11042 
+Dispatch Time, 0, 0, 11084 
+Total Pipeline Time, 0, 1532721526, 11084 
+Get Data Time, 0, 1532721526, 11084 
+Concurrent Pipeline Time, 0, 232, 11084 
+write time, 42, 0, 11084 
+Dispatch Time, 0, 0, 11124 
+Total Pipeline Time, 0, 1532721526, 11124 
+Get Data Time, 0, 1532721526, 11124 
+Concurrent Pipeline Time, 0, 232, 11124 
+write time, 39, 0, 11124 
+Dispatch Time, 0, 0, 11167 
+Total Pipeline Time, 0, 1532721526, 11167 
+Get Data Time, 0, 1532721526, 11167 
+Concurrent Pipeline Time, 0, 232, 11167 
+write time, 43, 0, 11167 
+Dispatch Time, 0, 0, 11208 
+Total Pipeline Time, 0, 1532721526, 11208 
+Get Data Time, 0, 1532721526, 11208 
+Concurrent Pipeline Time, 0, 232, 11208 
+write time, 41, 0, 11209 
+Dispatch Time, 0, 0, 11250 
+Total Pipeline Time, 0, 1532721526, 11250 
+Get Data Time, 0, 1532721526, 11250 
+Concurrent Pipeline Time, 0, 232, 11250 
+write time, 42, 0, 11251 
+Dispatch Time, 0, 0, 11292 
+Total Pipeline Time, 0, 1532721526, 11293 
+Get Data Time, 0, 1532721526, 11293 
+Concurrent Pipeline Time, 0, 232, 11293 
+write time, 42, 0, 11293 
+Dispatch Time, 0, 0, 11334 
+Total Pipeline Time, 0, 1532721526, 11334 
+Get Data Time, 0, 1532721526, 11334 
+Concurrent Pipeline Time, 0, 232, 11334 
+write time, 41, 0, 11334 
+Dispatch Time, 0, 0, 11379 
+Total Pipeline Time, 0, 1532721526, 11379 
+Get Data Time, 0, 1532721526, 11379 
+Concurrent Pipeline Time, 0, 232, 11379 
+write time, 44, 0, 11379 
+Dispatch Time, 0, 0, 11417 
+Total Pipeline Time, 0, 1532721526, 11417 
+Get Data Time, 0, 1532721526, 11417 
+Concurrent Pipeline Time, 0, 232, 11417 
+write time, 38, 0, 11417 
+Dispatch Time, 0, 0, 11458 
+Total Pipeline Time, 0, 1532721526, 11458 
+Get Data Time, 0, 1532721526, 11458 
+Concurrent Pipeline Time, 0, 232, 11458 
+write time, 41, 0, 11459 
+Dispatch Time, 0, 0, 11500 
+Total Pipeline Time, 0, 1532721526, 11500 
+Get Data Time, 0, 1532721526, 11500 
+Concurrent Pipeline Time, 0, 232, 11500 
+write time, 42, 0, 11501 
+Dispatch Time, 0, 0, 11542 
+Total Pipeline Time, 0, 1532721526, 11542 
+Get Data Time, 0, 1532721526, 11542 
+Concurrent Pipeline Time, 0, 232, 11542 
+write time, 41, 0, 11542 
+Dispatch Time, 0, 0, 11583 
+Total Pipeline Time, 0, 1532721526, 11583 
+Get Data Time, 0, 1532721526, 11584 
+Concurrent Pipeline Time, 0, 232, 11584 
+write time, 41, 0, 11584 
+Dispatch Time, 0, 0, 11625 
+Total Pipeline Time, 0, 1532721526, 11625 
+Get Data Time, 0, 1532721526, 11625 
+Concurrent Pipeline Time, 0, 232, 11625 
+write time, 41, 0, 11625 
+Dispatch Time, 0, 0, 11667 
+Total Pipeline Time, 0, 1532721526, 11667 
+Get Data Time, 0, 1532721526, 11667 
+Concurrent Pipeline Time, 0, 232, 11667 
+write time, 41, 0, 11667 
+Dispatch Time, 0, 0, 11708 
+Total Pipeline Time, 0, 1532721526, 11708 
+Get Data Time, 0, 1532721526, 11708 
+Concurrent Pipeline Time, 0, 232, 11708 
+write time, 41, 0, 11709 
+Dispatch Time, 0, 0, 11750 
+Total Pipeline Time, 0, 1532721526, 11750 
+Get Data Time, 0, 1532721526, 11750 
+Concurrent Pipeline Time, 0, 232, 11750 
+write time, 42, 0, 11751 
+Dispatch Time, 0, 0, 11792 
+Total Pipeline Time, 0, 1532721526, 11792 
+Get Data Time, 0, 1532721526, 11792 
+Concurrent Pipeline Time, 0, 232, 11792 
+write time, 41, 0, 11793 
+Dispatch Time, 0, 0, 11833 
+Total Pipeline Time, 0, 1532721526, 11833 
+Get Data Time, 0, 1532721526, 11833 
+Concurrent Pipeline Time, 0, 232, 11833 
+write time, 41, 0, 11834 
+Dispatch Time, 0, 0, 11877 
+Total Pipeline Time, 0, 1532721526, 11877 
+Get Data Time, 0, 1532721526, 11877 
+Concurrent Pipeline Time, 0, 232, 11877 
+write time, 43, 0, 11878 
+Dispatch Time, 0, 0, 11917 
+Total Pipeline Time, 0, 1532721526, 11917 
+Get Data Time, 0, 1532721526, 11917 
+Concurrent Pipeline Time, 0, 232, 11917 
+write time, 39, 0, 11917 
+Dispatch Time, 0, 0, 11959 
+Total Pipeline Time, 0, 1532721526, 11959 
+Get Data Time, 0, 1532721526, 11959 
+Concurrent Pipeline Time, 0, 232, 11959 
+write time, 41, 0, 11959 
+Dispatch Time, 0, 0, 12000 
+Total Pipeline Time, 0, 1532721526, 12000 
+Get Data Time, 0, 1532721526, 12000 
+Concurrent Pipeline Time, 0, 232, 12000 
+write time, 41, 0, 12001 
+Dispatch Time, 0, 0, 12042 
+Total Pipeline Time, 0, 1532721526, 12042 
+Get Data Time, 0, 1532721526, 12042 
+Concurrent Pipeline Time, 0, 232, 12042 
+write time, 41, 0, 12042 
+Dispatch Time, 0, 0, 12083 
+Total Pipeline Time, 0, 1532721526, 12083 
+Get Data Time, 0, 1532721526, 12083 
+Concurrent Pipeline Time, 0, 232, 12083 
+write time, 41, 0, 12084 
+Dispatch Time, 0, 0, 12125 
+Total Pipeline Time, 0, 1532721526, 12125 
+Get Data Time, 0, 1532721526, 12125 
+Concurrent Pipeline Time, 0, 232, 12125 
+write time, 42, 0, 12126 
+Dispatch Time, 0, 0, 12167 
+Total Pipeline Time, 0, 1532721526, 12167 
+Get Data Time, 0, 1532721526, 12167 
+Concurrent Pipeline Time, 0, 232, 12167 
+write time, 41, 0, 12167 
+Dispatch Time, 0, 0, 12210 
+Total Pipeline Time, 0, 1532721526, 12210 
+Get Data Time, 0, 1532721526, 12210 
+Concurrent Pipeline Time, 0, 232, 12210 
+write time, 43, 0, 12211 
+Dispatch Time, 0, 0, 12250 
+Total Pipeline Time, 0, 1532721526, 12251 
+Get Data Time, 0, 1532721526, 12251 
+Concurrent Pipeline Time, 0, 232, 12251 
+write time, 40, 0, 12251 
+Dispatch Time, 0, 0, 12292 
+Total Pipeline Time, 0, 1532721526, 12292 
+Get Data Time, 0, 1532721526, 12292 
+Concurrent Pipeline Time, 0, 232, 12292 
+write time, 42, 0, 12293 
+Dispatch Time, 0, 0, 12333 
+Total Pipeline Time, 0, 1532721526, 12333 
+Get Data Time, 0, 1532721526, 12333 
+Concurrent Pipeline Time, 0, 232, 12334 
+write time, 40, 0, 12334 
+Dispatch Time, 0, 0, 12375 
+Total Pipeline Time, 0, 1532721526, 12375 
+Get Data Time, 0, 1532721526, 12376 
+Concurrent Pipeline Time, 0, 232, 12376 
+write time, 42, 0, 12376 
+Get Data Time, 0, 1532721526, 12416 
+Concurrent Pipeline Time, 0, 232, 12416 
+write time, 40, 0, 12417 
+Get Data Time, 0, 1532721526, 12458 
+Concurrent Pipeline Time, 0, 232, 12458 
+write time, 41, 0, 12458 
+Concurrent Pipeline Time, 0, 232, 12500 
+Concurrent Pipeline Time, 0, 232, 12541 
+Concurrent Pipeline Time, 0, 232, 12583 
+Concurrent Pipeline Time, 0, 232, 12624 
+Concurrent Pipeline Time, 0, 232, 12666 
+Concurrent Pipeline Time, 0, 232, 12709 
+Concurrent Pipeline Time, 0, 232, 12750 
+Concurrent Pipeline Time, 0, 232, 12791 
+Concurrent Pipeline Time, 0, 232, 12833 
+Concurrent Pipeline Time, 0, 232, 12874 
+Concurrent Pipeline Time, 0, 232, 12916 
+Concurrent Pipeline Time, 0, 232, 12958 
+Concurrent Pipeline Time, 0, 232, 13000 
+Concurrent Pipeline Time, 0, 232, 13041 
+Concurrent Pipeline Time, 0, 232, 13083 
+Concurrent Pipeline Time, 0, 232, 13125 
+Concurrent Pipeline Time, 0, 232, 13166 
+Concurrent Pipeline Time, 0, 232, 13208 
+Concurrent Pipeline Time, 0, 232, 13249 
+Concurrent Pipeline Time, 0, 232, 13291 
+Concurrent Pipeline Time, 0, 232, 13333 
+Concurrent Pipeline Time, 0, 232, 13375 
+Concurrent Pipeline Time, 0, 232, 13416 
+Concurrent Pipeline Time, 0, 232, 13458 
+Concurrent Pipeline Time, 0, 232, 13499 
+Concurrent Pipeline Time, 0, 232, 13541 
+Concurrent Pipeline Time, 0, 232, 13583 
+Concurrent Pipeline Time, 0, 232, 13625 
+Concurrent Pipeline Time, 0, 232, 13666 
+Concurrent Pipeline Time, 0, 232, 13708 
+Concurrent Pipeline Time, 0, 232, 13750 
+Concurrent Pipeline Time, 0, 232, 13853 
+Concurrent Pipeline Time, 0, 232, 13860 
+Concurrent Pipeline Time, 0, 232, 13902 
+Concurrent Pipeline Time, 0, 232, 13943 
+Concurrent Pipeline Time, 0, 232, 13986 
+Concurrent Pipeline Time, 0, 232, 14027 
+Concurrent Pipeline Time, 0, 232, 14069 
+Concurrent Pipeline Time, 0, 232, 14111 
+Concurrent Pipeline Time, 0, 232, 14152 
+Concurrent Pipeline Time, 0, 232, 14194 
+Concurrent Pipeline Time, 0, 232, 14236 
+Concurrent Pipeline Time, 0, 232, 14277 
+Concurrent Pipeline Time, 0, 232, 14319 
+Concurrent Pipeline Time, 0, 232, 14360 
+Concurrent Pipeline Time, 0, 232, 14402 
+Concurrent Pipeline Time, 0, 232, 14443 
+Concurrent Pipeline Time, 0, 232, 14486 
+Concurrent Pipeline Time, 0, 232, 14527 
+Concurrent Pipeline Time, 0, 232, 14569 
+Concurrent Pipeline Time, 0, 232, 14611 
+Concurrent Pipeline Time, 0, 232, 14652 
+Concurrent Pipeline Time, 0, 232, 14694 
+Concurrent Pipeline Time, 0, 232, 14736 
+Concurrent Pipeline Time, 0, 232, 14777 
+Concurrent Pipeline Time, 0, 232, 14818 
+Concurrent Pipeline Time, 0, 232, 14860 
+Concurrent Pipeline Time, 0, 232, 14902 
+Concurrent Pipeline Time, 0, 232, 14944 
+Concurrent Pipeline Time, 0, 232, 14985 
+Concurrent Pipeline Time, 0, 232, 15027 
+Concurrent Pipeline Time, 0, 232, 15069 
+Concurrent Pipeline Time, 0, 232, 15111 
+Concurrent Pipeline Time, 0, 232, 15152 
+Concurrent Pipeline Time, 0, 232, 15193 
+Concurrent Pipeline Time, 0, 232, 15236 
+Concurrent Pipeline Time, 0, 232, 15277 
+Concurrent Pipeline Time, 0, 232, 15319 
+Concurrent Pipeline Time, 0, 232, 15360 
+Concurrent Pipeline Time, 0, 232, 15402 
+Concurrent Pipeline Time, 0, 232, 15444 
+Concurrent Pipeline Time, 0, 232, 15485 
+Concurrent Pipeline Time, 0, 232, 15527 
+Concurrent Pipeline Time, 0, 232, 15569 
+Concurrent Pipeline Time, 0, 232, 15611 
+Concurrent Pipeline Time, 0, 232, 15652 
+Concurrent Pipeline Time, 0, 232, 15694 
+Concurrent Pipeline Time, 0, 232, 15735 
+Concurrent Pipeline Time, 0, 232, 15777 
+Concurrent Pipeline Time, 0, 232, 15820 
+Concurrent Pipeline Time, 0, 232, 15864 
+Concurrent Pipeline Time, 0, 232, 15902 
+Concurrent Pipeline Time, 0, 232, 15944 

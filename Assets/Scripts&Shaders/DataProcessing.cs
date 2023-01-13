@@ -24,12 +24,17 @@ public class DataProcessing : MonoBehaviour
 
         public ComputeBuffer encoding;
 
-        public AsyncRead(AsyncGPUReadbackRequest reqIn, RenderTexture oldIn, RenderTexture resultIn, RenderTexture newTextureIn, ComputeBuffer encodingIn){
+        public int reqNum;
+
+        public AsyncRead(AsyncGPUReadbackRequest reqIn, RenderTexture oldIn, RenderTexture resultIn,
+            RenderTexture newTextureIn, ComputeBuffer encodingIn, int reqNumIn){
+
             req = reqIn;
             old = oldIn;
             result = resultIn;
             newTexture = newTextureIn;
             encoding = encodingIn;
+            reqNum = reqNumIn;
         }
     }    
 
@@ -54,7 +59,7 @@ public class DataProcessing : MonoBehaviour
         }
     }
 
-    DiskWriter ds = new DiskWriter(3840, 2160);
+    DiskWriter dw = new DiskWriter(3840, 2160);
 
     public ComputeShader deltaShader;
 
@@ -94,6 +99,9 @@ public class DataProcessing : MonoBehaviour
         ServePendingGpuRequests();
     }
     
+    string formatWriteFileName(int fileNum){
+        return uid.ToString() + "_" + fileNum.ToString();
+    }
 
     public void ServePendingGpuRequests(){
         List<AsyncRead> doneRequests = new();
@@ -103,7 +111,7 @@ public class DataProcessing : MonoBehaviour
             }else if(read.req.done){
                 Stopwatch sw = new();
                 sw.Start();
-                ds.SaveDepthFramePipelineNaive(read.req.GetData<byte>().ToArray());    
+                dw.SaveDepthFramePipelineNaive(read.req.GetData<byte>().ToArray(), formatWriteFileName(read.reqNum));    
                 doneRequests.Add(read);
                 StatsCollector.writeStatistic<long>("Get Data Time", uid, sw.ElapsedMilliseconds);
                 release(read);
@@ -154,15 +162,16 @@ public class DataProcessing : MonoBehaviour
             //////////////////////////////
             StatsCollector.writeStatistic<long>("Dispatch Time", 0, sw.ElapsedMilliseconds);
             RenderTexture.active = result;        
-            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(Encoding), oldTexture, result, newTexture, Encoding);
+            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(Encoding), oldTexture, result, newTexture, Encoding, timesRun);
             pendingGpuRequests.Add(read);        
         }else{
             // Note probably a small 1 time memory leak of newtexture here
             RenderTexture.active = newTexture;            
-            Texture2D tmp = new(Screen.width, Screen.height, TextureFormat.RGBA32, false);
+            Texture2D tmp = new(Screen.width, Screen.height, TextureFormat.RGBAFloat, false);
             Rect regionToReadFrom = new Rect(0, 0, Screen.width, Screen.height);
             tmp.ReadPixels(regionToReadFrom, 0, 0);
-            ds.SaveDepthFramePipelineNaive(tmp.GetRawTextureData());            
+
+            dw.SaveDepthFramePipelineNaive(tmp.GetRawTextureData(), formatWriteFileName(timesRun));            
         }
 
         // Cleanup render texture

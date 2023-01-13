@@ -1,0 +1,3 @@
+> /Users/lukehobeika/Harsha Research Lab/postprocessing/read_files.py(84)recreate_frame()
+-> recreated_frame[pixel["xpos"]][pixel["ypos"]][0] = pixel["val"] * 256 + prevFrame[pixel["xpos"]][pixel["ypos"]][0]
+(Pdb) (Pdb) 

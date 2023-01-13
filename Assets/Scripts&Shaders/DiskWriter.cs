@@ -18,14 +18,20 @@ using UnityEngine.Rendering;
 // Probably do not need the DiskWriter writer part of this, I can delete it later on
 struct writeInformation{
     public DiskWriter writer;
+
+
+    public string filename;
     public byte[] data;    
-    public writeInformation(byte[] dataIn, DiskWriter writerIn){
+    public writeInformation(byte[] dataIn, DiskWriter writerIn, string filenameIn){
+        filename = filenameIn;
         data = dataIn;
         writer = writerIn;
     }
 }
 
 public class DiskWriter{
+
+    static string directoryName = "delta_encoding_raw_data/";
 
     static readonly int NUM_THREADS = 8;
 
@@ -39,36 +45,18 @@ public class DiskWriter{
 
     }
 
-    static void writeCompressionRatio(byte[] arr){
-        Stopwatch sw = new();
-        sw.Start();
-        float count = 0.0F;
 
-        double chunkSize = Math.Ceiling(arr.Length / ((NUM_THREADS) * 1.0f));
-
-
-
-
-        foreach(var b in arr){
-            if(!b.Equals(0)){
-                count+=1;
-            }
-        }
-        StatsCollector.writeStatistic<float>("Compression Ratio", 0, count / (arr.Length * 1.0f));
-
-        UnityEngine.Debug.Log(count );
-        UnityEngine.Debug.Log(arr.Length);        
-        UnityEngine.Debug.Log(count / arr.Length);
-
-        StatsCollector.writeStatistic<long>("Time to Iterate Through Array", 0, sw.ElapsedMilliseconds);
+    string formatFilepath(string name){
+        return directoryName + name;
     }
 
 
     static void writeThread(){
         Stopwatch sw = new Stopwatch();
+        Directory.CreateDirectory(directoryName);
         while(true){
             writeInformation info = collection.Take(); 
-            info.writer.SaveDepthFrameNaive(info.data);                
+            info.writer.SaveDepthFrameNaive(info.data, info.filename);                
             //writeCompressionRatio(info.data);
             StatsCollector.writeStatistic<long>("write time", 0,  sw.ElapsedMilliseconds);
             
@@ -94,21 +82,16 @@ public class DiskWriter{
         timeSinceStart.Start();
     }
 
-    
-    // need to make a deepcopy of pixels because it will get overwritten next frame
-    public void SaveDepthFramePipelineNaive(byte[] pixels){
-        writeInformation info = new writeInformation(pixels, this);
+
+    public void SaveDepthFramePipelineNaive(byte[] pixels, string filename){
+        writeInformation info = new writeInformation(pixels, this, filename);
         collection.Add(info);
     }
-
-    // need to make a deepcopy of pixels because it will get overwritten next frame
-    // public void SaveDepthFramePipelineNaive(AsyncGPUReadbackRequest req){
-    //     byte[] cpy = new byte[pixels.Length];
-    //     Buffer.BlockCopy(pixels, 0, cpy, 0, pixels.Length);
-    //     writeInformation info = new writeInformation(cpy, this, null);
-    //     collection.Add(info);
-    // }    
     
+    public void SaveDepthFramePipelineNaive(byte[] pixels){
+        writeInformation info = new writeInformation(pixels, this, "test_file");
+        collection.Add(info);
+    }
 
     byte[] encodePixels(Color[] pixels){
         string tmp = "";
@@ -117,8 +100,33 @@ public class DiskWriter{
     }
 
     public void SaveDepthFrameNaive(byte[] pixels){
+        SaveDepthFrameNaive(pixels, "test_file");
+    }
+    public void SaveDepthFrameNaive(byte[] pixels, string filename){
         Stopwatch sw = new Stopwatch();
         sw.Start();                
-        File.WriteAllBytes("test_file", pixels);
+        File.WriteAllBytes(formatFilepath(filename), pixels);
     }
+
+
+    // Used to calculate and log what the compression ratio is for a specifc frame
+    static void writeCompressionRatio(byte[] arr){
+        Stopwatch sw = new();
+        sw.Start();
+        float count = 0.0F;
+
+        double chunkSize = Math.Ceiling(arr.Length / ((NUM_THREADS) * 1.0f));
+        foreach(var b in arr){
+            if(!b.Equals(0)){
+                count+=1;
+            }
+        }
+        StatsCollector.writeStatistic<float>("Compression Ratio", 0, count / (arr.Length * 1.0f));
+        UnityEngine.Debug.Log(count );
+        UnityEngine.Debug.Log(arr.Length);        
+        UnityEngine.Debug.Log(count / arr.Length);
+        StatsCollector.writeStatistic<long>("Time to Iterate Through Array", 0, sw.ElapsedMilliseconds);
+    }
+
+
 }

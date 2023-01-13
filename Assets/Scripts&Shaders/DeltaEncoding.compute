@@ -12,7 +12,7 @@ AppendStructuredBuffer<float4> Encoding;
 [numthreads(8,8,1)]
 void CSMain (uint3 id : SV_DispatchThreadID){    
     [branch]
-    if(OldTexture[id.xy].r - NewTexture[id.xy].r != 0){
-        Encoding.Append(float4(OldTexture[id.xy].r - NewTexture[id.xy].r, id.x, id.y, 0));
+    if( NewTexture[id.xy].r - OldTexture[id.xy].r != 0){
+        Encoding.Append(float4(  NewTexture[id.xy].r - OldTexture[id.xy].r, id.y, id.x, 0));
     }
 }

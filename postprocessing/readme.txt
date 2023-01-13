@@ -1,0 +1,1 @@
+This directory contains all of the scripts for reconstructing a series of frames after a delta encoding
