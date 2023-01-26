@@ -11,6 +11,10 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
+# output of delta encoding
+/delta_encoding_raw_data
+/delta_encoding_raw_data/*
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
