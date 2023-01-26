@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 28319527910074765, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 485775277137744801, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_Enabled
@@ -224,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4223332160187615745, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4223332160187615748, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_LocalScale.z
@@ -232,7 +232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4273444163095655341, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4342882117102366765, guid: 839f9a563748645b6a8b4dde396347ff, type: 3}
       propertyPath: m_Enabled
@@ -425,8 +425,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc7776f159d346298ca7a15709aa26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTimesRun: 2
-  delay: 1
+  maxTimesRun: 400
+  delay: 2
   deltaShader: {fileID: 7200000, guid: d4e094d32994247109ead33e9f219e72, type: 3}
 --- !u!1 &884306163
 GameObject:
@@ -677,8 +677,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc7776f159d346298ca7a15709aa26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTimesRun: 2
-  delay: 1
+  maxTimesRun: 400
+  delay: 2
   deltaShader: {fileID: 7200000, guid: d4e094d32994247109ead33e9f219e72, type: 3}
 --- !u!1001 &1324601074
 PrefabInstance:
@@ -774,8 +774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc7776f159d346298ca7a15709aa26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTimesRun: 248
-  delay: 0
+  maxTimesRun: 400
+  delay: 2
   deltaShader: {fileID: 7200000, guid: d4e094d32994247109ead33e9f219e72, type: 3}
 --- !u!1 &1813362370 stripped
 GameObject:
@@ -794,8 +794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc7776f159d346298ca7a15709aa26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTimesRun: 2
-  delay: 1
+  maxTimesRun: 400
+  delay: 2
   deltaShader: {fileID: 7200000, guid: d4e094d32994247109ead33e9f219e72, type: 3}
 --- !u!1 &1874182013 stripped
 GameObject:

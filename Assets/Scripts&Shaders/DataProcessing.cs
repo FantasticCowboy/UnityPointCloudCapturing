@@ -149,9 +149,10 @@ public class DataProcessing : MonoBehaviour
 
 
 
-        ComputeBuffer Encoding = new ComputeBuffer(Screen.width * Screen.height / 20 , sizeof(float) * 4 );
-        ComputeBuffer Count = new ComputeBuffer(1,4);
+        ComputeBuffer Encoding = new ComputeBuffer(Screen.width * Screen.height / 20 , sizeof(float) * 4, ComputeBufferType.Append);
+
         
+
         if(oldTexture != null){
             int kernel = deltaShader.FindKernel("CSMain");
             deltaShader.SetTexture(0,"NewTexture", newTexture);
@@ -169,17 +170,16 @@ public class DataProcessing : MonoBehaviour
             //////////////////////////////
             StatsCollector.writeStatistic<long>("Dispatch Time", 0, sw.ElapsedMilliseconds);
             RenderTexture.active = result;    
-            
-            int[] newCount = new int[1];
 
-            sw.Restart();
-            Count.GetData(newCount);
-            UnityEngine.Debug.Log(sw.ElapsedMilliseconds);
+
+
+
             //UnityEngine.Debug.Log(newCount[0]);
 
             AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(Encoding), oldTexture, result, newTexture, Encoding, timesRun);
             pendingGpuRequests.Add(read);        
         }else{
+            Encoding.Dispose();
             // Note probably a small 1 time memory leak of newtexture here
             RenderTexture.active = newTexture;            
             Texture2D tmp = new(Screen.width, Screen.height, TextureFormat.RGBAFloat, false);
