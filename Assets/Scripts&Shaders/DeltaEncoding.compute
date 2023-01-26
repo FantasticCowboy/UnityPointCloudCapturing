@@ -5,7 +5,27 @@
 // with cs.SetTexture
 Texture2D<float4> OldTexture;
 Texture2D<float4> NewTexture;
+RWBuffer<int> NumEncoded;
+int MaxSize;
 AppendStructuredBuffer<float4> Encoding;
+
+
+// Different Buffers that the application can append to
+// 
+AppendStructuredBuffer<float4> Encoding_1_Percent;
+AppendStructuredBuffer<float4> Encoding_2_Percent;
+AppendStructuredBuffer<float4> Encoding_3_Percent;
+AppendStructuredBuffer<float4> Encoding_4_Percent;
+AppendStructuredBuffer<float4> Encoding_5_Percent;
+AppendStructuredBuffer<float4> Encoding_10_Percent;
+AppendStructuredBuffer<float4> Encoding_20_Percent;
+AppendStructuredBuffer<float4> Encoding_50_Percent;
+AppendStructuredBuffer<float4> Encoding_100_Percent;
+
+
+
+AppendStructuredBuffer<float4> ReturnValue;
+
 
 //groupshared int NextPos;
 
@@ -13,6 +33,7 @@ AppendStructuredBuffer<float4> Encoding;
 void CSMain (uint3 id : SV_DispatchThreadID){    
     [branch]
     if( NewTexture[id.xy].r - OldTexture[id.xy].r != 0){
+        InterlockedAdd(NumEncoded[0], 1);
         Encoding.Append(float4(  NewTexture[id.xy].r - OldTexture[id.xy].r, id.y, id.x, 0));
     }
 }

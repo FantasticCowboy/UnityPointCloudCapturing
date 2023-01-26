@@ -14,8 +14,10 @@ public class DataProcessing : MonoBehaviour
     int resolutionX;
     int resolutionY;
     int uid;
+    public float delay = 1;
 
     struct AsyncRead{
+
         public AsyncGPUReadbackRequest req;
         public RenderTexture old;
 
@@ -88,7 +90,9 @@ public class DataProcessing : MonoBehaviour
         resolutionX = Screen.width;
         resolutionY = Screen.height;
 
-        if(timesRun < maxTimesRun){
+        // May cause a floating point overflow!
+        delay -= Time.deltaTime;
+        if(timesRun < maxTimesRun && delay < 0){
             Stopwatch sw = new Stopwatch();
             sw.Start();
             SendDepthFrameToDisk();
@@ -143,14 +147,17 @@ public class DataProcessing : MonoBehaviour
         result.enableRandomWrite = true;
         result.Create();
 
+
+
         ComputeBuffer Encoding = new ComputeBuffer(Screen.width * Screen.height / 20 , sizeof(float) * 4 );
-        
+        ComputeBuffer Count = new ComputeBuffer(1,4);
         
         if(oldTexture != null){
             int kernel = deltaShader.FindKernel("CSMain");
             deltaShader.SetTexture(0,"NewTexture", newTexture);
             deltaShader.SetTexture(0,"OldTexture", oldTexture);
             deltaShader.SetBuffer(0, "Encoding", Encoding);
+            
 
             Stopwatch sw = new();
             sw.Start();
@@ -161,7 +168,15 @@ public class DataProcessing : MonoBehaviour
             // StatsCollector.writeStatistic<int>("Number of times incremented", 0, tmp[0]);
             //////////////////////////////
             StatsCollector.writeStatistic<long>("Dispatch Time", 0, sw.ElapsedMilliseconds);
-            RenderTexture.active = result;        
+            RenderTexture.active = result;    
+            
+            int[] newCount = new int[1];
+
+            sw.Restart();
+            Count.GetData(newCount);
+            UnityEngine.Debug.Log(sw.ElapsedMilliseconds);
+            //UnityEngine.Debug.Log(newCount[0]);
+
             AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(Encoding), oldTexture, result, newTexture, Encoding, timesRun);
             pendingGpuRequests.Add(read);        
         }else{

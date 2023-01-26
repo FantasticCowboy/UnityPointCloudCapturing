@@ -20,10 +20,12 @@ def rotate_coordinates(x : int, y : int, angle : float):
 def read_delta_encoding(filename : str) -> list[dict[str : float]]:
     b = bytearray()
     ret = []
+
     with open(filename, "rb") as f :
         for line in f:
             for byte in line:
                 b.append(byte)
+
 
     # 16 -> four floats
     for i in range(0,len(b), 16):
@@ -38,6 +40,8 @@ def read_delta_encoding(filename : str) -> list[dict[str : float]]:
             vals.append(val)
 
         ret.append({"val" : float(vals[0][0]), "xpos" : int(vals[1][0]), "ypos" : int(vals[2][0])})
+
+
     return ret
 
 
@@ -45,7 +49,7 @@ def read_delta_encoding(filename : str) -> list[dict[str : float]]:
 # I.E: R = 8 bit channel, G = 8 bit channel, B = 8 bit channel, A = 8 bit chanel
 # returned list represents the texture such that the first 4 elements in the list represent the
 # bottom left pixel and the last 4 elements in the list represent the top right pixel
-def read_initial_texture(filename : str) -> list[list[int]]:
+def read_initial_texture(filename : str, height : int, width : int, datatype_size : int, elements_per_pixels : int) -> list[list[list[int]]]:
     b = bytearray()
     ret = list[dict[str : float]]
     ret = []
@@ -57,11 +61,10 @@ def read_initial_texture(filename : str) -> list[list[int]]:
     
     # TODO: This will break when I change the resolution of the frames 
     # each value is a float, 4 floats in a pixel    
-    datatype_size = 4
-    total_elements = 4
-    total_size = datatype_size * total_elements
-    rowLengthInBytes = 200 * total_size    
-    for rowNum in range(0, 200):
+    total_size = datatype_size * elements_per_pixels
+    rowLengthInBytes = width * total_size    
+
+    for rowNum in range(0, height):
         row = []
         for i in range(rowNum * rowLengthInBytes, rowNum * rowLengthInBytes + rowLengthInBytes, total_size):
             vals = []
@@ -94,13 +97,13 @@ def create_empty_frame(height : int, width : int) -> list[list[list[int]]]:
     return l
 
 
-def recreate_frame(prevFrame : list[dict[str : int]] , curFrameDeltaEncoding : list[dict[str : float]]):
-    recreated_frame = create_empty_frame(200, 200)
-    
+def recreate_frame(prevFrame : list[list[list[int]]] , curFrameDeltaEncoding : list[dict[str : float]]):
+    recreated_frame = create_empty_frame(1080, 1920)    
 
     # probably computing the wrong values because the read in original frame goes from bottom left to top right
     # whereas I am not sure in what coordinate space the encoded frame values are using!!!!!!
     exploredCoordinataes = {}
+
 
 
     for pixel in curFrameDeltaEncoding:
@@ -108,14 +111,11 @@ def recreate_frame(prevFrame : list[dict[str : int]] , curFrameDeltaEncoding : l
             continue
         #if(pixel["val"] < 0):
         #    pdb.set_trace()
-
         recreated_frame[pixel["xpos"]][pixel["ypos"]][0] = ((pixel["val"] ) + prevFrame[pixel["xpos"]][pixel["ypos"]][0])
         recreated_frame[pixel["xpos"]][pixel["ypos"]][1] = ((pixel["val"] ) + prevFrame[pixel["xpos"]][pixel["ypos"]][1])
         recreated_frame[pixel["xpos"]][pixel["ypos"]][2] = ((pixel["val"] ) + prevFrame[pixel["xpos"]][pixel["ypos"]][2])
         recreated_frame[pixel["xpos"]][pixel["ypos"]][3] = ((pixel["val"] ) + prevFrame[pixel["xpos"]][pixel["ypos"]][3])
         exploredCoordinataes[(pixel["xpos"] , pixel["ypos"])] = True
-
-
 
     for x in range(0, len(recreated_frame)):
         for y in range(0, len(recreated_frame[x])):
@@ -129,11 +129,14 @@ def recreate_frame(prevFrame : list[dict[str : int]] , curFrameDeltaEncoding : l
 
 # returns a list containing the recreated frames from first frame to last frame 
 def recreate_frames(encodingIdentifier : str) -> list[dict[str:int]]:
-    prevFrame = read_initial_texture(format_filename(encodingIdentifier=encodingIdentifier, file_num=0))
+
+    prevFrame = read_initial_texture(format_filename(encodingIdentifier=encodingIdentifier, file_num=0), 1080, 1920, 4, 4)
     frames = [prevFrame]
     currentFile = 1
     formatedName = format_filename(encodingIdentifier=encodingIdentifier, file_num=currentFile)   
     while(os.path.exists(formatedName)):
+        if(currentFile == 24):
+            break
         encoding = read_delta_encoding(formatedName)
         prevFrame = recreate_frame(prevFrame=prevFrame, curFrameDeltaEncoding=encoding)
         frames.append(prevFrame)
@@ -149,10 +152,13 @@ def recreate_frames(encodingIdentifier : str) -> list[dict[str:int]]:
 #
 #img.show()
 
-frames = recreate_frames("delta_encoding_raw_data/1532721526")
+frames = recreate_frames("delta_encoding_raw_data/544838990")
 
 for frame in frames:
     frame.reverse()
+
+frames = np.array(frames) * 255
+
 
 elements = np.array(frames)
 elements = elements.flatten()
@@ -170,4 +176,4 @@ for element in elements:
 # 
 # img.show()
 
-skvideo.io.vwrite("./postprocessing/test_video.gif", frames)
+skvideo.io.vwrite("./postprocessing/test_video.mov", frames)
