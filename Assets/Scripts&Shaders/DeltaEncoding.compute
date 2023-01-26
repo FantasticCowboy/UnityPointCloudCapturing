@@ -5,22 +5,11 @@
 // with cs.SetTexture
 Texture2D<float4> OldTexture;
 Texture2D<float4> NewTexture;
-//RWBuffer<int> NumEncoded;
-//int MaxSize;
+RWBuffer<int> NumEncoded;
+int MaxSmallSize;
+
 AppendStructuredBuffer<float4> Encoding;
-
-
-// Different Buffers that the application can append to
-// AppendStructuredBuffer<float4> Encoding_1_Percent;
-// AppendStructuredBuffer<float4> Encoding_2_Percent;
-// AppendStructuredBuffer<float4> Encoding_3_Percent;
-// AppendStructuredBuffer<float4> Encoding_4_Percent;
-// AppendStructuredBuffer<float4> Encoding_5_Percent;
-// AppendStructuredBuffer<float4> Encoding_10_Percent;
-// AppendStructuredBuffer<float4> Encoding_20_Percent;
-// AppendStructuredBuffer<float4> Encoding_50_Percent;
-// AppendStructuredBuffer<float4> Encoding_100_Percent;
-// AppendStructuredBuffer<float4> Result;
+AppendStructuredBuffer<float4> EncodingOverflow;
 
 
 //groupshared int NextPos;

@@ -16,7 +16,7 @@ public class DataProcessing : MonoBehaviour
     int uid;
     public float delay = 1;
 
-    struct AsyncRead{
+    struct AsyncReadDeltaEncoding{
 
         public AsyncGPUReadbackRequest req;
         public RenderTexture old;
@@ -28,9 +28,8 @@ public class DataProcessing : MonoBehaviour
 
         public int reqNum;
 
-        public AsyncRead(AsyncGPUReadbackRequest reqIn, RenderTexture oldIn, RenderTexture resultIn,
+        public AsyncReadDeltaEncoding(AsyncGPUReadbackRequest reqIn, RenderTexture oldIn, RenderTexture resultIn,
             RenderTexture newTextureIn, ComputeBuffer encodingIn, int reqNumIn){
-
             req = reqIn;
             old = oldIn;
             result = resultIn;
@@ -40,7 +39,30 @@ public class DataProcessing : MonoBehaviour
         }
     }    
 
+    struct AsyncRead{
+        public AsyncReadDeltaEncoding newReq;
+        public AsyncGPUReadbackRequest req;
+        public ComputeBuffer count;
+
+        public AsyncRead(AsyncReadDeltaEncoding deltaIn, AsyncGPUReadbackRequest reqIn, ComputeBuffer countIn){
+            newReq = deltaIn;
+            req = reqIn;
+            count = countIn;
+        }
+    }
+
+    
     void release(AsyncRead read){
+
+        // four floats per element
+        int bytesToRead = read.req.GetData<int>().ToArray()[0] * 4 *4;
+        read.newReq.req = AsyncGPUReadback.Request(read.newReq.encoding, bytesToRead, 0);
+        read.count.Dispose();
+
+        pendingGpuRequests.Add(read.newReq);
+    }
+
+    void release(AsyncReadDeltaEncoding read){
         if(read.newTexture!=null){
             renderTextureToReferences[read.newTexture]-=1;
             if(renderTextureToReferences[read.newTexture]==0){
@@ -67,7 +89,9 @@ public class DataProcessing : MonoBehaviour
 
     RenderTexture oldTexture;
 
-    HashSet<AsyncRead> pendingGpuRequests = new(); 
+    HashSet<AsyncReadDeltaEncoding> pendingGpuRequests = new(); 
+    HashSet<AsyncRead> pendingCountRequests = new(); 
+    
 
     Dictionary<RenderTexture, int> renderTextureToReferences = new();
 
@@ -100,6 +124,7 @@ public class DataProcessing : MonoBehaviour
             timesRun++;
             ran = true;
         }
+        ServePendingCountRequests();
         ServePendingGpuRequests();
     }
     
@@ -108,7 +133,7 @@ public class DataProcessing : MonoBehaviour
     }
 
     public void ServePendingGpuRequests(){
-        List<AsyncRead> doneRequests = new();
+        List<AsyncReadDeltaEncoding> doneRequests = new();
         foreach(var read in pendingGpuRequests){
             if(read.req.hasError){
                 UnityEngine.Debug.Log(read.req.hasError);
@@ -125,6 +150,21 @@ public class DataProcessing : MonoBehaviour
             pendingGpuRequests.Remove(req);
         }
     }
+
+    public void ServePendingCountRequests(){
+        List<AsyncRead> doneRequests = new();
+        foreach(var read in pendingCountRequests){
+            if(read.req.hasError){
+                UnityEngine.Debug.Log(read.req.hasError);
+            }else if(read.req.done){
+                release(read);
+                doneRequests.Add(read);
+            }   
+        }
+        foreach(var req in doneRequests){
+            pendingCountRequests.Remove(req);
+        }
+    }    
 
 
     void printIfOldTextureIsCreated(string tag){
@@ -149,15 +189,15 @@ public class DataProcessing : MonoBehaviour
 
 
 
-        ComputeBuffer Encoding = new ComputeBuffer(Screen.width * Screen.height / 20 , sizeof(float) * 4, ComputeBufferType.Append);
+        ComputeBuffer Encoding = new ComputeBuffer(Screen.width * Screen.height , sizeof(float) * 4, ComputeBufferType.Append);
 
         
 
         if(oldTexture != null){
             int kernel = deltaShader.FindKernel("CSMain");
-            deltaShader.SetTexture(0,"NewTexture", newTexture);
-            deltaShader.SetTexture(0,"OldTexture", oldTexture);
-            deltaShader.SetBuffer(0, "Encoding", Encoding);
+            deltaShader.SetTexture(kernel,"NewTexture", newTexture);
+            deltaShader.SetTexture(kernel,"OldTexture", oldTexture);
+            deltaShader.SetBuffer(kernel, "Encoding", Encoding);
             
 
             Stopwatch sw = new();
@@ -171,13 +211,16 @@ public class DataProcessing : MonoBehaviour
             StatsCollector.writeStatistic<long>("Dispatch Time", 0, sw.ElapsedMilliseconds);
             RenderTexture.active = result;    
 
+            ComputeBuffer Count = new ComputeBuffer(1, 4);
+            ComputeBuffer.CopyCount(Encoding, Count, 0);
 
 
+            AsyncGPUReadbackRequest req = AsyncGPUReadback.Request(Count);
 
-            //UnityEngine.Debug.Log(newCount[0]);
+            AsyncReadDeltaEncoding read = new AsyncReadDeltaEncoding(req, oldTexture, result, newTexture, Encoding, timesRun);
 
-            AsyncRead read = new AsyncRead(AsyncGPUReadback.Request(Encoding), oldTexture, result, newTexture, Encoding, timesRun);
-            pendingGpuRequests.Add(read);        
+            AsyncRead countReq = new AsyncRead(read, req, Count);
+            pendingCountRequests.Add(countReq);
         }else{
             Encoding.Dispose();
             // Note probably a small 1 time memory leak of newtexture here

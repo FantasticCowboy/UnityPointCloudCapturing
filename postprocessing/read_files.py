@@ -98,7 +98,7 @@ def create_empty_frame(height : int, width : int) -> list[list[list[int]]]:
 
 
 def recreate_frame(prevFrame : list[list[list[int]]] , curFrameDeltaEncoding : list[dict[str : float]]):
-    recreated_frame = create_empty_frame(1080, 1920)    
+    recreated_frame = create_empty_frame(WIDTH, HEIGHT)    
 
     # probably computing the wrong values because the read in original frame goes from bottom left to top right
     # whereas I am not sure in what coordinate space the encoded frame values are using!!!!!!
@@ -130,13 +130,11 @@ def recreate_frame(prevFrame : list[list[list[int]]] , curFrameDeltaEncoding : l
 # returns a list containing the recreated frames from first frame to last frame 
 def recreate_frames(encodingIdentifier : str) -> list[dict[str:int]]:
 
-    prevFrame = read_initial_texture(format_filename(encodingIdentifier=encodingIdentifier, file_num=0), 1080, 1920, 4, 4)
+    prevFrame = read_initial_texture(format_filename(encodingIdentifier=encodingIdentifier, file_num=0), WIDTH, HEIGHT, 4, 4)
     frames = [prevFrame]
     currentFile = 1
     formatedName = format_filename(encodingIdentifier=encodingIdentifier, file_num=currentFile)   
     while(os.path.exists(formatedName)):
-        if(currentFile == 24):
-            break
         encoding = read_delta_encoding(formatedName)
         prevFrame = recreate_frame(prevFrame=prevFrame, curFrameDeltaEncoding=encoding)
         frames.append(prevFrame)
@@ -152,7 +150,10 @@ def recreate_frames(encodingIdentifier : str) -> list[dict[str:int]]:
 #
 #img.show()
 
-frames = recreate_frames("delta_encoding_raw_data/544838990")
+WIDTH = 200
+HEIGHT = 200
+
+frames = recreate_frames("delta_encoding_raw_data/108881726")
 
 for frame in frames:
     frame.reverse()
