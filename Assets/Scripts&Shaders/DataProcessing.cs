@@ -5,8 +5,12 @@ using System.Collections.Generic;
 using UnityEngine.Rendering;
 using System.Threading;
 
+
+
 public class DataProcessing : MonoBehaviour
 {
+    static readonly int ELEMENT_SIZE_BYTES = 4 * 2;
+
     bool ran;
 
     int timesRun = 0;
@@ -53,9 +57,8 @@ public class DataProcessing : MonoBehaviour
 
     
     void release(AsyncRead read){
-
-        // four floats per element
-        int bytesToRead = read.req.GetData<int>().ToArray()[0] * 4 *4;
+        int bytesToRead = read.req.GetData<int>().ToArray()[0] * ELEMENT_SIZE_BYTES;
+        StatsCollector.writeStatistic<long>("Bytes Read " + Screen.height + "x" + Screen.width + " frame", uid, bytesToRead);
         read.newReq.req = AsyncGPUReadback.Request(read.newReq.encoding, bytesToRead, 0);
         read.count.Dispose();
 
@@ -116,16 +119,24 @@ public class DataProcessing : MonoBehaviour
 
         // May cause a floating point overflow!
         delay -= Time.deltaTime;
+        Stopwatch sw = new Stopwatch();
+
         if(timesRun < maxTimesRun && delay < 0){
-            Stopwatch sw = new Stopwatch();
+            CaputreFPS.recordFPS();
             sw.Start();
             SendDepthFrameToDisk();
             StatsCollector.writeStatistic<long>("Total Pipeline Time", uid, sw.ElapsedMilliseconds);
             timesRun++;
             ran = true;
         }
+        sw = new Stopwatch();
+        sw.Start();
         ServePendingCountRequests();
+        StatsCollector.writeStatistic<long>("Count Request Time", uid, sw.ElapsedMilliseconds);
+        sw.Restart();
         ServePendingGpuRequests();
+        StatsCollector.writeStatistic<long>("Pending Request Time", uid, sw.ElapsedMilliseconds);
+
     }
     
     string formatWriteFileName(int fileNum){
@@ -176,6 +187,10 @@ public class DataProcessing : MonoBehaviour
 
 
     void SendDepthFrameToDisk(){
+
+        Stopwatch sw = new();
+        sw.Start();        
+        
         RenderTexture newTexture = RenderColorArray();
         RenderTexture result = new RenderTexture(
             resolutionX, 
@@ -186,22 +201,19 @@ public class DataProcessing : MonoBehaviour
         );
         result.enableRandomWrite = true;
         result.Create();
-
-
-
-        ComputeBuffer Encoding = new ComputeBuffer(Screen.width * Screen.height , sizeof(float) * 4, ComputeBufferType.Append);
-
-        
+        ComputeBuffer Encoding = new ComputeBuffer(Screen.width * Screen.height , ELEMENT_SIZE_BYTES, ComputeBufferType.Append);
+        StatsCollector.writeStatistic<long>("Create Textures and Buffers Time", uid, sw.ElapsedMilliseconds);
+        sw.Restart();        
 
         if(oldTexture != null){
+
             int kernel = deltaShader.FindKernel("CSMain");
             deltaShader.SetTexture(kernel,"NewTexture", newTexture);
             deltaShader.SetTexture(kernel,"OldTexture", oldTexture);
             deltaShader.SetBuffer(kernel, "Encoding", Encoding);
-            
+            StatsCollector.writeStatistic<long>("Set Textures and Buffers Time", uid, sw.ElapsedMilliseconds);
 
-            Stopwatch sw = new();
-            sw.Start();
+            sw.Restart();
             deltaShader.Dispatch(kernel, newTexture.width / 8, newTexture.height / 8, 1);
 
             // For debug only delete later 
@@ -209,6 +221,8 @@ public class DataProcessing : MonoBehaviour
             // StatsCollector.writeStatistic<int>("Number of times incremented", 0, tmp[0]);
             //////////////////////////////
             StatsCollector.writeStatistic<long>("Dispatch Time", 0, sw.ElapsedMilliseconds);
+            sw.Restart();
+
             RenderTexture.active = result;    
 
             ComputeBuffer Count = new ComputeBuffer(1, 4);
@@ -221,6 +235,7 @@ public class DataProcessing : MonoBehaviour
 
             AsyncRead countReq = new AsyncRead(read, req, Count);
             pendingCountRequests.Add(countReq);
+            StatsCollector.writeStatistic<long>("Add Requests to Pipeline", 0, sw.ElapsedMilliseconds);
         }else{
             Encoding.Dispose();
             // Note probably a small 1 time memory leak of newtexture here
@@ -248,13 +263,15 @@ public class DataProcessing : MonoBehaviour
     }
 
     RenderTexture RenderColorArray(){
+        Stopwatch sw = new();
+        sw.Start();
         RenderTexture renderTex = new RenderTexture(resolutionX, resolutionY, 0);
         renderTex.Create();        
         GetComponent<Camera>().targetTexture = renderTex;
         GetComponent<Camera>().Render();  
         GetComponent<Camera>().targetTexture = null;
-
         renderTextureToReferences[renderTex] = 2;
+        StatsCollector.writeStatistic<long>("Render Depth Frame Time", uid, sw.ElapsedMilliseconds);
         return renderTex;    
     }
 

@@ -5,19 +5,21 @@
 // with cs.SetTexture
 Texture2D<float4> OldTexture;
 Texture2D<float4> NewTexture;
-RWBuffer<int> NumEncoded;
-int MaxSmallSize;
+struct Data{
+    float encoding;
+    uint pos;
+};
 
-AppendStructuredBuffer<float4> Encoding;
-AppendStructuredBuffer<float4> EncodingOverflow;
-
-
-//groupshared int NextPos;
+AppendStructuredBuffer<Data> Encoding;
 
 [numthreads(8,8,1)]
 void CSMain (uint3 id : SV_DispatchThreadID){    
     [branch]
     if( NewTexture[id.xy].r - OldTexture[id.xy].r != 0){
-        Encoding.Append(float4(  NewTexture[id.xy].r - OldTexture[id.xy].r, id.y, id.x, 0));
+        Data tmp;
+        tmp.encoding = NewTexture[id.xy].r - OldTexture[id.xy].r;
+        tmp.pos = id.x;
+        tmp.pos |= (id.y << 16);
+        Encoding.Append(tmp); 
     }
 }

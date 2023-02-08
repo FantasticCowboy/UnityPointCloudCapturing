@@ -1,6 +1,6 @@
 import pdb
 import matplotlib.pyplot as plt
-
+import numpy as np
 
 def writeStats(stats, test_count):
     for stat in stats:
@@ -15,22 +15,29 @@ def makeHistogram(stats : dict[str, list[float]]):
     for stat in stats:          
         buckets = {}
 
-        cumsum = 0
+        cumsum = 1
+        count = 0
         for val in stats[stat]:
             cumsum += float(val)            
             buckets[val] = True
-        vals = [float(x) for x in stats[stat]]        
-        plt.hist(vals, len(buckets) + 10)
-        plt.yscale("log")
-        plt.title(stat)
-        plt.xlabel("Time in ms")
-        plt.ylabel("Frequency")
-        plt.show()     
+            count +=1
+        vals = [float(x) for x in stats[stat]]   
 
         print(f"\n{stat}'s Statistics")   
         print(f"Cummulative Sum={cumsum}")
         #pdb.set_trace()
         print(f"Average Value={cumsum / len(vals)}")
+
+        plt.hist(vals, len(buckets), cumulative=True, weights=np.ones_like(vals)/float(len(vals)),histtype='step')
+        plt.hist( vals , len(buckets), histtype='step', weights=np.ones_like(vals)/float(len(vals) ))
+
+
+        #plt.yscale("log")
+        plt.title(stat)
+        plt.xlabel("Time in ms")
+        plt.ylabel("Probability")
+        plt.show()     
+
 
 
 with open("stats.txt") as f:

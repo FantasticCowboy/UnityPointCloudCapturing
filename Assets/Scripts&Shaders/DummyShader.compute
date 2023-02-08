@@ -1,0 +1,11 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWBuffer<float4> Result;
+
+[numthreads(8,8,1)]
+void CSMain (uint id : SV_DispatchThreadID){
+    Result[id.x] = float4(id.x , (id.x & 15)/15.0, (id.x & 15)/15.0, 0.0);
+}
