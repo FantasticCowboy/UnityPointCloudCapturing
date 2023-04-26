@@ -7,19 +7,19 @@ Texture2D<float4> OldTexture;
 Texture2D<float4> NewTexture;
 struct Data{
     float encoding;
-    uint pos;
+    uint xPos;
+    uint yPos;
 };
 
 AppendStructuredBuffer<Data> Encoding;
 
 [numthreads(8,8,1)]
 void CSMain (uint3 id : SV_DispatchThreadID){    
-    [branch]
-    if( NewTexture[id.xy].r - OldTexture[id.xy].r != 0){
+    [branch] if( NewTexture[id.xy].r - OldTexture[id.xy].r != 0){
         Data tmp;
         tmp.encoding = NewTexture[id.xy].r - OldTexture[id.xy].r;
-        tmp.pos = id.x;
-        tmp.pos |= (id.y << 16);
+        tmp.xPos = id.x;
+        tmp.yPos = id.y;
         Encoding.Append(tmp); 
     }
 }

@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - RGB Camera
+  - RGB Camera 1
+  - RGB Camera 2
+  - RGB Camera 3
+  - Camera
   layers:
   - Default
   - TransparentFX

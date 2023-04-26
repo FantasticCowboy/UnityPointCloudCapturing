@@ -27,7 +27,7 @@ def processFile(height, width):
             buckets[vals[-1]] = True
             cumsum+=float(line)
    
-    plt.hist(vals, int(len(buckets)/15), 
+    plt.hist(vals, 50, 
             label=formatLabel(height, width),
             weights=np.ones_like(vals)/float(len(vals)),
             linewidth=2,

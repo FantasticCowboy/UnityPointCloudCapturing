@@ -6,10 +6,9 @@ using UnityEngine.Rendering;
 using System.Threading;
 
 
-
 public class DataProcessing : MonoBehaviour
 {
-    static readonly int ELEMENT_SIZE_BYTES = 4 * 2;
+    static readonly int ELEMENT_SIZE_BYTES = 4 * 3;
 
     bool ran;
 
@@ -17,7 +16,7 @@ public class DataProcessing : MonoBehaviour
     public int maxTimesRun = 1;
     int resolutionX;
     int resolutionY;
-    int uid;
+    public int uid;
     public float delay = 1;
 
     struct AsyncReadDeltaEncoding{
@@ -99,7 +98,6 @@ public class DataProcessing : MonoBehaviour
     Dictionary<RenderTexture, int> renderTextureToReferences = new();
 
     void Start() {
-        uid = (int) (UnityEngine.Random.Range(0,int.MaxValue));
         //Debug.Log(uid);        
         resolutionX = Screen.width;
         resolutionY = Screen.height;
@@ -107,7 +105,25 @@ public class DataProcessing : MonoBehaviour
         DiskWriter.initialize();
         ran = false;
 
+        UnityEngine.Debug.Log("Camera To World Matrix");
+        UnityEngine.Debug.Log(GetComponent<Camera>().cameraToWorldMatrix);
+        UnityEngine.Debug.Log("Projection Matrix");
+        UnityEngine.Debug.Log(GetComponent<Camera>().projectionMatrix);        
+        UnityEngine.Debug.Log("Uid");
+        UnityEngine.Debug.Log(uid);
+        UnityEngine.Debug.Log("Viewport to world matrix");
+        Matrix4x4 viewToWorld = GetComponent<Camera>().cameraToWorldMatrix * GetComponent<Camera>().projectionMatrix.inverse;
+        UnityEngine.Debug.Log(viewToWorld);
+        UnityEngine.Debug.Log("Projection Matrix Inverse");      
+        UnityEngine.Debug.Log(GetComponent<Camera>().projectionMatrix.inverse);
+
+
+        UnityEngine.Debug.Log("Local To World");      
+        UnityEngine.Debug.Log(transform.localToWorldMatrix);
         //oldTexture = new RenderTexture(resolutionX, resolutionY, 0);
+        List<Camera> cameraList = new();
+        cameraList.Add(GetComponent<Camera>());
+
     }
 
     // Update is called once per frame

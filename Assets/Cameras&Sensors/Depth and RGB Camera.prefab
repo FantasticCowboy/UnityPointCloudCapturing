@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 1626826625666323258}
   - component: {fileID: 2429601741147037640}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: RGB Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,11 +90,11 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 10
+  field of view: 40
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
